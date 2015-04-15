@@ -1,0 +1,217 @@
+body, html {
+  font-family: "Raleway", sans-serif !important;
+  height: 100%;
+  margin: 0;
+}
+/*
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.35); dim the background 
+}*/
+
+.lato{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;   
+    font-size: 2em;
+}
+
+h1{
+    color: #404143;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 6.2em;
+}
+
+p, li, h2, h3 {
+  color: #5c8f26;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+}
+
+h4, h5 {
+  color: #fff;
+  font-weight: 300;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+}
+
+.headersection{
+    font-size: 2.8em;   
+    padding-top: 5%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: #5c8f26;
+}
+
+.header{
+    font-size: 2.4em;   
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+.subheader{
+    font-size: 1.8em;   
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: #5c8f26;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 4%;
+    width: 100%;
+    padding: 0 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.footer p{
+    float: left;   
+    margin: 8px;
+}
+
+.footer ul li{
+    list-style-type: none;
+    display: inline;
+    float: right;
+    padding: 4px;
+}
+
+.section{
+    min-height: 100%;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#landing {
+  background-image: url(../images/Strip.jpg);
+  text-align: right;
+}
+#about {
+  background-image: url(../images/Polygon.jpg);
+  text-align: left;
+}
+#portfolio {
+  background-image: url(../images/SoftPolygon.jpg);
+  text-align: left;
+}
+#contact {
+    background-image: url(../images/Desert_gs.jpg);
+    text-align: left;
+}
+
+#landing .row{
+    max-width: 100em;
+}
+#about .row, #portfolio .row{
+    max-width: 85em;
+}
+
+.profile-image{
+    border-radius: 350px;
+    height: 85%;
+    width: 85%;
+    margin: 5%;
+}
+.profile-info{
+    font-size: 1.2em;   
+}
+
+.margin-top2{
+  margin-top: 2%;   
+}
+.margin-top5{
+  margin-top: 5%;   
+}
+.margin-top10{
+  margin-top: 10%;   
+}
+.margin-top15{
+  margin-top: 15%;   
+}
+.margin-bottom5{
+    margin-bottom: 5px;
+}
+.margin-right10{
+    margin-right: 10%;   
+}
+.margin-LR5{
+    margin: 0 5%;   
+}
+.margin-LR10{
+    margin: 0 10%;   
+}
+.padding-top5{
+  padding-top: 5%;   
+}
+.padding-top10{
+  padding-top: 10%;   
+}
+.padding-right5{
+  padding-right: 5%;   
+}
+.padding-right10{
+    padding-right: 10%;   
+}
+.padding-left2{
+    padding-left: 2%;   
+}
+.padding-LR15{
+    padding: 0 15%;   
+}
+
+.center-vertical{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hexagon-party{
+    margin: 2% 0 0 0;
+}
+.hexagon-party img{
+    -webkit-filter: drop-shadow(6px 6px 3px rgba(0,0,0,0.5)); filter: drop-shadow(6px 6px 3px rgba(0,0,0,0.5));   
+}
+.hexagon-row1{
+    transform: translateX(3.5%); 
+    padding: 0 5%;
+}
+.hexagon-row2{
+    transform: translateY(-24%);
+    padding: 0 5%;
+}
+
+.send-btn {
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+  padding: 8px;
+  float: right;
+  color: #fff;
+  background-color: #404143;
+}
+
+/*Overriding*/
+.tip-top{
+    margin-left: 6px;   
+}
+
+/*Color Classes*/
+.white{
+    color: #fff;   
+}
+.grey{
+    color: #404143;   
+}
+.light-grey{
+    color: #b8b8b8;   
+}
+.green{
+    color: #5c8f26; 
+} 
