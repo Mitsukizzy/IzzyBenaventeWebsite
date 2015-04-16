@@ -85,27 +85,26 @@ h4, h5 {
 }
 
 .section{
+    background-color: #111;
+}
+
+#landing {    
     min-height: 100%;
     background-size: cover;
     margin: 0;
     padding: 0;
 }
-
-#landing {
-    background-color: #111;
-    text-align: right;
-}
 #about {
-  background-image: url(../images/Polygon.jpg);
-  text-align: left;
+ /* background-image: url(../images/Polygon.jpg);*/
+    text-align: left;
 }
 #portfolio {
-  background-image: url(../images/SoftPolygon.jpg);
-  text-align: left;
+    background-image: url(../images/SoftPolygon.jpg);
+    text-align: left;
 }
 #contact {
     background-image: url(../images/Desert_gs.jpg);
-    text-align: left;
+    text-align: center;
 }
 
 #landing .row{
