@@ -1,7 +1,7 @@
 body, html {
-  font-family: "Raleway", sans-serif !important;
-  height: 100%;
-  margin: 0;
+    min-height: 100%;
+    height: 100%;
+    margin: 0;  
 }
 /*
 .overlay {
@@ -21,17 +21,19 @@ body, html {
 }
 
 h1{
-    color: #404143;
-    position: relative;
+    color: #fff;
     font-family: "Raleway", sans-serif;
     font-weight: 300;
-    font-size: 6.2em;
+    font-size: 6em;
+    margin: 0;
+    padding: 5% 0 2% 0;
 }
 
 p, li, h2, h3 {
-  color: #5c8f26;
-  position: relative;
-  font-family: "Raleway", sans-serif;
+    color: #ffcc00;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
 }
 
 h4, h5 {
@@ -41,55 +43,12 @@ h4, h5 {
   font-family: "Raleway", sans-serif;
 }
 
-.headersection{
-    font-size: 2.8em;   
-    padding-top: 5%;
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    color: #5c8f26;
-}
-
-.header{
-    font-size: 2.4em;   
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-}
-
-.subheader{
-    font-size: 1.8em;   
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    color: #5c8f26;
-}
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    height: 4%;
-    width: 100%;
-    padding: 0 5%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 100;
-}
-
-.footer p{
-    float: left;   
-    margin: 8px;
-}
-
-.footer ul li{
-    list-style-type: none;
-    display: inline;
-    float: right;
-    padding: 4px;
-}
-
 .section{
-    background-color: #111;
+    background-color: #111;     
+    min-height: 100%;
 }
 
 #landing {    
-    min-height: 100%;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -100,7 +59,7 @@ h4, h5 {
 }
 #portfolio {
     background-image: url(../images/SoftPolygon.jpg);
-    text-align: left;
+    text-align: left;    
 }
 #contact {
     background-image: url(../images/Desert_gs.jpg);
@@ -195,19 +154,27 @@ img.splash-logo{
     transform: translateY(-24%);
     padding: 0 5%;
 }
-
-.send-btn {
-  font-size: 1.2em;
-  font-family: "Raleway", sans-serif;
-  padding: 8px;
-  float: right;
-  color: #fff;
-  background-color: #404143;
+.menu-icon{
+    position: absolute;
+    color: #333;
+    top: 2%;
+    right: 1%;
+}
+.hide{
+    display: none;   
+}
+.gold-line{
+    border-bottom: 1px solid #ffcc00;   
+}
+.contact-item{
+    font-size: 2em;
+    color: #fff;
+    display: inline-block;
 }
 
-/*Overriding*/
-.tip-top{
-    margin-left: 6px;   
+ul li{
+    list-style: none;
+    color: #b8b8b8;
 }
 
 /*Color Classes*/
@@ -217,9 +184,18 @@ img.splash-logo{
 .grey{
     color: #404143;   
 }
+.grey2{
+    color: #222;   
+}
+.grey3{
+    color: #111;   
+}
 .light-grey{
     color: #b8b8b8;   
 }
 .green{
     color: #5c8f26; 
 } 
+.gold{
+    color: #ffcc00;
+}
