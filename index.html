@@ -18,7 +18,7 @@
     <body>
         <!-- <div class="overlay"></div> -->
         <div id="landing" class="section">
-            <img class="center" src="images/Logo.png">
+            <img class="splash-logo" src="images/Logo.png">
         </div>
 
         <script src="js/jquery.js"></script>
@@ -26,6 +26,10 @@
         <script src="js/foundation.min.js"></script>     
         <script> 
             $(document).foundation();
+            $(document).ready(function() {
+                 $(".splash-logo").fadeIn("slow");
+            });
+           
         </script>
     </body>
 </html>

@@ -92,8 +92,8 @@ h4, h5 {
 }
 
 #landing {
-  background-image: url(../images/Strip_whiteoverlay.jpg);
-  text-align: right;
+    background-color: #111;
+    text-align: right;
 }
 #about {
   background-image: url(../images/Polygon.jpg);
@@ -113,6 +113,15 @@ h4, h5 {
 }
 #about .row, #portfolio .row{
     max-width: 85em;
+}
+
+img.splash-logo{
+    position: absolute;
+    margin: auto;
+    left: 0; 
+    right: 0;
+    top: 0;
+    bottom: 0;  
 }
 
 .profile-image{
