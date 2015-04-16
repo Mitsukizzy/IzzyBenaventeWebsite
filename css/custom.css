@@ -24,9 +24,10 @@ h1{
     color: #fff;
     font-family: "Raleway", sans-serif;
     font-weight: 300;
-    font-size: 6em;
-    margin: 0;
+    font-size: 6em !important;
+    margin: 0 !important;
     padding: 5% 0 2% 0;
+    text-align: center;
 }
 
 p, li, h2, h3 {
@@ -34,6 +35,7 @@ p, li, h2, h3 {
     position: relative;
     font-family: "Raleway", sans-serif;
     margin: 0;
+    text-align: center;
 }
 
 h4, h5 {
@@ -63,7 +65,6 @@ h4, h5 {
 }
 #contact {
     background-image: url(../images/Desert_gs.jpg);
-    text-align: center;
 }
 
 #landing .row{
@@ -78,8 +79,7 @@ img.splash-logo{
     margin: auto;
     left: 0; 
     right: 0;
-    top: 0;
-    bottom: 0;  
+    top: 30%; 
 }
 
 .profile-image{
@@ -154,12 +154,7 @@ img.splash-logo{
     transform: translateY(-24%);
     padding: 0 5%;
 }
-.menu-icon{
-    position: absolute;
-    color: #333;
-    top: 2%;
-    right: 1%;
-}
+
 .hide{
     display: none;   
 }
@@ -170,11 +165,91 @@ img.splash-logo{
     font-size: 2em;
     color: #fff;
     display: inline-block;
+    margin: 2%;
+}
+.contact-menu{
+    margin-top: 3%;
+    padding: 0 20%;   
+}
+.contact-menu a{
+    text-decoration: none;   
+}
+#contact .fa{
+    color: #b8b8b8;   
+}
+.landing-menu{
+    position: absolute;
+    margin: auto;
+    left: 25%; 
+    right: 25%;
+    top: 50%; 
+}
+.landing-menu a{
+    text-decoration: none;   
+}
+.landing-item{
+    font-size: 1.4em;
+    text-align: center;   
+    margin: 10% 0;
+}
+.landing-item span{
+    border: 1px solid #fff;
+    padding: 5px;
 }
 
 ul li{
     list-style: none;
     color: #b8b8b8;
+}
+
+/*Menu Classes*/
+.navigation-wrapper {
+	background: #555;
+	background: rgba(0, 0, 0, .9);
+	padding: 40px 0 0 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 900;
+	display: none;
+}
+
+.navigation {
+	padding: 20px 5% 0 5%;
+	display: none;
+}
+
+.navigation li{
+    margin: 2%;
+    text-align: center;
+}
+
+.navigation a{
+    text-decoration: none;
+    font-size: 3.4em;
+    color: #444;
+}
+
+.show-menu {
+	display: block;
+}
+
+.menu-icon, .close-icon{
+    position: absolute;
+    color: #333;
+    top: 2%;
+    right: 1%;
+}
+
+.menu-icon:hover, .close-icon:hover{
+    cursor: pointer;
+}
+
+.grey-line{
+    border-bottom: 1px solid #333;  
+    width: 20%;
 }
 
 /*Color Classes*/
