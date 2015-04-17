@@ -32,7 +32,7 @@ h1{
 }
 
 h2{
-    font-size: 3.4vmin !important;   
+    font-size: 3.4vmin;   
 }
 
 p, li, h2, h3 {
@@ -252,14 +252,57 @@ ul li{
     text-decoration: none !important;
 }
 #about-info{
-    background-color: #999;
-    height: 30vmin;
+    background-color: #555;
+    padding: 10vmin 25vmin 0 25vmin;
+    height: 25vmin;
+}
+#about-info h2{
+    color: #111 !important;
+    text-align: left;
+}
+#about-info p{
+    color: #111 !important;
+    font-size: 2.7vmin;
+    text-align: left;
+}
+#about-info span{
+    color: #ffcc00;
+}
+#about-profile{
+    height: 100vmin;
+}
+.about-profile-info{
+    padding: 10vmin 25vmin;   
+}
+.about-profile-info h2{
+    padding-top: 6vmin;
+    font-size: 4vmin;
+    text-align: left; 
+}
+.about-profile-info p{
+    font-size: 2.4vmin;
+    text-align: left; 
+}
+.profile-image{
+    border-radius: 50%;   
 }
 @media screen and (max-width: 700px) {
     .about-top-text{
         top: 40%;    
     }   
+    #about-info{
+        height: 30vmin;  
+    }     
+    .about-profile-info{
+        padding: 15vmin 20vmin;   
+    }
 }
+@media screen and (max-width: 900px) { 
+   #about-info{
+        padding: 10vmin 10vmin 0 10vmin;
+    }   
+}
+
 
 /*Contact Page Specific Classes*/
 .contact-item p{
@@ -332,6 +375,7 @@ ul li{
 }
 .menu-icon:hover, .close-icon:hover{
     cursor: pointer;
+    color: #fff;
 }
 .grey-line{
     border-bottom: 1px solid #333;  

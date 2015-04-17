@@ -1,7 +1,6 @@
 $(document).ready(function() {
-     $('.landing-item span').hover(function(event) {
-		$(this).addClass("grey-line");
-	 },function(){
-        $(this).removeClass("grey-line");     
-     });
+    $('.about-izzy').hide();
+    $('.about-more').hide();
+    $('.about-izzy').fadeIn(1000);
+    $('.about-more').delay(1000).slideDown(500);
 });

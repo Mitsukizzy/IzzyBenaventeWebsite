@@ -3,6 +3,7 @@ $(document).ready(function() {
     $('.name-last').hide();
     $('.info-list').hide();
     $('.footer').hide();
+    $('.menu-item').hide();
     
     $('.name-first').fadeIn(1000);
     $('.name-last').fadeIn(1000);
@@ -14,6 +15,7 @@ $(document).ready(function() {
     });
     
     $('.footer').delay(6500).slideDown();
+    $('.menu-item').delay(6500).fadeIn();
     
     $('.landing-item span').hover(function(event) {
         $(this).addClass("grey-line");
