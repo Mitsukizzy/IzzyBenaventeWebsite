@@ -159,6 +159,15 @@ ul li{
     list-style: none;
     color: #b8b8b8;
 }
+.initials{
+    position: absolute;
+    top: 2%;
+    left: 1%;
+}
+.initials span{
+    display: inline-block;
+    font-size: 6vmin;
+}
 
 /*Landing Page Specific Classes*/
 .landing-menu{
@@ -215,14 +224,44 @@ ul li{
     font-family: Lato !important;
 }
 
-/*Contact Page Specific Classes*/
-.contact-item p{
-    font-size: 5vmin;
-    color: #fff;
-    display: inline-block;
-    margin: 2%;
-    padding-bottom: 1vmin;
+/*About Page Classes*/
+#about1{
+    background-size: cover;
+    background-image: url('../images/Strip_gs.jpg');
+    height: 100vmin;
+    margin: 0;
+    padding: 0;
 }
+.about-top-text{
+    position: absolute;
+    left: 10%;
+    top: 55%;    
+}
+.about-izzy{    
+    color: #fff;
+    text-shadow: 1px 1px #bbb;
+    font-size: 6vmin;   
+    text-align: left;
+}
+.about-more{
+    font-size: 4vmin;   
+    text-align: left;
+}
+.about-more a{
+    color: #ffcc00;
+    text-decoration: none !important;
+}
+#about-info{
+    background-color: #999;
+    height: 30vmin;
+}
+@media screen and (max-width: 700px) {
+    .about-top-text{
+        top: 40%;    
+    }   
+}
+
+/*Contact Page Specific Classes*/
 .contact-item p{
     font-size: 5vmin;
     color: #fff;
@@ -232,13 +271,24 @@ ul li{
 }
 .contact-menu{
     margin-top: 3%;
-    padding: 0 20%;   
+    padding: 0 18% 0 30%;   
 }
 .contact-menu a{
     text-decoration: none;   
 }
 #contact .fa{
     color: #555;   
+    font-size: 7vmin !important;   
+}
+@media screen and (max-width: 700px) {
+    .contact-menu{
+        margin-top: 10%;   
+    }    
+}
+@media screen and (max-width: 550px) {
+    .contact-item{
+        margin: 5%;   
+    }   
 }
 
 /*Menu Classes*/
@@ -259,7 +309,7 @@ ul li{
 	display: none;
 }
 .navigation li{
-    margin: 2%;
+    margin: 5%;
     text-align: center;
 }
 .navigation a:hover{
@@ -267,17 +317,18 @@ ul li{
 }
 .navigation a{
     text-decoration: none;
-    font-size: 3.4em;
+    font-size: 7vmin;
     color: #777;
 }
 .show-menu {
 	display: block;
 }
 .menu-icon, .close-icon{
-    position: absolute;
+    position: fixed;
     color: #333 !important;
     top: 2%;
     right: 1%;
+    font-size: 7vmin !important; 
 }
 .menu-icon:hover, .close-icon:hover{
     cursor: pointer;
@@ -293,7 +344,7 @@ ul li{
 .footer{
     min-width: 100%;
     background-color: #333;
-    position: absolute;
+    position: fixed;
     bottom: 0;   
 }
 .footer-text{
@@ -307,7 +358,7 @@ ul li{
     color: #fff;   
 }
 .grey{
-    color: #404143;   
+    color: #444;   
 }
 .grey2{
     color: #222;   

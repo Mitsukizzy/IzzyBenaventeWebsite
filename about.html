@@ -12,27 +12,56 @@
         <link rel="stylesheet" href="css/custom.css" />
         <link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-        <script src="js/modernizr.js"></script>  
+        <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css"> <!--Required for responsive grid-->
+        <script src="js/jquery-1.11.2.min.js"></script>
     </head>
     <body>
         <!-- <div class="overlay"></div> -->
         <div id="about" class="section">
-            <div>
-                <h3 class="header">Hi, I'm Izzy Benavente</h3>
-                <h4 class="grey">
-                    a front end web developer and game developer from Las Vegas
-                    currently studying Computer Science with a focus in
-                    Game Development and Cyber Security at
-                    the University of Southern California (USC) in Los Angeles
-                <h4>
+            <i class="menu-icon fa fa-bars fa-3x"></i>
+            <div id="about1">
+                <div class="about-top-text">
+                    <p class="about-izzy">About Izzy</p>
+                    <p class="about-more"><a href="#about-info">Learn More</a></p>
+                </div>
+            </div>
+            <div id="about-info">
+                A front end web developer and game developer
+                
+                from Las Vegas
+                studying Computer Science with a focus in
+                Game Development and Cyber Security 
+                at the University of Southern California (USC) in Los Angeles
+            </div>
+
+                    
+            <!-- FOOTER -->
+            <div class="footer">
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <p class="footer-text gold">© 2015 by Isabella Benavente. All rights reserved.</p>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <p class="footer-text white">Preferred Email: izzybenavente@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- MENU OVERLAY -->
+            <div class="navigation-wrapper">
+                <i class="close-icon fa fa-times fa-3x"></i>
+                <ul class="navigation">
+                    <li><a href="index.html"><span class="grey-line">HOME</span></a></li>
+                    <li><a href="about.html"><span class="grey-line">ABOUT</span></a></li>
+                    <li><a href="works.html"><span class="grey-line">WORKS</span></a></li>
+                    <li><a href="contact.html"><span class="grey-line">CONTACT</span></a></li>
+                  </ul>
             </div>
         </div>
 
-        <script src="js/jquery.js"></script>
-        <script src="js/fastclick.js"></script>
-        <script src="js/foundation.min.js"></script>     
-        <script> 
-            $(document).foundation();
-        </script>
+        <script src="js/menu.js"></script>
+        <script src="js/about.js"></script>
     </body>
 </html>
