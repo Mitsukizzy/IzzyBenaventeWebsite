@@ -80,14 +80,6 @@ h4, h5 {
     max-width: 85em;
 }
 
-img.splash-logo{
-    position: absolute;
-    margin: auto;
-    left: 0; 
-    right: 0;
-    top: 30%; 
-}
-
 .profile-image{
     border-radius: 350px;
     height: 85%;
@@ -180,7 +172,7 @@ ul li{
     text-decoration: none;   
 }
 .landing-item{
-    font-size: 4vmin;
+    font-size: 4.6vmin;
     text-align: center;   
     margin: 10% 0;
 }
@@ -189,6 +181,38 @@ ul li{
 }
 .landing-item span:hover{
     color: #ffcc00;   
+}
+.splash-logo{
+    position: absolute;
+    margin: auto;
+    left: 0; 
+    right: 0;
+    top: 30%; 
+    text-align: center;
+}
+.name-first{
+    font-family: Lato !important;      
+    font-size: 11vmin !important;
+    display: inline-block;
+    color: #ffcc00;
+    padding: 0;
+}
+.name-last{
+    font-family: Lato !important;
+    font-size: 11vmin !important;
+    display: inline-block;
+    color: #555;
+    padding: 0;
+}
+.info-item{
+    display: inline-block;
+    font-size: 2.6vmin;
+    color: #666;
+}
+.separator{
+    color: #999;   
+    font-size: 2.6vmin !important;
+    font-family: Lato !important;
 }
 
 /*Contact Page Specific Classes*/
