@@ -23,4 +23,11 @@ $(document).ready(function() {
 			$('.navigation').fadeIn();
 	   }
 	});
+    $('.navigation li').hover(function(){
+        $(this).find('span').addClass('gold-line');
+        $(this).find('span').removeClass('grey-line');
+    },function(){
+        $(this).find('span').addClass('grey-line');
+        $(this).find('span').removeClass('gold-line');
+    });
 });
