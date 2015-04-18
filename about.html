@@ -19,44 +19,47 @@
     </head>
     <body>
         <!-- <div class="overlay"></div> -->
-        <div id="about" class="section">
+        <div id="about">
             <i class="menu-icon fa fa-bars fa-3x"></i>
             <div id="about1">
-                <div class="about-top-text">
+                
+            </div>
+            <div class="strip"><div class="about-top-text">
                     <p class="about-izzy">About Izzy</p>
                     <p class="about-more"><a href="#about-info">Learn More</a></p>
-                </div>
-            </div>
+                </div></div>
             <div id="about-info">
                 <h2>
-                    A front end <span>web developer</span> 
-                    and <span>game developer</span>
+                    A developer with <span>passion </span>
+                    and <span>initiative</span>.
                 </h2>
                 <br />
                 <p>
-                from Las Vegas
-                studying Computer Science with a focus in
-                <span>Game Development</span>  and <span>Cyber Security</span>  
-                at the University of Southern California (USC) in Los Angeles.
+                    With a love of building cool things, I excel at learning quickly and executing tasks efficiently.
+                    Always looking for new opportunities, I am ambitious and eager to take on new challenges.                    
                 </p>
             </div>
             <div id="about-profile">
                 <div class="pure-g about-profile-info">
-                    <div class="pure-u-1 pure-u-md-1-3">
-                        <img class="profile-image pure-img" src="images/Profile_gs.jpg" />
+                    <div class="pure-u-1 center">
+                        <img class="profile-image" src="images/Profile_gs.jpg" />
                     </div>
-                    <div class="pure-u-1 pure-u-md-2-3 profile-text">
-                        <h2>Izzy Benavente</h2><br />
+                    <div class="pure-u-1 profile-text">
+                        <h2 class="center">Hi, I'm Izzy</h2><br />
                         <p>
-                            USC Class of 2017<br />
-                            Location: Los Angeles, California <br />
-                            Hometowns: Las Vegas, NV and Dededo, Guam <br />
-                            Activities: Co-op gaming, foodie-ing <br />
-                            Sports: Dragon Boat, Beach Volleyball 
+                            Though currently a second year college student, I devote a great deal of my time to working on game projects, participating in hackathons, and practicing web development.
+I attended high school in Las Vegas where I studied Computer Science for four years and got my first taste of game development and web design.
+Now, I study Computer Science with a focus in Game Development and Cyber Security at the University of Southern California (USC) in Los Angeles. <br /><br />
+
+I currently work with a fantastic team on a virtual reality game called ElemenTerra. I'm responsible for programming many of the player-specific functions and also for experimenting and developing the game's flight controls using the Razer Hydra
+and the Oculus Rift. This summer I'm excited (and blessed) to be working at a AAA game studio for the first time, taking my first step into the games industry.
+                            <br /><br />
+
+When I'm not at school or at a computer, you can find me at the beach playing volleyball or on the water paddling for the USC Dragon Boat team. 
+Else I'm probably on the hunt for the best boba milk tea or the strongest cup of coffee in the area.<br /><br />
+
+Want to get in touch? <a href="contact.html" class="grey">Contact me!</a>
                         </p>
-                    </div>
-                    <div class="pure-u-1 pure-u-md-1-4">
-                        
                     </div>
                 </div>
             </div>
@@ -88,5 +91,12 @@
 
         <script src="js/menu.js"></script>
         <script src="js/about.js"></script>
+        <script>
+            //anchor menu scroll
+            $('.about-more').click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$('#about-info').offset().top}, 500);    
+            });  
+        </script>
     </body>
 </html>
