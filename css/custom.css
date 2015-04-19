@@ -176,6 +176,25 @@ ul li{
     font-size: 2.6vmin !important;
     font-family: Lato !important;
 }
+.resume-button{
+    position: absolute;
+    margin: auto;
+    bottom: 20%;
+    left: 0; 
+    right: 0;
+}
+.resume-button span{
+    padding: 2vmin;
+    border: 1px solid #777;
+    font-size: 2vmin;
+    color: #ddd;
+}
+.resume-button span:hover{
+    padding: 2vmin;
+    border: 1px solid #ffcc00;
+    font-size: 2vmin;
+    color: #fff;
+}
 
 /*About Page Classes*/
 .strip{
@@ -275,32 +294,58 @@ ul li{
 }
 
 /*Works Page Specific Classes*/
+.works-title{
+    font-family: Lato;
+    font-size: 6vmin;
+    padding-top: 5vmin;
+}
 .works-list{
-    padding: 10vmin 0;
+    padding: 0 0 5vmin 0;
+    text-align: center;
 }
 .works-item{
-    height: 65vmin;
+    height: 40vmin;
     background-color: #555;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 .works-item:hover{
-    height: 65vmin;
-    background-color: #444;
+    height: 40vmin;
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
     cursor:pointer;
 }
-.resume-button{
-    padding: 0 0 20vmin 0;   
+.works-item-overlay{    
+    background-color: #333;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    height: 50%;
+    z-index: 50;
 }
-.resume-button span{
-    padding: 2vmin;
-    border: 1px solid #777;
-    font-size: 2vmin;
-    color: #ddd;
+.elementerra{
+    background-image: url('../images/elementerra.jpg');
 }
-.resume-button span:hover{
-    padding: 2vmin;
-    border: 1px solid #ffcc00;
-    font-size: 2vmin;
-    color: #fff;
+.pricetracker{
+    background-image: url('../images/pricetracker2.jpg');
+    background-position: left top;
+}
+.usc{
+    background-image: url('../images/ultimate.jpg');
+}
+.whiteboard{
+    background-image: url('../images/whiteboard.jpg'); 
+}
+.coupinions{
+    background-image: url('../images/coupinions.jpg');   
+}
+.arcis{
+    background-image: url('../images/arcis.jpg');    
+}
+.night{
+    background-image: url('../images/night.jpg');
 }
 
 /*Contact Page Specific Classes*/
@@ -371,6 +416,7 @@ ul li{
     top: 2%;
     right: 1%;
     font-size: 7vmin !important; 
+    z-index: 100;
 }
 .menu-icon:hover, .close-icon:hover{
     cursor: pointer;
