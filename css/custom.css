@@ -67,12 +67,11 @@ h4, h5 {
 #about {
     text-align: left;
 }
-#portfolio {
-    background-image: url(../images/SoftPolygon.jpg);
+#works {
     text-align: left;    
 }
 #contact {
-    background-image: url(../images/Desert_gs.jpg);
+    
 }
 
 #landing .row{
@@ -84,57 +83,13 @@ h4, h5 {
 .profile-info{
     font-size: 1.2em;   
 }
-
-.margin-top2{
-  margin-top: 2%;   
-}
-.margin-top5{
-  margin-top: 5%;   
-}
-.margin-top10{
-  margin-top: 10%;   
-}
-.margin-top15{
-  margin-top: 15%;   
-}
-.margin-bottom5{
-    margin-bottom: 5px;
-}
-.margin-right10{
-    margin-right: 10%;   
-}
-.margin-LR5{
-    margin: 0 5%;   
-}
-.margin-LR10{
-    margin: 0 10%;   
-}
-.padding-top5{
-  padding-top: 5%;   
-}
-.padding-top10{
-  padding-top: 10%;   
-}
-.padding-right5{
-  padding-right: 5%;   
-}
-.padding-right10{
-    padding-right: 10%;   
-}
-.padding-left2{
-    padding-left: 2%;   
-}
-.padding-LR15{
-    padding: 0 15%;   
-}
-
 .center-vertical{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 .hexagon-party{
-    margin: 2% 0 0 0;
+    margin: 0 40vmin;
 }
 .hexagon-party img{
     -webkit-filter: drop-shadow(6px 6px 3px rgba(0,0,0,0.5)); filter: drop-shadow(6px 6px 3px rgba(0,0,0,0.5));   
@@ -317,6 +272,35 @@ ul li{
     #about-profile{        
         padding-bottom: 40vmin;   
     }
+}
+
+/*Works Page Specific Classes*/
+.works-list{
+    padding: 10vmin 0;
+}
+.works-item{
+    height: 65vmin;
+    background-color: #555;
+}
+.works-item:hover{
+    height: 65vmin;
+    background-color: #444;
+    cursor:pointer;
+}
+.resume-button{
+    padding: 0 0 20vmin 0;   
+}
+.resume-button span{
+    padding: 2vmin;
+    border: 1px solid #777;
+    font-size: 2vmin;
+    color: #ddd;
+}
+.resume-button span:hover{
+    padding: 2vmin;
+    border: 1px solid #ffcc00;
+    font-size: 2vmin;
+    color: #fff;
 }
 
 /*Contact Page Specific Classes*/
