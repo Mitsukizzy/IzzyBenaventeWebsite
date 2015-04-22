@@ -326,6 +326,10 @@ ul li{
 }
 .elementerra{
     background-image: url('../images/elementerra.jpg');
+    height: 50vmin;
+}
+.elementerra:hover{
+    height: 50vmin;   
 }
 .pricetracker{
     background-image: url('../images/pricetracker2.jpg');
