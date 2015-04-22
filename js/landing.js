@@ -1,19 +1,15 @@
 $(document).ready(function() {
-    $('.name-first').hide();
-    $('.name-last').hide();
-    $('.info-list').hide();
-    $('.menu-icon').hide();
-    
-    $('.name-first').fadeIn(1000);
-    $('.name-last').fadeIn(1000);
-    $('.info-list').delay(1000).fadeIn(2000, function(){        
-        $('.landing-item').delay(750).each(function(i){
-            $(this).delay(750 * i).fadeIn();
+    $('.name-first').css({'opacity':0}).animate({'opacity':1}, 3000);
+    $('.name-last').css({'opacity':0}).animate({'opacity':1}, 3000);
+
+    $('.info-list').delay(2000).css({'opacity':0}).animate({'opacity':1}, 2000, function(){ 
+        $('.landing-item').delay(250).each(function(i){
+            $(this).delay(750 * i).css({'opacity':0}).animate({'opacity':1}, 1000);
         });
         
     });
     
-    $('.menu-icon').delay(5500).fadeIn();
+    $('.menu-icon').delay(5500).css({'opacity':0}).animate({'opacity':1}, 3000);
     
     $('.landing-item span').hover(function(event) {
         $(this).addClass("grey-line");
@@ -21,6 +17,7 @@ $(document).ready(function() {
         $(this).removeClass("grey-line");     
     });
     
+    // When leaving the page, fade it out
     $('.landing-item').click(function(){
         $('#landing').fadeOut(500); 
     });

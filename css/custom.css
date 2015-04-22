@@ -3,6 +3,7 @@ body, html {
     height: 100%;
     margin: 0;  
 }
+
 /*
 .overlay {
   position: fixed;
@@ -71,7 +72,7 @@ h4, h5 {
     text-align: left;    
 }
 #contact {
-    
+    display: none; /* Will fade in */
 }
 
 #landing .row{
@@ -103,7 +104,7 @@ h4, h5 {
     padding: 0 5%;
 }
 .hide{
-    display: none;   
+    opacity: 0;  
 }
 ul li{
     list-style: none;
@@ -152,19 +153,15 @@ ul li{
     top: 30%; 
     text-align: center;
 }
-.name-first{
+.name-first, .name-last{
     font-family: Lato !important;      
-    font-size: 11vmin !important;
+    font-size: 11.4vmin !important;
     display: inline-block;
     color: #ffcc00;
     padding: 0;
 }
 .name-last{
-    font-family: Lato !important;
-    font-size: 11vmin !important;
-    display: inline-block;
     color: #555;
-    padding: 0;
 }
 .info-item{
     display: inline-block;
@@ -222,10 +219,12 @@ ul li{
     text-shadow: 1px 1px #ddd;
     font-size: 6vmin;   
     text-align: left;
+    display: none; /* Will be animated in */
 }
 .about-more{
     font-size: 4vmin;   
     text-align: left;
+    display: none; /* Will be animated in */
 }
 .about-more a{
     color: #ffcc00;
@@ -260,13 +259,13 @@ ul li{
     font-size: 4vmin;
     text-align: left;  
     color: #111;    
-    font-family: Lato;
+    font-family: Raleway;
 }
 .about-profile-info p{
-    font-size: 2.5vmin;
+    font-size: 2.2vmin;
     text-align: left;  
-    color: #111;
-    font-family: Lato;
+    color: #333;
+    font-family: Open Sans;
 }
 .profile-image{
     border-radius: 50%;
@@ -346,6 +345,11 @@ ul li{
 }
 .night{
     background-image: url('../images/night.jpg');
+}
+@media screen and (max-width: 775px) {
+    .works-item, .works-item:hover{
+        height: 60vmin;
+    }
 }
 
 /*Contact Page Specific Classes*/
@@ -466,4 +470,7 @@ ul li{
 }
 .gold2{
     color: #CD950C;   
+}
+.bg-grey{
+    background-color: #222;   
 }

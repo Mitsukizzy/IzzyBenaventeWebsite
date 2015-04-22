@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    $('#contact').hide();
     $('#contact').fadeIn(1500);
     $('.contact-item').hover(function(event) {
         $(this).find(".fa").css("color", "white");
