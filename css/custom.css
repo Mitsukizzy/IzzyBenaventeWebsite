@@ -1,7 +1,7 @@
 body, html {
     min-height: 100%;
     height: 100%;
-    margin: 0;  
+    margin: 0;
 }
 
 /*
@@ -72,7 +72,6 @@ h4, h5 {
     text-align: left;    
 }
 #contact {
-    display: none; /* Will fade in */
 }
 
 #landing .row{
@@ -133,11 +132,15 @@ ul li{
 }
 .landing-menu a{
     text-decoration: none;   
+    color: #bbb;
 }
 .landing-item{
     font-size: 4.6vmin;
     text-align: center;   
     margin: 10% 0;
+}
+.landing-item:hover{
+    cursor: pointer;
 }
 .landing-item span{
     padding: 0;   
@@ -173,25 +176,6 @@ ul li{
     font-size: 2.6vmin !important;
     font-family: Lato !important;
 }
-.resume-button{
-    position: absolute;
-    margin: auto;
-    bottom: 20%;
-    left: 0; 
-    right: 0;
-}
-.resume-button span{
-    padding: 2vmin;
-    border: 1px solid #777;
-    font-size: 2vmin;
-    color: #ddd;
-}
-.resume-button span:hover{
-    padding: 2vmin;
-    border: 1px solid #ffcc00;
-    font-size: 2vmin;
-    color: #fff;
-}
 
 /*About Page Classes*/
 .strip{
@@ -199,18 +183,16 @@ ul li{
     widows: 100%;
 }
 #about1{
-    background-size: cover;
     background-image: url('../images/Strip_gs.jpg');
+    background-size: cover;
     width:100%;
     height: 100vmin;
     position: fixed;
-    padding: 100%;
-    margin: 0;
     padding: 0;
-    z-index: -1;
+    z-index: -5;
 }
 .about-top-text{
-    position: absolute;
+    position: fixed;
     left: 10%;
     top: 55%;    
 }
@@ -375,6 +357,23 @@ ul li{
     color: #555;   
     font-size: 7vmin !important;   
 }
+.resume-button{
+    margin: auto;
+    margin-top: 5%;
+}
+.resume-button span{
+    padding: 2vmin;
+    border: 1px solid #777;
+    font-size: 2vmin;
+    color: #ddd;
+}
+.resume-button span:hover{
+    padding: 2vmin;
+    border: 1px solid #ffcc00;
+    font-size: 2vmin;
+    color: #fff;
+}
+
 @media screen and (max-width: 700px) {
     .contact-menu{
         margin-top: 10%;   
