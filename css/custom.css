@@ -12,8 +12,8 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 100;
-    background-color: rgba(0, 0, 0, 0.35); /*dim the background */
+    z-index: 900;
+    background-color: rgba(0, 0, 0, 0.9); /*dim the background */
 }
 
 .lato{
@@ -424,7 +424,7 @@ ul li{
 .show-menu {
 	display: block;
 }
-.menu-icon, .close-icon{
+.menu-icon, .close-icon, .close-icon-work{
     position: fixed;
     color: #333 !important;
     top: 2%;
@@ -432,7 +432,7 @@ ul li{
     font-size: 7vmin !important; 
     z-index: 100;
 }
-.menu-icon:hover, .close-icon:hover{
+.menu-icon:hover, .close-icon:hover, .close-icon-work:hover{
     cursor: pointer;
     color: #fff;
 }

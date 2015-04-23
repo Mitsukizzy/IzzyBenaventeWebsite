@@ -3,9 +3,7 @@ $(document).ready(function() {
     $('.landing-item').delay(250).each(function(i){
         $(this).delay(750 * i).css({'opacity':0}).animate({'opacity':1}, 1000);
     });        
-    
-    $('.menu-icon').delay(5500).css({'opacity':0}).animate({'opacity':1}, 3000);
-    
+        
     $('.landing-item span').hover(function(event) {
         $(this).addClass("grey-line");
     },function(){
@@ -46,7 +44,7 @@ $(document).ready(function() {
      }); 
     
     // WORKS PAGE
-    $("div.works-item").click(
+/*    $("div.works-item").click(
         function(event)
         {
             //window.location = $(this).attr("url");
@@ -54,7 +52,17 @@ $(document).ready(function() {
             window.open($url,'_blank');
             event.preventDefault();
         }
-    );    
+    );  */ 
+    
+    $('.elementerra').click(function(){
+        $('.work-overlay').fadeIn(); 
+        $('.menu-icon').hide();
+        
+        $('.close-icon-work').click(function() {
+            $('.work-overlay').fadeOut(); 
+            $('.menu-icon').show();
+        });
+    });
     
     // CONTACT PAGE
     $('.contact-item').hover(function(event) {
