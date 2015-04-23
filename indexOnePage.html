@@ -31,7 +31,7 @@
                 <p class="info-item">WEB DEV</p><span class="separator"> | </span>
                 <p class="info-item">GAME DEV</p><span class="separator"> | </span>
                 <p class="info-item">HACKATHON HACKER</p><span class="separator"> | </span>
-                <p class="info-item">FOODIE</p><span class="separator"> | </span>
+                <p class="info-item"><a href="http://izzybenavente.yelp.com" target="_blank">FOODIE</a></p><span class="separator"> | </span>
                 <p class="info-item">ADVENTURER</p>
                 </div>
             </div>
@@ -184,13 +184,18 @@
             <div class="pure-g">
                 <div class="pure-u-1 pure-u-md-1-2">
                     <p class="footer-text gold">© 2015 by Isabella Benavente. All rights reserved.</p>
-                </div>
+                </div>                
                 <div class="pure-u-1 pure-u-md-1-2">
                     <p class="footer-text white">Preferred Email: izzybenavente@gmail.com</p>
-                </div>
+                </div>  
+                <div class="elevator"><i class="fa fa-arrow-up fa-2x"></i></div>
             </div>
         </div>
 
+        <!-- WORK ITEM OVERLAY -->
+        <div class="work-overlay">
+            
+        </div>
 
         <!-- MENU OVERLAY -->
         <div class="navigation-wrapper">
@@ -205,7 +210,23 @@
     </body>
     <script src="js/menu.js"></script>
     <script src="js/onepage.js"></script>
+    <script src="js/elevator.js"></script>
     <script>            
+/*        window.onload = function() {
+            var elevator = new Elevator({
+                element: document.querySelector('.elevator'),
+                duration: 1000 // milliseconds
+                /*mainAudio: '/src/to/audio.mp3',
+                endAudio: '/src/to/end-audio.mp3'
+            });
+        }
+        
+        // You can run the elevator, by calling.
+        $('.elevator').click(function(){
+            elevator.elevate();    
+        });       
+*/
+        
         //anchor menu scroll
         $('.landing-item').each().click(function(event){
             $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);       

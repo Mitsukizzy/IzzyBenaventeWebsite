@@ -4,16 +4,17 @@ body, html {
     margin: 0;
 }
 
-/*
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background-color: rgba(0, 0, 0, 0.35); dim the background 
-}*/
+
+.work-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.35); /*dim the background */
+}
 
 .lato{
     font-family: "Lato", sans-serif;
@@ -121,6 +122,9 @@ ul li{
 .center{
     text-align: center;   
 }
+.right{
+    text-align: right;   
+}
 
 /*Landing Page Specific Classes*/
 .landing-menu{
@@ -169,6 +173,9 @@ ul li{
 .info-item{
     display: inline-block;
     font-size: 2.6vmin;
+    color: #666;
+}
+.info-item a{
     color: #666;
 }
 .separator{
@@ -447,6 +454,16 @@ ul li{
     font-size: 2vmin;
     line-height: 5vmin;
     text-align: center;
+}
+.elevator{
+    position: absolute;
+    bottom: 0.5vmin;
+    right: 5vmin;
+    color: #555;
+    z-index: 500;
+}
+.elevator:hover{    
+    cursor: pointer;
 }
 
 /*Color Classes*/
