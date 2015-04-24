@@ -430,6 +430,9 @@ ul li{
     color: #666;
     font-family: Open Sans;
 }
+.fa-ul{
+    margin-left: 4.2vmin !important;
+}
 .fa-li{
     color: #fff;   
 }
@@ -440,9 +443,6 @@ ul li{
 @media screen and (max-width: 550px) {
     .inner-overlay{
         padding: 2vmin 6vmin;   
-    }
-    fa-ul{
-        margin-left: 2vmin;
     }
 }
 
