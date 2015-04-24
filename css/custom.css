@@ -194,16 +194,14 @@ ul li{
     z-index: -5;
 }
 .about-top-text{
-    position: fixed;
-    left: 10%;
-    top: 55%;    
+    padding: 55vmin 0 0 10vmin;   
 }
 .about-izzy{    
     color: #fff;
-    text-shadow: 1px 1px #ddd;
+    text-shadow: 1px 1px #333;
     font-size: 6vmin;   
     text-align: left;
-    display: none; /* Will be animated in */
+    display: visible; /* Will be animated in */
 }
 .about-more{
     font-size: 4vmin;   
@@ -338,6 +336,10 @@ ul li{
     .works-item, .works-item:hover{
         height: 60vmin;
     }
+    .works-item{
+        opacity: 1;
+        filter: alpha(opacity=100); /* For IE8 and earlier */
+    }
 }
 
 /*Contact Page Specific Classes*/
@@ -411,7 +413,6 @@ ul li{
 .work-overlay h1{
     padding: 1vmin 3vmin 0 5vmin;
 }
-
 .work-overlay h3{
     color: #fff;   
 }
@@ -422,7 +423,7 @@ ul li{
 }
 .item-header{
     color: #ffcc00;    
-    width: 75vmin;
+    width: 70%;
     border-bottom: 1px solid #888;
 }
 .contribution{
@@ -439,6 +440,9 @@ ul li{
 .item-header a{
     font-size: 6vmin;
     color: #fff;
+}
+.item-image{
+    padding: 0 5vmin;   
 }
 @media screen and (max-width: 550px) {
     .inner-overlay{

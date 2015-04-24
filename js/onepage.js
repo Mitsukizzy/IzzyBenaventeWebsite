@@ -31,6 +31,25 @@ $(document).ready(function() {
                 $atTop = true;   
             }*/
             
+            var $elem = $('.about-izzy');
+
+            var docViewTop = $win.scrollTop();
+            var docViewBottom = docViewTop + $win.height();
+
+            var elemTop = $elem.offset().top;
+            var elemBottom = elemTop + $elem.height();
+
+            if (!$atTop && (elemBottom <= docViewBottom) && (elemTop >= docViewTop)){
+                $('.about-izzy').fadeIn(1000);
+                $('.about-more').slideDown(1000);
+                $atTop = true;   
+            }
+            else if($atTop && (elemBottom > docViewBottom) || (elemTop < docViewTop)){
+                $('.about-izzy').fadeOut(1000);
+                $('.about-more').slideUp(1000);
+                $atTop = false;
+            }
+            
             // If scrolled to bottom, show bottom bar
             if($(window).scrollTop() + $(window).height() >= $(document).height() && !$atBottom)  {
                 $('.footer').slideDown();
