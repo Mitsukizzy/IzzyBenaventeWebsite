@@ -405,21 +405,45 @@ ul li{
     padding: 2vmin 8vmin;   
     position: static;
 }
-.work-overlay h1{
+.work-overlay p, .work-overlay h1, .work-overlay h3{
     text-align: left;  
+}
+.work-overlay h1{
     padding: 1vmin 3vmin 0 5vmin;
 }
-.work-overlay p, .work-overlay h3{
-    text-align: left;  
+
+.work-overlay h3{
+    color: #fff;   
+}
+.work-overlay li{
+    font-size: 2.4vmin;  
+    color: #666;
+    font-family: Open Sans;
 }
 .item-header{
     color: #ffcc00;    
-    width: 90vmin;
+    width: 75vmin;
     border-bottom: 1px solid #888;
+}
+.contribution{
+    font-size: 2.4vmin;  
+    color: #666;
+    font-family: Open Sans;
+}
+.fa-li{
+    color: #fff;   
 }
 .item-header a{
     font-size: 6vmin;
     color: #fff;
+}
+@media screen and (max-width: 550px) {
+    .inner-overlay{
+        padding: 2vmin 2vmin;   
+    }
+    ul{
+        margin-left: 0;
+    }
 }
 
 
