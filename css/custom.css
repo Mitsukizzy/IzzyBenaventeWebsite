@@ -439,10 +439,10 @@ ul li{
 }
 @media screen and (max-width: 550px) {
     .inner-overlay{
-        padding: 2vmin 4vmin;   
+        padding: 2vmin 6vmin;   
     }
-    ul{
-        margin-left: 0;
+    fa-ul{
+        margin-left: 2vmin;
     }
 }
 
