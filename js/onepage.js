@@ -19,7 +19,7 @@ $(document).ready(function() {
 
         $win.scroll(function () {
             // If scrolled to top, show text
-            if ($win.scrollTop() != $('#about').offset().top && $atTop)
+/*            if ($win.scrollTop() != $('#about').offset().top && $atTop)
             {
                 $('.about-izzy').fadeOut();
                 $('.about-more').slideUp();
@@ -29,7 +29,7 @@ $(document).ready(function() {
                 $('.about-izzy').fadeIn();
                 $('.about-more').slideDown();
                 $atTop = true;   
-            }
+            }*/
             
             // If scrolled to bottom, show bottom bar
             if($(window).scrollTop() + $(window).height() >= $(document).height() && !$atBottom)  {

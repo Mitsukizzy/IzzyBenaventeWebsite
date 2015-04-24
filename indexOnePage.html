@@ -189,7 +189,7 @@
                 <div class="pure-u-1 pure-u-md-1-2">
                     <p class="footer-text white">Preferred Email: izzybenavente@gmail.com</p>
                 </div>  
-                <div class="elevator"><i class="fa fa-arrow-up fa-2x"></i></div>
+                <div class="elevator"><a href="#landing"><i class="fa fa-arrow-up fa-2x"></i></a></div>
             </div>
         </div>
 
@@ -197,10 +197,10 @@
         <div class="navigation-wrapper">
             <i class="close-icon fa fa-times fa-3x"></i>
             <ul class="navigation">
-                <li><a href="index.html"><span class="grey-line">HOME</span></a></li>
-                <li><a href="about.html"><span class="grey-line">ABOUT</span></a></li>
-                <li><a href="works.html"><span class="grey-line">WORKS</span></a></li>
-                <li><a href="contact.html"><span class="grey-line">CONTACT</span></a></li>
+                <li><a href="#landing"><span class="grey-line">HOME</span></a></li>
+                <li><a href="#about"><span class="grey-line">ABOUT</span></a></li>
+                <li><a href="#works"><span class="grey-line">WORKS</span></a></li>
+                <li><a href="#contact"><span class="grey-line">CONTACT</span></a></li>
               </ul>
         </div>
         
@@ -301,13 +301,9 @@
 */
         
         //anchor menu scroll
-        $('.landing-item').each().click(function(event){
-            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);       
-            event.preventDefault();     
-        }); 
-        $('.about-more').click(function(event){
+        $('a[href*=#]').on('click', function(event){     
             event.preventDefault();
-            $('html,body').animate({scrollTop:$('#about-info').offset().top}, 500);    
-        }); 
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+        });
     </script>
 </html>

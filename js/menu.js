@@ -29,9 +29,5 @@ $(document).ready(function() {
     },function(){
         $(this).find('span').addClass('grey-line');
         $(this).find('span').removeClass('gold-line');
-    });
-    
-    $('.landing-item').click(function(){
-        $('.section').fadeOut(500); 
-    });
+    });    
 });

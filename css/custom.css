@@ -515,8 +515,10 @@ ul li{
     position: absolute;
     bottom: 0.5vmin;
     right: 5vmin;
-    color: #555;
     z-index: 500;
+}
+.elevator a{
+    color: #555;    
 }
 .elevator:hover{    
     cursor: pointer;
