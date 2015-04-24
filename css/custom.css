@@ -48,9 +48,6 @@ h4, h5 {
     position: relative;
     font-family: "Raleway", sans-serif;
 }
-ul{
-    padding-left: 5vmin !important;   
-}
 ul li{
     text-align: left;   
 }
@@ -405,7 +402,7 @@ ul li{
     background-color: rgba(0, 0, 0, 0.9); /*dim the background */
 }
 .inner-overlay{
-    padding: 5vmin 10vmin;   
+    padding: 2vmin 8vmin;   
     position: static;
 }
 .work-overlay h1{
@@ -414,7 +411,6 @@ ul li{
 }
 .work-overlay p, .work-overlay h3{
     text-align: left;  
-    padding: 0 5vmin;
 }
 .item-header{
     color: #ffcc00;    
