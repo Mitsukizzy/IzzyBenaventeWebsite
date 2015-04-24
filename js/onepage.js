@@ -54,12 +54,15 @@ $(document).ready(function() {
         }
     );  */ 
     
-    $('.elementerra').click(function(){
-        $('.work-overlay').fadeIn(); 
-        $('.menu-icon').hide();
+    $('.works-item').click(function(){
+        $workitem = $(this).attr("item");
+        $('.item-' + $workitem).fadeIn();
+        $('body').addClass('noscroll');     // prevent body from scrolling
+        $('.menu-icon').hide();             // hide hamburger
         
         $('.close-icon-work').click(function() {
-            $('.work-overlay').fadeOut(); 
+            $('.item-' + $workitem).fadeOut(); 
+            $('body').removeClass('noscroll');  
             $('.menu-icon').show();
         });
     });
