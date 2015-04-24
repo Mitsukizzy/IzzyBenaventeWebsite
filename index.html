@@ -10,60 +10,300 @@
         <link rel="shortcut icon" href="favicon.ico" />    
         <link rel="stylesheet" href="css/custom.css" />
         <link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>     
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css"> <!--Required for responsive grid-->
         <script src="js/jquery-1.11.2.min.js"></script>
     </head>
     <body>
-        <!-- <div class="overlay"></div> -->
+        <div id="about1">
+
+        </div>
+        <!-- LANDING PAGE -->
         <div id="landing" class="section">
-            <i class="hide menu-icon fa fa-bars fa-3x"></i>
-            
+            <i class="menu-icon fa fa-bars fa-3x"></i>
             
             <div class="splash-logo">
-                <h1 class="hide name-first">IZZY</h1>
-                <h1 class="hide name-last">BENAVENTE</h1><br />
-                <div class="hide info-list">
+                <h1 class="name-first">IZZY</h1>
+                <h1 class="name-last">BENAVENTE</h1><br />
+                <div class="info-list">
                 <p class="info-item">WEB DEV</p><span class="separator"> | </span>
                 <p class="info-item">GAME DEV</p><span class="separator"> | </span>
                 <p class="info-item">HACKATHON HACKER</p><span class="separator"> | </span>
-                <p class="info-item">FOODIE</p><span class="separator"> | </span>
+                <p class="info-item"><a href="http://izzybenavente.yelp.com" target="_blank">FOODIE</a></p><span class="separator"> | </span>
                 <p class="info-item">ADVENTURER</p>
                 </div>
             </div>
             
             <div class="pure-g landing-menu">
                 <div class="pure-u-1 pure-u-md-1-3">
-                    <a href="about.html">
-                    <p class="hide landing-item"><span>ABOUT</span></p>
-                    </a>
+                    <p class="hide landing-item">
+                        <a href="#about"><span>ABOUT</span></a>
+                    </p>
                 </div>
                 <div class="pure-u-1 pure-u-md-1-3">
-                    <a href="works.html">
-                    <p class="hide landing-item"><span>WORKS</span></p>
-                    </a>
+                    <p class="hide landing-item">
+                        <a href="#works"><span>WORKS</span></a>
+                    </p>
                 </div>
                 <div class="pure-u-1 pure-u-md-1-3">
-                    <a href="contact.html">
-                    <p class="hide landing-item"><span>CONTACT</span></p>
+                    <p class="hide landing-item">
+                        <a href="#contact"><span>CONTACT</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+            
+        <!--ABOUT PAGE-->
+        <div id="about">
+            <i class="menu-icon fa fa-bars fa-3x"></i>            
+            <div class="strip">
+                <div class="about-top-text">
+                    <p class="about-izzy">About Izzy</p>
+                    <p class="about-more"><a href="#about-info">Learn More</a></p>
+                </div>
+            </div>
+            <div id="about-info">
+                <h2>
+                    A developer with <span>passion </span>
+                    and <span>initiative</span>.
+                </h2>
+                <br />
+                <p>
+                    With a love of building cool things, I excel at learning quickly and executing tasks efficiently.
+                    Always looking for new opportunities, I am ambitious and eager to take on new challenges.                    
+                </p>
+            </div>
+            <div id="about-profile">
+                <div class="pure-g about-profile-info">
+                    <div class="pure-u-1 center">
+                        <img class="profile-image" src="images/Profile_gs.jpg" />
+                    </div>
+                    <div class="pure-u-1 profile-text">
+                        <h2 class="center">Hi, I'm Izzy</h2><br />
+                        <p>
+                            Though currently a second year college student, I devote a great deal of my time to working on game projects, participating in hackathons, and practicing web development.
+    I attended high school in Las Vegas where I studied Computer Science for four years and got my first taste of game development and web design.
+    Now, I study Computer Science with a focus in Game Development and Cyber Security at the University of Southern California (USC) in Los Angeles. <br /><br />
+
+    I currently work with a fantastic team on a virtual reality game called ElemenTerra. I'm responsible for programming many of the player-specific functions and also for experimenting and developing the game's flight controls using the Razer Hydra
+    and the Oculus Rift. This summer I'm excited (and blessed) to be working at a AAA game studio for the first time, taking my first step into the games industry.
+                            <br /><br />
+
+    When I'm not at school or at a computer, you can find me at the beach playing volleyball or on the water paddling for the USC Dragon Boat team. 
+    Else I'm probably on the hunt for the best boba milk tea or the strongest cup of coffee in the area.<br /><br />
+
+    Want to get in touch? <a href="contact.html" class="grey">Contact me!</a>
+                        </p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        
+        <!--WORKS PAGE-->
+        <div id="works" class="section">
+            <i class="menu-icon fa fa-bars fa-3x"></i>
+            
+            <!--<h2 class="works-title">Works</h2>-->
+            
+            <div class="pure-g works-list">
+                <div class="pure-u-1 works-item elementerra" item="elementerra" url="http://elementerravr.com/">
+                    
+                </div>                            
+                <div class="pure-u-1 pure-u-md-1-3 works-item whiteboard" url="http://ec2-54-201-215-248.us-west-2.compute.amazonaws.com/">
+                             
+                </div>
+                <div class="pure-u-1 pure-u-md-1-3 works-item pricetracker" url="http://slickdeals.net/pricetracker/">
+                             
+                </div>   
+                <div class="pure-u-1 pure-u-md-1-3 works-item coupinions" item="coupinions" url="http://coupinions.us">
+                      
+                </div>  
+                <div class="pure-u-1 pure-u-md-1-3 works-item usc" url="http://mitsukizzy.github.io/ultimate_space_combat/">
+                          
+                </div>                
+                <div class="pure-u-1 pure-u-md-1-3 works-item arcis" url="http://mitsukizzy.github.io/arcis/">
+                                  
+                </div>
+                <div class="pure-u-1 pure-u-md-1-3 works-item night" url="https://www.thegamecrafter.com/games/a-night-in-the-woods-fall-2014">
+                    
+                </div>            
+            </div>
+        </div>
+                    
+        <!--CONTACT PAGE-->
+        <div id="contact" class="section">
+            <i class="menu-icon fa fa-bars fa-3x"></i>
+            
+            <h1><span class="gold-line">Contact</span></h1>
+            <h2>Connect with me through</h2>
+            
+            <div class="pure-g contact-menu">
+                <div class="pure-u-1 pure-u-md-1-2 contact-item">
+                    <a href="http://www.facebook.com/mitsukizzy" target="_blank">
+                    <i class="fa fa-facebook-square fa-4x"></i>
+                    <p>Facebook</p>
                     </a>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-2 contact-item">
+                    <a href="https://www.linkedin.com/in/izzyb" target="_blank">
+                    <i class="fa fa-linkedin-square fa-4x"></i>
+                    <p>LinkedIn</p>
+                    </a>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-2 contact-item">
+                    <a href="mailto:izzybenavente@gmail.com" target="_blank">
+                    <i class="fa fa-envelope-square fa-4x"></i>
+                    <p>Email</p>
+                    </a>    
+                </div>
+                <div class="pure-u-1 pure-u-md-1-2 contact-item">
+                    <a href="https://github.com/Mitsukizzy/" target="_blank">
+                    <i class="fa fa-github-square fa-4x"></i>
+                    <p>Github</p>
+                    </a>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-2 contact-item">
+                    <a href="http://steamcommunity.com/id/Mitsukizzy/" target="_blank">
+                    <i class="fa fa-steam-square fa-4x"></i>
+                    <p>Steam</p>
+                    </a>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-2">
                 </div>
             </div>
             
-            <!-- MENU OVERLAY -->
-            <div class="navigation-wrapper">
-                <i class="close-icon fa fa-times fa-3x"></i>
-                <ul class="navigation">
-                    <li><a href="index.html"><span class="grey-line">HOME</span></a></li>
-                    <li><a href="about.html"><span class="grey-line">ABOUT</span></a></li>
-                    <li><a href="works.html"><span class="grey-line">WORKS</span></a></li>
-                    <li><a href="contact.html"><span class="grey-line">CONTACT</span></a></li>
-                  </ul>
+            <div class="center resume-button">
+                <a href="resume.pdf" target="_blank"><span>VIEW RESUME</span></a>
             </div>
         </div>
+        
+        <!-- FOOTER -->
+        <div class="footer" style="display:none">
+            <div class="pure-g">
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <p class="footer-text gold">© 2015 by Isabella Benavente. All rights reserved.</p>
+                </div>                
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <p class="footer-text white">Preferred Email: izzybenavente@gmail.com</p>
+                </div>  
+                <div class="elevator"><a href="#landing"><i class="fa fa-arrow-up fa-2x"></i></a></div>
+            </div>
+        </div>
+
+        <!-- MENU OVERLAY -->
+        <div class="navigation-wrapper">
+            <i class="close-icon fa fa-times fa-3x"></i>
+            <ul class="navigation">
+                <li><a href="#landing"><span class="grey-line">HOME</span></a></li>
+                <li><a href="#about"><span class="grey-line">ABOUT</span></a></li>
+                <li><a href="#works"><span class="grey-line">WORKS</span></a></li>
+                <li><a href="#contact"><span class="grey-line">CONTACT</span></a></li>
+              </ul>
+        </div>
+        
+        <!-- WORK ITEM OVERLAYS -->
+        <!-- ELEMENTERRA -->
+        <div class="work-overlay item-elementerra">
+            <i class="close-icon-work fa fa-times fa-3x"></i>
+            <h1 class="item-header lato">
+                ElemenTerra 
+                <a href="http://elementerravr.com" target="_blank">
+                    <i class="fa fa-chevron-right fa"></i>
+                </a>
+            </h1>
+            <div class="pure-g inner-overlay">
+                <div class="pure-u-1 pure-u-lg-3-5">
+                    <h3>Contribution</h3>
+                    <p class="contribution">
+                        I have been on the ElemenTerra team as a gameplay engineer since August 2014.
+                        I work on many player-related functions including flight and planting. We've gone through 
+                        heavy code review and long term collaboration on a year-long project.
+                        I also assist in demoing the game during a few showcase events throughout the year.
+                    </p>
+                    <div class="pure-g">
+                        <div class="pure-u-2-3">
+                            <h3>Key Points and Skills</h3>
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-code"></i>C# Scripting</li>
+                                <li><i class="fa-li fa fa-code"></i>Programmed radial gravity and flight mechanics</li>
+                                <li><i class="fa-li fa fa-code"></i>Developed intuitive movement controls</li>
+                                <li><i class="fa-li fa fa-code"></i>Refinined experimental controls</li>
+                                <li><i class="fa-li fa fa-code"></i>Wrote clean code and performed code review</li>
+                                <li><i class="fa-li fa fa-code"></i>Year-long project</li>
+                                <li><i class="fa-li fa fa-code"></i>Collaboration in a 35-man team</li>
+                            </ul>
+                        </div>
+                        <div class="pure-u-1-3">
+                            <h3>Tools</h3>
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-check"></i>Unity</li>
+                                <li><i class="fa-li fa fa-check"></i>Oculus Rift</li>
+                                <li><i class="fa-li fa fa-check"></i>Razer Hydra (Sixense)</li>
+                                <li><i class="fa-li fa fa-check"></i>Confluence</li>
+                                <li><i class="fa-li fa fa-check"></i>Slack</li>
+                                <li><i class="fa-li fa fa-check"></i>Hall</li>
+                                <li><i class="fa-li fa fa-check"></i>Wrike</li>
+                                <li><i class="fa-li fa fa-check"></i>SourceTree</li>
+                                <li><i class="fa-li fa fa-check"></i>Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pure-u-1 pure-u-lg-2-5">
+                    <img class="pure-img" src="images/elementerra.jpg" />
+                </div>
+            </div>  
+        </div>
+        <!-- COUPINIONS --> 
+        <div class="work-overlay item-coupinions">
+            <i class="close-icon-work fa fa-times fa-3x"></i>
+            <h1 class="item-header">Coupinions</h1>
+            <div class="pure-g">
+                <div class="pure-u-1 pure-u-md-2-3">
+                    <h3>Contribution</h3>
+                    <p>
+
+                    </p>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <p>Check out the Coupinions site <a href="coupinions.us/index.html" target="_blank">here.</a></p>
+                </div>
+            </div>
+            
+            
+            <h4>Skills</h4>
+            <p>Native Android Development using Java</p>
+            <h4>Tools</h4>
+            <p>Android Studio/Eclipse, Github</p>
+        </div>
+        <!-- END WORK ITEM OVERLAYS -->
     </body>
     <script src="js/menu.js"></script>
-    <script src="js/landing.js"></script>
+    <script src="js/onepage.js"></script>
+    <script src="js/elevator.js"></script>
+    <script>            
+/*        window.onload = function() {
+            var elevator = new Elevator({
+                element: document.querySelector('.elevator'),
+                duration: 1000 // milliseconds
+                /*mainAudio: '/src/to/audio.mp3',
+                endAudio: '/src/to/end-audio.mp3'
+            });
+        }
+        
+        // You can run the elevator, by calling.
+        $('.elevator').click(function(){
+            elevator.elevate();    
+        });       
+*/
+        
+        //anchor menu scroll
+        $('a[href*=#]').on('click', function(event){     
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+        });
+    </script>
 </html>
