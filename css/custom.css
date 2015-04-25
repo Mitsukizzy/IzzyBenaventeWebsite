@@ -267,6 +267,14 @@ ul li{
     .about-profile-info{
         padding: 15vmin 20vmin;   
     }
+    #about1{
+        background-image: url('../images/Strip_gs.jpg');
+        width: 100vmin;
+        height: 40vmin;
+        position: fixed;
+        padding-top: 100%;
+        z-index: -5;
+    }
 }
 @media screen and (max-width: 900px) { 
     #about-info{
@@ -445,12 +453,14 @@ ul li{
     left: 3vmin;
     top: 50vmin;
     color: #777;
+    font-size: 6vmin !important;
 }
 .fa-angle-double-right{
     position: fixed;
     right: 3vmin;
     top: 50vmin;
     color: #777;
+    font-size: 6vmin !important;
 }
 .fa-angle-double-left:hover, 
 .fa-angle-double-right:hover{
