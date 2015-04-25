@@ -86,6 +86,21 @@ $(document).ready(function() {
         });
     });
     
+    $('.work-nav').click(function(){
+        $nextitem = $(this).attr("next");
+        $curitem = $(this).attr("cur");
+        $('.item-' + $nextitem).fadeIn();
+        $('.item-' + $curitem).fadeOut();
+        $('body').addClass('noscroll');     // prevent body from scrolling
+        $('.menu-icon').hide();             // hide hamburger
+        
+        $('.close-icon-work').click(function() {
+            $('.item-' + $nextitem).fadeOut(); 
+            $('body').removeClass('noscroll');  
+            $('.menu-icon').show();
+        });
+    });
+    
     // CONTACT PAGE
     $('.contact-item').hover(function(event) {
         $(this).find(".fa").css("color", "white");

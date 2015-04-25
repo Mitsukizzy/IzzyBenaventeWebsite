@@ -11,6 +11,9 @@ body, html {
     font-weight: 300;   
     font-size: 2em;
 }
+.link{
+    color: #ffcc00;   
+}
 h1{
     color: #fff;
     font-family: "Raleway", sans-serif;
@@ -276,9 +279,9 @@ ul li{
 
 /*Works Page Specific Classes*/
 .works-title{
-    font-family: Lato;
-    font-size: 6vmin;
-    padding-top: 5vmin;
+    font-size: 8vmin;
+    padding: 5vmin;
+    border-top: 1px solid #ffcc00;
 }
 .works-list{
     padding: 0 0 5vmin 0;
@@ -404,7 +407,7 @@ ul li{
     background-color: rgba(0, 0, 0, 0.9); /*dim the background */
 }
 .inner-overlay{
-    padding: 2vmin 8vmin;   
+    padding: 2vmin 10vmin;   
     position: static;
 }
 .work-overlay p, .work-overlay h1, .work-overlay h3{
@@ -436,6 +439,22 @@ ul li{
 }
 .fa-li{
     color: #fff;   
+}
+.fa-angle-double-left{
+    position: fixed;
+    left: 3vmin;
+    top: 50vmin;
+    color: #777;
+}
+.fa-angle-double-right{
+    position: fixed;
+    right: 3vmin;
+    top: 50vmin;
+    color: #777;
+}
+.fa-angle-double-left:hover, 
+.fa-angle-double-right:hover{
+    cursor:pointer;
 }
 .item-header a{
     font-size: 6vmin;
