@@ -270,7 +270,7 @@ ul li{
     #about1{
         background-image: url('../images/Strip_gs.jpg');
         width: 100vmin;
-        height: 40vmin;
+        height: 50vmin;
         position: fixed;
         padding-top: 100%;
         z-index: -5;
