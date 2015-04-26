@@ -50,11 +50,6 @@ $(document).ready(function() {
                 $('.about-more').slideDown(1000);
                 $atTop = true;   
             }
-            else if($atTop && (elemBottom > docViewBottom) || (elemTop < docViewTop)){
-                $('.about-izzy').fadeOut(1000);
-                $('.about-more').slideUp(1000);
-                $atTop = false;
-            }
             
             // If scrolled to bottom, show bottom bar
             if($(window).scrollTop() + $(window).height() >= $(document).height() && !$atBottom)  {

@@ -208,6 +208,7 @@ ul li{
 }
 .about-more{
     font-size: 4vmin;   
+    text-shadow: 1px 1px #333;
     text-align: left;
     display: none; /* Will be animated in */
 }
@@ -235,6 +236,7 @@ ul li{
 #about-profile{
     height: 130vmin;    
     background-color: #bbb;
+    padding-bottom: 10vmin;
 }
 .about-profile-info{
     padding: 10vmin 55vmin;  
@@ -257,6 +259,38 @@ ul li{
     width: 35vmin;
     height: 35vmin;    
 }
+.works-button{
+    margin: auto;
+    margin-top: 10%;
+}
+.works-button span{
+    padding: 2vmin;
+    border: 1px solid #888;
+    font-size: 2vmin;
+    color: #000;
+}
+.works-button span:hover{
+    padding: 2vmin;
+    border: 1px solid #ffcc00;
+    font-size: 2vmin;
+    color: #fff;    	
+}
+@media screen and (max-width: 1200px) {   
+    .about-profile-info{
+        padding: 15vmin 30vmin;   
+    }
+    #about-profile{        
+        padding-bottom: 20vmin;   
+    }
+}
+@media screen and (max-width: 900px) { 
+    #about-info{
+        padding: 10vmin 10vmin 0 10vmin;
+    }   
+    #about-profile{        
+        padding-bottom: 40vmin;   
+    }
+}
 @media screen and (max-width: 700px) {
     .about-top-text{
         top: 40%;    
@@ -274,14 +308,6 @@ ul li{
         position: fixed;
         padding-top: 100%;
         z-index: -5;
-    }
-}
-@media screen and (max-width: 900px) { 
-    #about-info{
-        padding: 10vmin 10vmin 0 10vmin;
-    }   
-    #about-profile{        
-        padding-bottom: 40vmin;   
     }
 }
 
@@ -309,6 +335,12 @@ ul li{
     opacity: 1;
     filter: alpha(opacity=100); /* For IE8 and earlier */
     cursor:pointer;
+    
+    -webkit-transition: all 0.2s 0s ease-in-out;
+    -moz-transition: all 0.2s 0s ease-in-out;
+    -o-transition: all 0.2s 0s ease-in-out;
+    -ms-transition: all 0.2s 0s ease-in-out;
+    transition: all 0.2s 0s ease-in-out;
 }
 .works-item-overlay{    
     background-color: #333;
