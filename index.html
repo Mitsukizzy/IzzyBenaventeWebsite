@@ -581,12 +581,18 @@
     </body>
     <script src="js/menu.js"></script>
     <script src="js/onepage.js"></script>
-    <script src="js/elevator.js"></script>
-    <script>                    
-        //anchor menu scroll
-        $('a[href*=#]').on('click', function(event){     
-            event.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    <script src="js/jquery.easing.min.js"></script>
+    <script>     
+        //jQuery for page scrolling feature - requires jQuery Easing plugin
+        $(function() {
+            $('a[href*=#]').bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
         });
+        
     </script>
 </html>
