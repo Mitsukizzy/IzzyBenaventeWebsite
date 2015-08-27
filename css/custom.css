@@ -245,7 +245,7 @@ ul li{
     padding-top: 6vmin;
     font-size: 4vmin;
     text-align: left;  
-    color: #111;    
+    color: #0971B2;    
     font-family: Raleway;
 }
 .about-profile-info p{
@@ -648,6 +648,11 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
     cursor: pointer;
 }
 
+/*Shadow Classes*/
+.shadow{
+    text-shadow: 1px 2px grey;
+}
+
 /*Color Classes*/
 .white{
     color: #fff;   
@@ -672,6 +677,9 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 }
 .gold2{
     color: #CD950C;   
+}
+.blue{
+    color: #0971B2;   
 }
 .bg-grey{
     background-color: #222;   
