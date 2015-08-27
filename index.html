@@ -113,25 +113,29 @@
             
             <div class="pure-g works-list">
                 <div class="pure-u-1 works-item elementerra" item="elementerra">
-                    
+                    <div class="hover-overlay">
+                        <div class="hover-overlay-content">
+                            <h2>ElemenTerra</h2>
+                        </div>
+                    </div>
                 </div>                            
                 <div class="pure-u-1 pure-u-md-1-3 works-item whiteboard" item="whiteboard">
-                             
+                    <div class="hover-overlay"><h2>Whiteboard Learning</h2></div>                             
                 </div>
                 <div class="pure-u-1 pure-u-md-1-3 works-item pricetracker" item="pricetracker">
-                             
+                    <div class="hover-overlay"><h2>Slickdeals Pricetracker</h2></div>
                 </div>   
                 <div class="pure-u-1 pure-u-md-1-3 works-item coupinions" item="coupinions">
-                      
+                    <div class="hover-overlay"><h2>Coupinions</h2></div> 
                 </div>  
                 <div class="pure-u-1 pure-u-md-1-3 works-item usc" item="usc">
-                          
+                    <div class="hover-overlay"><h2>Ultimate Space Combat</h2></div>     
                 </div>                
                 <div class="pure-u-1 pure-u-md-1-3 works-item arcis" item="arcis">
-                                  
+                    <div class="hover-overlay"><h2>Arcis</h2></div>             
                 </div>
                 <div class="pure-u-1 pure-u-md-1-3 works-item night" item="night">
-                    
+                    <div class="hover-overlay"><h2>A Night in the Woods</h2></div>
                 </div>            
             </div>
         </div>
@@ -318,7 +322,10 @@
                         <a class="link" href="http://slickdeals.net/pricetracker/" target="_blank">
                             Price Tracker 
                         </a> page for the Slickdeals site which informs users of changes in price for items
-                        they track.
+                        they track. Price tracker made it to Lifehacker's 
+                        <a class="link" href="http://lifehacker.com/five-best-price-tracking-tools-1692745053" target="_blank">
+                            top five
+                        </a>list.
                     </p>
                     <div class="pure-g">
                         <div class="pure-u-2-3">
@@ -581,12 +588,17 @@
     </body>
     <script src="js/menu.js"></script>
     <script src="js/onepage.js"></script>
-    <script src="js/elevator.js"></script>
-    <script>                    
-        //anchor menu scroll
-        $('a[href*=#]').on('click', function(event){     
-            event.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    <script src="js/jquery.easing.min.js"></script>
+    <script>     
+        //jQuery for page scrolling feature - requires jQuery Easing plugin
+        $(function() {
+            $('a[href*=#]').bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
         });
     </script>
 </html>
