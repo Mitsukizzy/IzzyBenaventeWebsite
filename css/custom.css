@@ -415,6 +415,18 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 .elementerra:hover{
     height: 50vmin;   
 }
+.archipelago{
+    background-image: url('../images/archipelago.jpg');
+}
+.psychic{
+    background-image: url('../images/psychic.png');
+}
+.nomnet{
+    background-image: url('../images/nomnet.png');
+}
+.wheresit{
+    background-image: url('../images/wheresit.jpg');
+}
 .pricetracker{
     background-image: url('../images/pricetracker2.jpg');
     background-position: left top;
