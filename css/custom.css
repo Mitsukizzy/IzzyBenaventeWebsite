@@ -242,7 +242,7 @@ ul li{
     padding: 10vmin 55vmin;  
 }
 .about-profile-info h2{
-    padding-top: 6vmin;
+    padding-top: 2vmin;
     font-size: 4vmin;
     text-align: left;  
     color: #0971B2;    
@@ -256,8 +256,8 @@ ul li{
 }
 .profile-image{
     border-radius: 50%;
-    width: 35vmin;
-    height: 35vmin;    
+    width: 32vmin;
+    height: 32vmin;    
 }
 .works-button{
     margin: auto;
