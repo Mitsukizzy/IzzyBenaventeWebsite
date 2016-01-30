@@ -45,6 +45,10 @@ p, li, h2 {
     margin: 0;
     text-align: center;
 }
+h4{
+    font-size: 2vmin;
+    margin-bottom: 1vmin;
+}
 h4, h5 {
     color: #fff;
     font-weight: 300;
@@ -317,8 +321,15 @@ ul li{
     padding: 5vmin;
     border-top: 1px solid #ffcc00;
 }
+.works-subtitle{
+    font-size: 4vmin;
+    padding: 1vmin;
+    color: #ffcc00;
+    border-top: 1px solid #fff;
+    background-color: #222;
+}
 .works-list{
-    padding: 0 0 5vmin 0;
+    padding: 0 0 0 0;
     text-align: center;
 }
 .works-item{
@@ -400,7 +411,6 @@ ul li{
     transition-delay: 0.3s;
 }
 END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
-
 .works-item-overlay{    
     background-color: #333;
     opacity: 0.5;
@@ -408,12 +418,46 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
     height: 50%;
     z-index: 50;
 }
+.hackathons{
+    padding: 0 25vmin 10vmin 25vmin;
+    background-color: #FCF8F2;
+}
+.hackathons a{
+    color: #FFB330;
+}
+.hackathons p{    
+    text-align: left;
+    color: #000;
+}
+.hack-event{    
+    color: #cc0000;
+    font-family: Open Sans;
+}
+.hack-header{    
+    color: #FFB330;
+    font-family: Open Sans;
+    margin: 5vmin 0 0 0;
+}
+.hack-logistics{
+    text-align: left;
+}
+.hack-link{
+    margin-top: 1vmin;
+}
+.hack-joke{
+    color: #333;
+    text-align: center;
+    padding-top: 5vmin;
+    font-family: Open Sans;
+}
+
+
 .elementerra{
     background-image: url('../images/elementerra.jpg');
-    height: 50vmin;
+    height: 45vmin;
 }
 .elementerra:hover{
-    height: 50vmin;   
+    height: 45vmin;   
 }
 .archipelago{
     background-image: url('../images/archipelago.jpg');
@@ -617,7 +661,7 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 }
 .menu-icon, .close-icon, .close-icon-work{
     position: fixed;
-    color: #333 !important;
+    color: #777 !important;
     top: 3%;
     right: 2%;
     font-size: 7vmin !important; 
@@ -626,7 +670,7 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 .menu-icon:hover, .close-icon:hover, .close-icon-work:hover{
     cursor: pointer;
     color: #fff;
-    z-index: 101;   
+    z-index: 100;   
 }
 .grey-line{
     border-bottom: 1px solid #333;  
@@ -692,6 +736,9 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 }
 .blue{
     color: #0971B2;   
+}
+.red{
+    color: #cc0000;
 }
 .bg-grey{
     background-color: #222;   
