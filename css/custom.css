@@ -419,16 +419,15 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
     z-index: 50;
 }
 .hackathons{
-    padding: 0 25vmin 10vmin 25vmin;
     background-color: #FCF8F2;
+    padding: 0 25vmin 10vmin 25vmin;
+    font-size: 1.8vmin;
 }
 .hackathons a{
     color: #FFB330;
-    font-size: 1.6vmin;
 }
 .hackathons p{    
     text-align: left;
-    font-size: 1.6vmin;
     color: #000;
 }
 .hack-title{
@@ -452,7 +451,7 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 }
 .hack-link{
     margin-top: 1vmin;
-    font-size: 1.6vmin;
+    font-size: 1.8vmin;
 }
 .hack-joke{
     color: #333;
@@ -460,10 +459,22 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
     padding-top: 5vmin;
     font-family: Open Sans;
 }
-@media screen and (max-width: 775px) {    
+@media screen and (max-width: 1400px) { 
+    .hackathons{
+        /*Allow more width space on mobile devices*/   
+        padding: 0 20vmin 10vmin 20vmin;
+    }
+}
+@media screen and (max-width: 1200px) { 
+    .hackathons{
+        /*Allow more width space on mobile devices*/   
+        padding: 0 15vmin 10vmin 15vmin;
+    }
+}
+@media screen and (max-width: 700px) {   
     .hackathons{
         /*Allow more width space on mobile devices*/    
-        padding: 0 15vmin 10vmin 15vmin;    
+        padding: 0 10vmin 10vmin 10vmin;    
     }    
 }
 
@@ -556,6 +567,12 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
     .contact-menu{
         margin-top: 4vmin;   
     }    
+    .contact-item p{
+        margin: 4vmin 0;
+    }
+    .resume-button{
+        padding-top: 4vmin;
+    }
 }
 @media screen and (max-width: 550px) {
     .contact-item{
