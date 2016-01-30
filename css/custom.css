@@ -424,6 +424,7 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 }
 .hackathons a{
     color: #FFB330;
+    font-size: 1.6vmin;
 }
 .hackathons p{    
     text-align: left;
@@ -451,12 +452,19 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 }
 .hack-link{
     margin-top: 1vmin;
+    font-size: 1.6vmin;
 }
 .hack-joke{
     color: #333;
     text-align: center;
     padding-top: 5vmin;
     font-family: Open Sans;
+}
+@media screen and (max-width: 775px) {    
+    .hackathons{
+        /*Allow more width space on mobile devices*/    
+        padding: 0 15vmin 10vmin 15vmin;    
+    }    
 }
 
 
