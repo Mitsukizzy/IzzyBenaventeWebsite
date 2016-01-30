@@ -427,7 +427,15 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 }
 .hackathons p{    
     text-align: left;
+    font-size: 1.6vmin;
     color: #000;
+}
+.hack-title{
+    font-size: 4.4vmin;
+    padding: 4vmin;
+    color: #111;
+    border-top: 1px solid #fff;
+    background-color: #FFB330;
 }
 .hack-event{    
     color: #cc0000;
