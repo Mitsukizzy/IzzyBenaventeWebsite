@@ -568,10 +568,10 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
         margin-top: 4vmin;   
     }    
     .contact-item p{
-        margin: 4vmin 0;
+        margin: 3vmin 0;
     }
     .resume-button{
-        padding-top: 4vmin;
+        padding-top: 3vmin;
     }
 }
 @media screen and (max-width: 550px) {
