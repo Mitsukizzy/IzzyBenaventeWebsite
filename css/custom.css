@@ -565,7 +565,7 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 
 @media screen and (max-width: 700px) {
     .contact-menu{
-        margin-top: 4vmin;   
+        margin-top: 5vmin;   
     }    
     .contact-item p{
         margin: 3vmin 0;
