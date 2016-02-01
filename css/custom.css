@@ -738,12 +738,12 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 }
 .elevator{
     position: absolute;
-    bottom: 0.5vmin;
+    bottom: 0.8vmin;
     right: 5vmin;
     z-index: 500;
 }
 .elevator a{
-    color: #555;    
+    color: #555;   
 }
 .elevator:hover{    
     cursor: pointer;

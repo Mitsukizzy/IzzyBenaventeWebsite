@@ -357,11 +357,11 @@
                     <hr />
                 </div> 
                 <div class="pure-u-1-3">
-                    <h4 class="hack-event">Global Hackathon</h4>  
+                    <h4 class="hack-event" style="padding-top:0">Global Hackathon</h4>  
                     <p class="hack-logistics">Seoul, Korea<br />July 2015</p>                   
                 </div> 
                 <div class="pure-u-2-3">
-                    <h4 class="hack-event">Invitee</h4>   
+                    <h4 class="hack-event" style="padding-top:0">Invitee</h4>   
                     <p>
                         The Global Hackathon was to be the global stage for the world's top 2,000 hackers to build meaningful hacks that would usher hackathons into a new level of social impact. It was unfortunately cancelled due the outbreak of Middle East Respiratory Syndrome (MERS) in South Korea.
                     </p>
@@ -1137,11 +1137,14 @@
             </div>
         </div>
     </body>
+    
     <script src="js/menu.js"></script>
     <script src="js/onepage.js"></script>
     <script src="js/jquery.easing.min.js"></script>
+    <script src="js/elevator.js"></script>
+    
     <script>     
-        //jQuery for page scrolling feature - requires jQuery Easing plugin
+    //jQuery for page scrolling feature - requires jQuery Easing plugin
         $(function() {
             $('a[href*=#]').bind('click', function(event) {
                 var $anchor = $(this);
@@ -1152,4 +1155,16 @@
             });
         });
     </script>
+    
+    <!--ELEVATOR!!!
+    <script>
+        window.onload = function() {
+          var elevator = new Elevator({
+            element: document.querySelector('.elevator'),
+            mainAudio: 'js/elevator.mp3',
+            endAudio: 'js/ding.mp3'
+          });
+        }
+    </script>
+    -->
 </html>
