@@ -222,8 +222,7 @@ ul li{
 }
 #about-info{
     background-color: #222;
-    padding: 7vmin 35vmin 0 35vmin;
-    height: 25vmin;
+    padding: 5vmin 35vmin;
 }
 #about-info h2{
     color: #666 !important;
@@ -243,7 +242,7 @@ ul li{
     padding-bottom: 10vmin;
 }
 .about-profile-info{
-    padding: 10vmin 55vmin;  
+    padding: 10vmin 55vmin 15vmin 55vmin;  
 }
 .about-profile-info h2{
     padding-top: 2vmin;
@@ -279,20 +278,31 @@ ul li{
     font-size: 2vmin;
     color: #fff;    	
 }
+@media screen and (max-width: 1600px) {   
+    .about-profile-info{
+        padding: 10vmin 35vmin 15vmin 35vmin;  
+    }
+}
 @media screen and (max-width: 1200px) {   
     .about-profile-info{
-        padding: 15vmin 30vmin;   
+        padding: 15vmin 30vmin 20vmin 30vmin;   
     }
+    #about-info{
+        padding: 5vmin 25vmin;
+    }     
     #about-profile{        
         padding-bottom: 20vmin;   
     }
 }
 @media screen and (max-width: 900px) { 
     #about-info{
-        padding: 10vmin 10vmin 0 10vmin;
+        padding: 5vmin 20vmin;
     }   
     #about-profile{        
         padding-bottom: 40vmin;   
+    }
+    .about-profile-info{
+        padding: 15vmin 20vmin 20vmin 20vmin;   
     }
 }
 @media screen and (max-width: 700px) {
@@ -300,10 +310,10 @@ ul li{
         top: 40%;    
     }   
     #about-info{
-        height: 30vmin;  
+        padding: 5vmin 15vmin;
     }     
     .about-profile-info{
-        padding: 15vmin 20vmin;   
+        padding: 15vmin 10vmin 20vmin 10vmin;   
     }
     #about1{
         background-image: url('../images/Strip_gs.jpg');
