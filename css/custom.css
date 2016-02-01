@@ -326,7 +326,7 @@ ul li{
     padding: 1vmin;
     color: #ffcc00;
     border-top: 1px solid #fff;
-    background-color: #222;
+    background-color: #111;
 }
 .works-list{
     padding: 0 0 0 0;
@@ -420,11 +420,12 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 }
 .hackathons{
     background-color: #FCF8F2;
-    padding: 0 25vmin 10vmin 25vmin;
+    padding: 0 27vmin 10vmin 27vmin;
     font-size: 1.8vmin;
 }
 .hackathons a{
-    color: #FFB330;
+    color: #0971B2;
+    font-size: 1.6vmin;
 }
 .hackathons p{    
     text-align: left;
@@ -440,6 +441,7 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 .hack-event{    
     color: #cc0000;
     font-family: Open Sans;
+    padding-top: 2vmin;
 }
 .hack-header{    
     color: #FFB330;
@@ -451,7 +453,7 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 }
 .hack-link{
     margin-top: 1vmin;
-    font-size: 1.8vmin;
+    font-size: 1.5vmin;
 }
 .hack-joke{
     color: #333;
