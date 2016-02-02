@@ -32,4 +32,4 @@ $(document).ready(function() {
         $(this).find('span').addClass('grey-line');
         $(this).find('span').removeClass('gold-line');
     });    
-});
+}); 

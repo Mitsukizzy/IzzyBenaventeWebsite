@@ -325,6 +325,74 @@ ul li{
     }
 }
 
+/*Gallery Specific Classes*/
+.gallery-header{
+    font-size: 3vmin;
+    padding: 1vmin;
+    color: #fff;
+    border-top: 1px solid #ffcc00;
+    background-color: #111;
+}
+.gallery{
+    background-color: #555;
+}
+.gallery-item{
+    height: 20vmin;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+.gallery .gallery-item:hover .caption {
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    z-index: 10;
+}
+.gallery .gallery-item .caption {
+	position: relative;
+	background-color: rgba(0,0,0,0.8);
+	bottom: -100%;
+    z-index: -10;
+    padding: 2vmin;
+}
+.gallery1{
+    background-image: url('../gallery/archi.jpg');
+}
+.gallery2{
+    background-image: url('../gallery/e3badges.jpg');
+}
+.gallery3{
+    background-image: url('../gallery/heroes.jpg');
+}
+.gallery4{
+    background-image: url('../gallery/dragonboat.jpg');
+}
+.gallery5{
+    background-image: url('../gallery/redbull.jpg');
+}
+.gallery6{
+    background-image: url('../gallery/ggames.jpg');
+}
+.gallery7{
+    background-image: url('../gallery/ggames2014.jpg');
+}
+.gallery8{
+    background-image: url('../gallery/et.jpg');
+}
+.gallery9{
+    background-image: url('../gallery/hacksc.jpg');
+}
+.gallery10{
+    background-image: url('../gallery/squareenix.jpg');
+}
+.gallery11{
+    background-image: url('../gallery/banana.jpg');
+}
+.gallery12{
+    background-image: url('../gallery/lahacks.jpg');
+}
+
 /*Works Page Specific Classes*/
 .works-title{
     font-size: 8vmin;
