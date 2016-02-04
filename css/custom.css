@@ -364,10 +364,10 @@ ul li{
     background-image: url('../gallery/archi.jpg');
 }
 .gallery2{
-    background-image: url('../gallery/e3badges.jpg');
+    background-image: url('../gallery/ggames.jpg');
 }
 .gallery3{
-    background-image: url('../gallery/heroes.jpg');
+    background-image: url('../gallery/homebase.jpg');
 }
 .gallery4{
     background-image: url('../gallery/dragonboat.jpg');
@@ -376,16 +376,16 @@ ul li{
     background-image: url('../gallery/redbull.jpg');
 }
 .gallery6{
-    background-image: url('../gallery/ggames.jpg');
+    background-image: url('../gallery/e3badges.jpg');
 }
 .gallery7{
-    background-image: url('../gallery/ggames2014.jpg');
+    background-image: url('../gallery/acm.jpg');
 }
 .gallery8{
     background-image: url('../gallery/et.jpg');
 }
 .gallery9{
-    background-image: url('../gallery/hacksc.jpg');
+    background-image: url('../gallery/high%20roller.jpg');
 }
 .gallery10{
     background-image: url('../gallery/squareenix.jpg');
@@ -394,25 +394,25 @@ ul li{
     background-image: url('../gallery/banana.jpg');
 }
 .gallery12{
-    background-image: url('../gallery/lahacks.jpg');
+    background-image: url('../gallery/inception.png');
 }
 .gallery13{
-    background-image: url('../gallery/psxcards.jpg');
+    background-image: url('../gallery/vball.jpg');
 }
 .gallery14{
-    background-image: url('../gallery/acm.jpg');
+    background-image: url('../gallery/ggames2014.jpg');
 }
 .gallery15{
-    background-image: url('../gallery/high%20roller.jpg');
+    background-image: url('../gallery/lahacks.jpg');
 }
 .gallery16{
-    background-image: url('../gallery/homebase.jpg');
+    background-image: url('../gallery/hacksc.jpg');
 }
 .gallery17{
-    background-image: url('../gallery/banana.jpg');
+    background-image: url('../gallery/psxcards.jpg');
 }
 .gallery18{
-    background-image: url('../gallery/vball.jpg');
+    background-image: url('../gallery/heroes.jpg');
 }
 
 /*Works Page Specific Classes*/
