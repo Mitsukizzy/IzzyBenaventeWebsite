@@ -74,7 +74,9 @@ ul li{
 #works {
     text-align: left;    
 }
-#contact {
+#contact {    
+    position: relative;
+    z-index: 0;
 }
 
 #landing .row{
@@ -294,7 +296,7 @@ ul li{
         padding-bottom: 20vmin;   
     }
 }
-@media screen and (max-width: 900px) { 
+@media screen and (max-width: 1000px) { 
     #about-info{
         padding: 5vmin 20vmin;
     }   
@@ -305,7 +307,7 @@ ul li{
         padding: 15vmin 20vmin 20vmin 20vmin;   
     }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .about-top-text{
         top: 40%;    
     }   
@@ -341,20 +343,22 @@ ul li{
     background-size: cover;
     background-position: center center;
     text-align: center;
+    z-index: 0;
+}
+.caption{
+    position: relative;
+    height: 4vmin;
+    padding: 2vmin;	
+    font-size: 1.6vmin;
+	background-color: rgba(0,0,0,0.8);
+    z-index: 0;
 }
 .gallery .gallery-item:hover .caption {
-    -moz-transform: translateY(-100%);
-    -o-transform: translateY(-100%);
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-    z-index: 10;
+    bottom: -12vmin;
 }
-.gallery .gallery-item .caption {
-	position: relative;
-	background-color: rgba(0,0,0,0.8);
-	bottom: -100%;
-    z-index: -10;
-    padding: 2vmin;
+.gallery .gallery-item .caption {   
+    bottom: -100%;
+    transition: all 0.5s ease;
 }
 .gallery1{
     background-image: url('../gallery/archi.jpg');
@@ -391,6 +395,24 @@ ul li{
 }
 .gallery12{
     background-image: url('../gallery/lahacks.jpg');
+}
+.gallery13{
+    background-image: url('../gallery/psxcards.jpg');
+}
+.gallery14{
+    background-image: url('../gallery/acm.jpg');
+}
+.gallery15{
+    background-image: url('../gallery/high%20roller.jpg');
+}
+.gallery16{
+    background-image: url('../gallery/homebase.jpg');
+}
+.gallery17{
+    background-image: url('../gallery/banana.jpg');
+}
+.gallery18{
+    background-image: url('../gallery/vball.jpg');
 }
 
 /*Works Page Specific Classes*/

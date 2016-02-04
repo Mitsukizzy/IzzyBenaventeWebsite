@@ -3,11 +3,12 @@
     <head>    
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="The online home of Izzy Benavente. Full portfolio and resume available." />
+        <meta property="og:url" content="http://izzybenavente.me" />
+        <meta property="og:description" content="The online home of Izzy Benavente. Full portfolio and resume available." />
         <meta name="keywords" content="Izzy Benavente, web developer, game developer, usc, programmer, ui design, coding, unity, engineer, Isabella Benavente" />
-        <meta name="author" content="Izzy Benavente" />
-        <meta name="image" property="og:image" content="/images/Logo.png">
-        <title>Izzy Benavente | Web Developer/Game Developer</title>
+        <meta name="author" property="og:author" content="Izzy Benavente" />
+        <meta property="og:image" content="http://izzybenavente.me/images/logoimage.jpg">
+        <title>Izzy Benavente | Game Developer/Web Developer</title>
         <link rel="shortcut icon" href="favicon.ico" />    
         <link rel="stylesheet" href="css/custom.css" />
         <link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
@@ -17,6 +18,7 @@
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css"> <!--Required for responsive grid-->
         <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
     </head>
     <body>
         <div id="about1">
@@ -229,7 +231,7 @@
                 </div> 
                 
                 <div class="pure-u-1-3">
-                    <h4 class="hack-event">Microsoft USC vs UCLA Rivalry Hackathon</h4>       
+                    <h4 class="hack-event">Microsoft Mash Up Hackathon</h4>       
                     <p class="hack-logistics">Los Angeles, CA<br />February 2014</p>
                 </div>
                 <div class="pure-u-2-3">
@@ -467,6 +469,37 @@
 					   <p>LA Hacks at UCLA: <br />A view from up high</p>
                     </div>  
                 </div> 
+                <!--THIRD ROW
+                <div class="pure-u-1-4 pure-u-md-1-6 gallery-item gallery13" item="gallery13">
+                    <div class="caption">
+					   <p>Google Games 2014</p>
+                    </div>  
+                </div>     
+                <div class="pure-u-1-4 pure-u-md-1-6 gallery-item gallery14" item="gallery14">
+                    <div class="caption">
+					   <p>ElemenTerra Live Demo</p>
+                    </div>  
+                </div>
+                <div class="pure-u-1-4 pure-u-md-1-6 gallery-item gallery15" item="gallery15">
+                    <div class="caption">
+					   <p>Getting everyone together for HackSC Fall 2015</p>
+                    </div>  
+                </div>   
+                <div class="pure-u-1-4 pure-u-md-1-6 gallery-item gallery16" item="gallery16">
+                    <div class="caption">
+					   <p>My favorite area at E3 2015:<br /> Square Enix</p>
+                    </div>  
+                </div>                
+                <div class="pure-u-1-4 pure-u-md-1-6 gallery-item gallery17" item="gallery17">
+                    <div class="caption">
+					   <p>IW UI Team with our favorite banana</p>
+                    </div>           
+                </div>
+                <div class="pure-u-1-4 pure-u-md-1-6 gallery-item gallery18" item="gallery18">
+                    <div class="caption">
+					   <p>LA Hacks at UCLA: <br />A view from up high</p>
+                    </div>  
+                </div> -->
             </div>
         </div>
                           
@@ -731,7 +764,7 @@
                 <div class="pure-u-1 pure-u-lg-3-5">
                     <h3>Contribution: UX Engineer</h3>
                     <p class="contribution">
-                        For the Microsoft Mash Up Rivalry Hackathon in 2014, I worked on creating a space-themed
+                        For the Microsoft Mash Up Hackathon in 2014, I worked on creating a space-themed
                         game for the Windows Tablet. With three other people, I programmed for 24 hours straight to 
                         create a playable game with smooth, intuitive touch/gesture controls. I was also heavily involved 
                         in the design phase before the hackathon where we decided what the game would be.
@@ -1210,7 +1243,6 @@
     <script src="js/menu.js"></script>
     <script src="js/onepage.js"></script>
     <script src="js/jquery.easing.min.js"></script>
-    <script src="js/elevator.js"></script>
     
     <script>     
     //jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -1226,6 +1258,7 @@
     </script>
     
     <!--ELEVATOR!!!
+    <script src="js/elevator.js"></script>
     <script>
         window.onload = function() {
           var elevator = new Elevator({
