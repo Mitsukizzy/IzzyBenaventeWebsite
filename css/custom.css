@@ -156,6 +156,9 @@ ul li{
 .landing-item span:hover{
     color: #ffcc00;   
 }
+.landing-resume{
+    padding-top: 15vmin;
+}
 .splash-logo{
     position: absolute;
     margin: auto;
@@ -558,7 +561,7 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 .hack-joke{
     color: #333;
     text-align: center;
-    padding-top: 5vmin;
+    padding: 10vmin 5vmin 5vmin 5vmin;
     font-family: Open Sans;
 }
 @media screen and (max-width: 1400px) { 
@@ -805,6 +808,19 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 .menu-icon:hover, .close-icon:hover, .close-icon-work:hover{
     cursor: pointer;
     color: #fff;
+    z-index: 100;   
+}
+.resume-icon{
+    position: fixed;
+    color: #fff !important;
+    top: 10%;
+    right: 2%;
+    font-size: 4vmin !important; 
+    z-index: 100;
+}
+.resume-icon:hover{
+    cursor: pointer;
+    color: #777;
     z-index: 100;   
 }
 .grey-line{
