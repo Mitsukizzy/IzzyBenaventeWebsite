@@ -20,22 +20,23 @@
         <script src="js/jquery-1.11.2.min.js"></script>
     </head>
     <body>
-        <div id="about1">
+        <div id="BG1">
 
         </div>
         <!-- LANDING PAGE -->
         <div id="landing" class="section">
+            <div class="landing-overlay">
             <i class="menu-icon fa fa-bars fa-3x"></i>
             
             <div class="splash-logo">
                 <h1 class="name-first">IZZY</h1>
                 <h1 class="name-last">BENAVENTE</h1><br />
                 <div class="info-list">
-                <p class="info-item">WEB DEV</p><span class="separator"> | </span>
-                <p class="info-item">GAME DEV</p><span class="separator"> | </span>
-                    <p class="info-item"><a href="#hackathons">HACKATHON HACKER</a></p><span class="separator"> | </span>
-                <p class="info-item"><a href="http://izzybenavente.yelp.com" target="_blank">FOODIE</a></p><span class="separator"> | </span>
-                <p class="info-item">ADVENTURER</p>
+                    <p class="info-item">WEB DEV</p><span class="separator"> | </span>
+                    <p class="info-item">GAME DEV</p><span class="separator"> | </span>
+                        <p class="info-item"><a href="#hackathons">HACKATHON HACKER</a></p><span class="separator"> | </span>
+                    <p class="info-item"><a href="http://izzybenavente.yelp.com" target="_blank">FOODIE</a></p><span class="separator"> | </span>
+                    <p class="info-item">ADVENTURER</p>
                 </div>
             </div>
             
@@ -61,17 +62,11 @@
                     </div>
                 </div>            
             </div>
+            </div>
         </div>
             
         <!--ABOUT PAGE-->
-        <div id="about">
-            <i class="menu-icon fa fa-bars fa-3x"></i>            
-            <div class="strip">
-                <div class="about-top-text">
-                    <p class="about-izzy">About Izzy</p>
-                    <p class="about-more"><a href="#about-info">Learn More</a></p>
-                </div>
-            </div>
+        <div id="about">       
             <div id="about-info">
                 <h2>
                     <span>// Developer, Hackathoner, Gamer, and Foodie?</span>
@@ -116,19 +111,33 @@
 
     Want to get in touch? <a href="#contact" class="blue">Contact me!</a> <br />
                         </p>
+                        <!--
                         <div class="center works-button">
                             <a href="#works"><span>VIEW WORK</span></a>
                         </div>
+                        -->
                     </div>
                 </div>                
             </div>
         </div>
-        
+                
         <!--WORKS PAGE-->
         <div id="works" class="section">
-            <i class="menu-icon fa fa-bars fa-3x"></i>
-            
             <h2 class="works-title">Works</h2>
+            
+            <div id="BG2">
+                <div class="bg-strip">
+                    <div class="about-top-text">
+                        <p class="about-izzy">
+                            I am front-end developer with a passion for designing and building immersive and engaging experiences</p>
+                        <p class="about-more">
+                            I am constantly inspired by immersive experiences and great storytelling<br />  
+                            I am interested in the future of virtual and augmented reality
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
             <h2 class="works-subtitle">Games</h2>
             <div class="pure-g works-list"> 
                 <div class="pure-u-1 works-item elementerra" item="elementerra">
@@ -509,9 +518,7 @@
         </div>
                           
         <!--CONTACT PAGE-->
-        <div id="contact" class="section">
-            <i class="menu-icon fa fa-bars fa-3x"></i>
-            
+        <div id="contact" class="section">            
             <h1><span class="gold-line">Contact</span></h1>
             <h2>Connect with me through</h2>
             

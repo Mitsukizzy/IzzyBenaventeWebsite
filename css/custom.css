@@ -67,6 +67,7 @@ ul li{
     background-size: cover;
     margin: 0;
     padding: 0;
+    opacity: 0.95;
 }
 #about {
     text-align: left;
@@ -131,6 +132,9 @@ ul li{
 }
 
 /*Landing Page Specific Classes*/
+.landing-overlay{
+    opacity: 1;
+}
 .landing-menu{
     position: absolute;
     margin: auto;
@@ -157,7 +161,7 @@ ul li{
     color: #ffcc00;   
 }
 .landing-resume{
-    padding-top: 15vmin;
+    padding-top: 7vmin;
 }
 .splash-logo{
     position: absolute;
@@ -192,33 +196,43 @@ ul li{
 }
 
 /*About Page Classes*/
-.strip{
-    height: 100vmin;
-    widows: 100%;
-}
-#about1{
-    background-image: url('../images/Strip_gs.jpg');
+#BG1{
+    background-image: url('../images/strip.jpg');
     background-size: cover;
-    width:100%;
+    width: 100%;
     height: 100vmin;
     position: fixed;
     padding: 0;
     z-index: -5;
 }
+#BG2{
+    background-image: url('../images/venicebeach.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 50vmin;
+    position: relative;
+    padding: 0;
+    z-index: 5;
+}
+.bg-strip{
+    height: 50vmin;
+}
 .about-top-text{
-    padding: 55vmin 0 0 10vmin;   
+    padding: 16vmin 35vmin 0 35vmin;   
 }
 .about-izzy{    
     color: #fff;
     text-shadow: 1px 1px #333;
-    font-size: 6vmin;   
-    text-align: left;
-    display: visible; /* Will be animated in */
+    font-size: 3.6vmin;   
+    text-align: center;
+    display: none; /* Will be animated in */
 }
 .about-more{
-    font-size: 4vmin;   
+    color: #ccc;
     text-shadow: 1px 1px #333;
-    text-align: left;
+    font-size: 2.8vmin;   
+    text-align: center;
+    padding-top: 5vmin; 
     display: none; /* Will be animated in */
 }
 .about-more a{

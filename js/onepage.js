@@ -46,7 +46,7 @@ $(document).ready(function() {
             var elemBottom = elemTop + $elem.height();
 
             if (!$atTop && (elemBottom <= docViewBottom) && (elemTop >= docViewTop)){
-                $('.about-izzy').fadeIn(1000);
+                $('.about-izzy').slideDown(1000);
                 $('.about-more').slideDown(1000);
                 $atTop = true;   
             }
