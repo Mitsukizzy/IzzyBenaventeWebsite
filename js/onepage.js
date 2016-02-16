@@ -45,11 +45,12 @@ $(document).ready(function() {
             var elemTop = $elem.offset().top;
             var elemBottom = elemTop + $elem.height();
 
+            /*// Venice beach
             if (!$atTop && (elemBottom <= docViewBottom) && (elemTop >= docViewTop)){
                 $('.about-izzy').slideDown(1000);
                 $('.about-more').slideDown(1000);
                 $atTop = true;   
-            }
+            }*/
             
             // If scrolled to bottom, show bottom bar
             if($(window).scrollTop() + $(window).height() >= $(document).height() && !$atBottom)  {
