@@ -11,11 +11,11 @@ $(document).ready(function() {
     });
     
     // ABOUT PAGE  
-    $('.profile-image').hover(function(){
+    /*$('.profile-image').hover(function(){
         $(this).attr('src', 'images/Profile.jpg');
     }, function(){
         $(this).attr('src', 'images/Profile_gs.jpg');
-    });
+    });*/
     
     $(function () {
         var $win = $(window);

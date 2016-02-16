@@ -67,7 +67,7 @@ ul li{
     background-size: cover;
     margin: 0;
     padding: 0;
-    opacity: 0.95;
+    opacity: 0.85;
 }
 #about {
     text-align: left;
@@ -199,8 +199,9 @@ ul li{
 #BG1{
     background-image: url('../images/strip.jpg');
     background-size: cover;
-    width: 100%;
-    height: 100vmin;
+    overflow: none;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     padding: 0;
     z-index: -5;
@@ -208,22 +209,15 @@ ul li{
 #BG2{
     background-image: url('../images/venicebeach.jpg');
     background-size: cover;
-    width: 100%;
-    height: 50vmin;
+    width: 100vm;
     position: relative;
-    padding: 0;
     z-index: 5;
-}
-.bg-strip{
-    height: 50vmin;
-}
-.about-top-text{
-    padding: 16vmin 35vmin 0 35vmin;   
+    padding: 15vh 20vw; 
 }
 .about-izzy{    
     color: #fff;
     text-shadow: 1px 1px #333;
-    font-size: 3.6vmin;   
+    font-size: 3.8vmin;   
     text-align: center;
     display: none; /* Will be animated in */
 }
@@ -257,8 +251,9 @@ ul li{
 }
 #about-profile{
     height: 130vmin;    
-    background-color: #bbb;
+    background-color: #aaa;
     padding-bottom: 10vmin;
+    opacity: 0.95;
 }
 .about-profile-info{
     padding: 10vmin 55vmin 15vmin 55vmin;  
@@ -279,7 +274,8 @@ ul li{
 .profile-image{
     border-radius: 50%;
     width: 32vmin;
-    height: 32vmin;    
+    height: 32vmin; 
+    opacity: 1 !important;   
 }
 .works-button{
     margin: auto;
@@ -302,7 +298,7 @@ ul li{
         padding: 10vmin 35vmin 15vmin 35vmin;  
     }
 }
-@media screen and (max-width: 1200px) {   
+@media screen and (max-width: 1300px) {   
     .about-profile-info{
         padding: 15vmin 30vmin 20vmin 30vmin;   
     }
@@ -402,7 +398,7 @@ ul li{
     background-image: url('../gallery/et.jpg');
 }
 .gallery9{
-    background-image: url('../gallery/high%20roller.jpg');
+    background-image: url('../gallery/treehacks.jpg');
 }
 .gallery10{
     background-image: url('../gallery/squareenix.jpg');
@@ -414,7 +410,7 @@ ul li{
     background-image: url('../gallery/inception.png');
 }
 .gallery13{
-    background-image: url('../gallery/vball.jpg');
+    background-image: url('../gallery/high%20roller.jpg');
 }
 .gallery14{
     background-image: url('../gallery/ggames2014.jpg');
