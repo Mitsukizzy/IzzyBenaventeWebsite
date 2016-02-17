@@ -206,6 +206,7 @@ ul li{
     padding: 0;
     z-index: -5;
     transition: height 999999s;
+    transition: width 999999s;
 }
 #BG2{
     background-image: url('../images/venicebeach.jpg');
@@ -215,6 +216,7 @@ ul li{
     z-index: 5;
     padding: 10vh 20vw; 
     transition: height 999999s;
+    transition: width 999999s;
 }
 .about-izzy{    
     color: #fff;
