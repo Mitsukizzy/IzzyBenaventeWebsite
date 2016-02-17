@@ -205,8 +205,6 @@ ul li{
     position: fixed;
     padding: 0;
     z-index: -5;
-    transition: height 999999s;
-    transition: width 999999s;
 }
 #BG2{
     background-image: url('../images/venicebeach.jpg');
@@ -215,8 +213,6 @@ ul li{
     position: relative;
     z-index: 5;
     padding: 10vh 20vw; 
-    transition: height 999999s;
-    transition: width 999999s;
 }
 .about-izzy{    
     color: #fff;
@@ -329,7 +325,7 @@ ul li{
 }
 @media screen and (max-width: 800px) {
     #BG2{
-        padding: 10vh 5vw; 
+        padding: 7vh 5vw; 
     } 
     #about-info{
         padding: 5vmin 15vmin;
@@ -642,7 +638,7 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 }
 @media screen and (max-width: 775px) {
     .works-item, .works-item:hover{
-        height: 60vmin;
+        height: 50vmin;
     }
     .works-item{
         opacity: 1;
