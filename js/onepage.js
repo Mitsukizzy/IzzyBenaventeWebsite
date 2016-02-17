@@ -52,6 +52,14 @@ $(document).ready(function() {
                 $atTop = true;   
             }*/
             
+            var bg = jQuery("#BG1");
+            jQuery(window).resize("resizeBackground");
+            
+            function resizeBackground() {
+                bg.height(jQuery(window).height() + 60);
+            }
+            resizeBackground();
+            
             // If scrolled to bottom, show bottom bar
             if($(window).scrollTop() + $(window).height() >= $(document).height() && !$atBottom)  {
                 $('.footer').slideDown();

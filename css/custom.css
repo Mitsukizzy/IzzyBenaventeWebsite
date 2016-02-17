@@ -212,7 +212,7 @@ ul li{
     width: 100vm;
     position: relative;
     z-index: 5;
-    padding: 15vh 20vw; 
+    padding: 10vh 20vw; 
 }
 .about-izzy{    
     color: #fff;
@@ -436,11 +436,12 @@ ul li{
     font-size: 8vmin;
     padding: 5vmin;
     border-top: 1px solid #ffcc00;
+    border-bottom: 1px solid #fff;
 }
 .works-subtitle{
     font-size: 4vmin;
-    padding: 1vmin;
-    color: #ffcc00;
+    padding: 2vmin;
+    color: #ccc;
     border-top: 1px solid #fff;
     background-color: #111;
 }
