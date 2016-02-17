@@ -205,6 +205,7 @@ ul li{
     position: fixed;
     padding: 0;
     z-index: -5;
+    transition: height 999999s;
 }
 #BG2{
     background-image: url('../images/venicebeach.jpg');
@@ -213,6 +214,7 @@ ul li{
     position: relative;
     z-index: 5;
     padding: 10vh 20vw; 
+    transition: height 999999s;
 }
 .about-izzy{    
     color: #fff;
@@ -817,12 +819,12 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
     top: 3%;
     right: 2%;
     font-size: 7vmin !important; 
-    z-index: 100;
+    z-index: 200;
 }
 .menu-icon:hover, .close-icon:hover, .close-icon-work:hover{
     cursor: pointer;
     color: #fff;
-    z-index: 100;   
+    z-index: 200;   
 }
 .resume-icon{
     position: fixed;
