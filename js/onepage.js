@@ -60,8 +60,8 @@ $(document).ready(function() {
             }
             resizeBackground();
             
-            // If scrolled to bottom, show bottom bar
-            if($(window).scrollTop() + $(window).height() >= $(document).height() && !$atBottom)  {
+            // If scrolled to bottom, show bottom bar, +2 so it'll just touch the bottom
+            if($(window).scrollTop() + $(window).height() + 1 >= $(document).height() && !$atBottom)  {
                 $('.footer').slideDown();
                 $atBottom = true;
             }

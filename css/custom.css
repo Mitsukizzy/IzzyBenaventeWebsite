@@ -61,25 +61,23 @@ ul li{
 .section{
     background-color: #111;     
     min-height: 100%;
+    z-index: 1;
 }
 
 #landing {    
+    background: rgba(17, 17, 17, .95); /* Opacity hack, doesn't affect children*/
     background-size: cover;
     margin: 0;
     padding: 0;
-    opacity: 0.85;
 }
 #about {
+    background: url(../images/desert.jpg) 50% 0 no-repeat fixed;
+    background-size: cover;
     text-align: left;
 }
 #works {
     text-align: left;    
 }
-#contact {    
-    position: relative;
-    z-index: 0;
-}
-
 #landing .row{
     max-width: 100em;
 }
@@ -110,6 +108,9 @@ ul li{
 }
 .hide{
     opacity: 0;  
+}
+.invisible{
+    display: none;
 }
 ul li{
     list-style: none;
@@ -161,7 +162,7 @@ ul li{
     color: #ffcc00;   
 }
 .landing-resume{
-    padding-top: 7vmin;
+    margin-top: 13vmin !important;
 }
 .splash-logo{
     position: absolute;
@@ -197,7 +198,7 @@ ul li{
 
 /*About Page Classes*/
 #BG1{
-    background-image: url('../images/strip.jpg');
+    background: url(../images/strip.jpg) 50% 0 no-repeat fixed;
     background-size: cover;
     overflow: none;
     width: 100vw;
@@ -207,12 +208,16 @@ ul li{
     z-index: -5;
 }
 #BG2{
-    background-image: url('../images/venicebeach.jpg');
-    background-size: cover;
-    width: 100vm;
-    position: relative;
+    background: url(../images/arch.jpg) 50% 0 no-repeat fixed;
+    padding: 0;
+}
+#BG2 .content{
+    background: rgba(70, 70, 70, .75); /* Opacity hack, doesn't affect children*/
+    padding: 0;
     z-index: 5;
-    padding: 10vh 20vw; 
+}
+#BG2 .inner{
+    padding: 10vmin 30vmin;
 }
 .about-izzy{    
     color: #fff;
@@ -249,27 +254,25 @@ ul li{
 #about-info span{
     color: #ffcc00;
 }
-#about-profile{
-    height: 130vmin;    
+#about-profile{ 
     background-color: #aaa;
-    padding-bottom: 10vmin;
+    background: rgba(170, 170, 170, .85); /* Opacity hack, doesn't affect children*/
     opacity: 0.95;
 }
 .about-profile-info{
-    padding: 10vmin 55vmin 15vmin 55vmin;  
+    padding: 15vmin 55vmin 15vmin 55vmin;  
 }
 .about-profile-info h2{
-    padding-top: 2vmin;
-    font-size: 4vmin;
+    font-family: Raleway;
+    font-size: 4.4vmin;
     text-align: left;  
     color: #0971B2;    
-    font-family: Raleway;
 }
 .about-profile-info p{
+    font-family: Open Sans;
     font-size: 2.2vmin;
     text-align: left;  
     color: #333;
-    font-family: Open Sans;
 }
 .profile-image{
     border-radius: 50%;
@@ -345,8 +348,8 @@ ul li{
 
 /*Gallery Specific Classes*/
 .gallery-header{
-    font-size: 3vmin;
-    padding: 1vmin;
+    font-size: 4vmin;
+    padding: 2vmin;
     color: #fff;
     border-top: 1px solid #ffcc00;
     background-color: #111;
@@ -535,16 +538,23 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
     height: 50%;
     z-index: 50;
 }
-.hackathons{
-    background-color: #FCF8F2;
+#hackathons{
+    background: url(../images/make.jpg) 50% 0 no-repeat fixed;
+}
+#hackathons .content{
+    /*background-color: #FCF8F2;*/
+    background: rgba(252, 248, 242, .85); /* Opacity hack, doesn't affect children*/
+    background-size: cover;
+    text-align: left;
     padding: 0 27vmin 10vmin 27vmin;
     font-size: 1.8vmin;
 }
-.hackathons a{
+#hackathons a{
     color: #0971B2;
     font-size: 1.6vmin;
 }
-.hackathons p{    
+#hackathons p{   
+    font-family: Open Sans; 
     text-align: left;
     color: #000;
 }
@@ -555,14 +565,25 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
     border-top: 1px solid #fff;
     background-color: #FFB330;
 }
+.hack-year{
+    font-family: Raleway;
+    font-weight: 400;
+    color: #0971B2;
+    font-size: 3.2vmin;
+    margin: 0;
+}
+.hack-hr{
+    width: 20px;
+}
 .hack-event{    
     color: #cc0000;
     font-family: Open Sans;
     padding-top: 2vmin;
 }
 .hack-header{    
-    color: #FFB330;
-    font-family: Open Sans;
+    font-family: Raleway;
+    font-size: 3.2vmin;
+    color: #000;
     margin: 5vmin 0 0 0;
 }
 .hack-logistics{
@@ -572,11 +593,15 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
     margin-top: 1vmin;
     font-size: 1.5vmin;
 }
-.hack-joke{
-    color: #333;
-    text-align: center;
-    padding: 10vmin 5vmin 5vmin 5vmin;
+.hack-end{
     font-family: Open Sans;
+    background-color: #333;
+    text-align: center;
+    padding: 0;
+}
+.hack-end h4{    
+    padding: 5vmin 30vmin;
+    margin: 0;
 }
 @media screen and (max-width: 1400px) { 
     .hackathons{
@@ -596,7 +621,6 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
         padding: 0 10vmin 10vmin 10vmin;    
     }    
 }
-
 
 .elementerra{
     background-image: url('../images/elementerra.jpg');
@@ -647,6 +671,21 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 }
 
 /*Contact Page Specific Classes*/
+#contact {    
+    background: url(../images/home.jpg) 50% 0 no-repeat fixed;
+    background-size: cover; 
+    position: relative;
+    min-height: 100%;
+    z-index: 5;
+}
+#contact .content{    
+/*    background-color: #888;*/
+    background: rgba(17, 17, 17, .95); /* Opacity hack, doesn't affect children*/
+    background-size: cover; 
+    position: relative;    
+    min-height: 100vh;
+    z-index: 5;
+}
 .contact-item p{
     font-size: 5vmin;
     color: #fff;
@@ -665,9 +704,15 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
     color: #555;   
     font-size: 7vmin !important;   
 }
+.easter{
+    font-family: Lato;
+    font-size: 1.8vmin;
+    padding-top: 5vmin;
+    text-align: center;
+}
 .resume-button{
     margin: auto;
-    margin-top: 5%;
+    margin-top: 10vmin;
 }
 .resume-button span{
     padding: 2vmin;
@@ -850,6 +895,7 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
     background-color: #333;
     position: fixed;
     bottom: 0;   
+    z-index: 20;
 }
 .footer-text{
     font-size: 2vmin;
