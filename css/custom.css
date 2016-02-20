@@ -65,7 +65,7 @@ ul li{
 }
 
 #landing {    
-    background: rgba(17, 17, 17, .95); /* Opacity hack, doesn't affect children*/
+    background: rgba(17, 17, 17, .85); /* Opacity hack, doesn't affect children*/
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -91,20 +91,6 @@ ul li{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-}
-.hexagon-party{
-    margin: 0 40vmin;
-}
-.hexagon-party img{
-    -webkit-filter: drop-shadow(6px 6px 3px rgba(0,0,0,0.5)); filter: drop-shadow(6px 6px 3px rgba(0,0,0,0.5));   
-}
-.hexagon-row1{
-    transform: translateX(3.5%); 
-    padding: 0 5%;
-}
-.hexagon-row2{
-    transform: translateY(-24%);
-    padding: 0 5%;
 }
 .hide{
     opacity: 0;  
@@ -143,20 +129,35 @@ ul li{
     text-align: center;
 }
 .name-first, .name-last{
-    font-family: Lato !important;      
+    font-family: Raleway; 
+    text-shadow: 1px 1px 2px #000;
     font-size: 11.4vmin !important;
     display: inline-block;
     color: #ffcc00;
     padding: 0;
 }
 .name-last{
-    color: #555;
+    color: #ccc;
+}
+.info-item{
+    font-family: Lato !important; 
+    font-weight: 400; 
+    display: inline-block;
+    font-size: 2.6vmin;
+    color: #999;
+    padding: 0 1vmin;
+}
+.info-item a{
+    color: #999;
+}
+.separator{
+    color: #666;   
+    font-size: 2.6vmin !important;
+    font-family: Lato !important;
 }
 .landing-menu{
-    left: 25%; 
-    right: 25%;
     margin: auto;
-    padding: 5vmin 45vmin;
+    padding: 5vmin 20vw !important;
     text-align: center;
 }
 .landing-menu a{
@@ -179,19 +180,7 @@ ul li{
 }
 .landing-resume{
     margin-top: 13vmin !important;
-}
-.info-item{
-    display: inline-block;
-    font-size: 2.6vmin;
-    color: #666;
-}
-.info-item a{
-    color: #666;
-}
-.separator{
-    color: #999;   
-    font-size: 2.6vmin !important;
-    font-family: Lato !important;
+    margin-bottom: 15vmin !important;
 }
 
 /*About Page Classes*/
@@ -245,8 +234,8 @@ ul li{
     text-align: left;
 }
 #about-info p{
-    color: #666 !important;
-    font-size: 2.7vmin;
+    color: #888 !important;
+    font-size: 2.6vmin;
     text-align: left;
 }
 #about-info span{
@@ -254,7 +243,7 @@ ul li{
 }
 #about-profile{ 
     background-color: #aaa;
-    background: rgba(170, 170, 170, .85); /* Opacity hack, doesn't affect children*/
+    background: rgba(255, 255, 255, .8); /* Opacity hack, doesn't affect children*/
 }
 .about-profile-info{
     padding: 15vmin 55vmin 15vmin 35vmin;  
@@ -263,13 +252,17 @@ ul li{
     font-family: Raleway;
     font-size: 4.4vmin;
     text-align: left;  
-    color: #0971B2;    
+    color: #cc0000;   /*Blue #0971B2*/ 
 }
 .about-profile-info p{
     font-family: Open Sans;
-    font-size: 2.2vmin;
+    font-size: 2.0vmin;
     text-align: left;  
-    color: #333;
+    color: #666;
+}
+.about-profile-info b{
+    font-weight: 300;
+    color: #cc0000;
 }
 .profile-image{
     border-radius: 50%;
@@ -560,7 +553,7 @@ ul li{
     padding-bottom: 1vmin;
 }
 .contact-menu{
-    margin-top: 4vmin;
+    margin-top: 5vmin;
     padding: 0 18% 0 30%;   
 }
 .contact-menu a{
@@ -579,6 +572,7 @@ ul li{
 .resume-button{
     margin: auto;
     margin-top: 10vmin;
+    padding-bottom: 15vmin;
 }
 .resume-button span{
     padding: 2vmin;
@@ -691,7 +685,7 @@ ul li{
 	display: none;
 }
 .navigation li{
-    margin: 5%;
+    margin: 10vh;
     text-align: center;
 }
 .navigation a:hover{
@@ -766,7 +760,17 @@ ul li{
 
 /*ALL MOBILE MODIFICATIONS*/
 /*Made to match grid-responsive.css from PureCSS*/
-@media screen and (max-width: 1280px) {   
+@media screen and (max-width: 1281px) {       
+    .landing-menu{
+        margin-top: 5vmin;
+        padding: 0;
+    }
+    .landing-item{
+        margin: 5vmin;
+    }
+    .landing-resume{
+        margin-top: 7vmin !important;
+    }
     .about-profile-info{
         padding: 15vmin 30vmin 15vmin 20vmin;  
     }
@@ -775,13 +779,13 @@ ul li{
         padding: 0 20vmin 10vmin 20vmin;
     }
 }
-@media screen and (max-width: 1024px) {   
+@media screen and (max-width: 1025px) { 
     .about-profile-info{
         padding: 15vmin 30vmin 20vmin 30vmin;   
     }
     #about-info{
-        padding: 5vmin 25vmin;
-    }     
+        padding: 5vmin 15vmin;
+    } 
     #BG2 .inner{
         padding: 10vmin 10vmin;
     }
@@ -789,8 +793,18 @@ ul li{
         /*Allow more width space on mobile devices*/   
         padding: 0 15vmin 10vmin 15vmin;
     }
+    .hack-end h4{    
+        padding: 5vmin 15vmin;
+        margin: 0;
+    }
+    .contact-menu{
+        margin: 5vmin auto; 
+    }
+    .contact-item{
+        margin: 2vh auto 0 auto;
+    }
 }
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 769px) { 
     #about {
         background: none;
         background-size: auto;
@@ -804,7 +818,7 @@ ul li{
         background: none;
     } 
     #about-profile{        
-        background: rgba(170, 170, 170, 1);
+    background: rgba(255, 255, 255, 1); /* Opacity hack, doesn't affect children*/
     }
     .about-profile-info{
         padding: 15vmin 20vmin 20vmin 20vmin;   
@@ -825,24 +839,22 @@ ul li{
         padding: 0 10vmin 10vmin 10vmin;    
         background: rgba(252, 248, 242, 1);
     }  
+    .hack-end h4{    
+        padding: 5vmin 10vmin;
+        margin: 0;
+    }
     /* Remove background, use dark gray color instead */
     #contact{
         background: none;
     }    
     #contact .content{
         background: rgba(17, 17, 17, 1); 
-    }
-    .contact-menu{
-        margin-top: 5vmin;   
-    }    
-    .contact-item p{
-        margin: 3vmin 0;
-    }
+    } 
     .resume-button{
         padding-top: 3vmin;
     }
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 569px) {
     #about-info{
         padding: 5vmin 15vmin;
     }     
@@ -857,9 +869,6 @@ ul li{
         padding-top: 100%;
         z-index: -5;
     }
-    .contact-item{
-        margin: 2vmin;   
-    }   
 }
 
 
