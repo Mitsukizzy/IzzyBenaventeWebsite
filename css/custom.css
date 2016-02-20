@@ -136,12 +136,28 @@ ul li{
 .landing-overlay{
     opacity: 1;
 }
-.landing-menu{
-    position: absolute;
+.splash-logo{
+    position: relative;
     margin: auto;
+    padding-top: 30vmin;
+    text-align: center;
+}
+.name-first, .name-last{
+    font-family: Lato !important;      
+    font-size: 11.4vmin !important;
+    display: inline-block;
+    color: #ffcc00;
+    padding: 0;
+}
+.name-last{
+    color: #555;
+}
+.landing-menu{
     left: 25%; 
     right: 25%;
-    top: 50%; 
+    margin: auto;
+    padding: 5vmin 45vmin;
+    text-align: center;
 }
 .landing-menu a{
     text-decoration: none;   
@@ -164,24 +180,6 @@ ul li{
 .landing-resume{
     margin-top: 13vmin !important;
 }
-.splash-logo{
-    position: absolute;
-    margin: auto;
-    left: 0; 
-    right: 0;
-    top: 30%; 
-    text-align: center;
-}
-.name-first, .name-last{
-    font-family: Lato !important;      
-    font-size: 11.4vmin !important;
-    display: inline-block;
-    color: #ffcc00;
-    padding: 0;
-}
-.name-last{
-    color: #555;
-}
 .info-item{
     display: inline-block;
     font-size: 2.6vmin;
@@ -202,7 +200,7 @@ ul li{
     background-size: cover;
     overflow: none;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     padding: 0;
     z-index: -5;
@@ -257,10 +255,9 @@ ul li{
 #about-profile{ 
     background-color: #aaa;
     background: rgba(170, 170, 170, .85); /* Opacity hack, doesn't affect children*/
-    opacity: 0.95;
 }
 .about-profile-info{
-    padding: 15vmin 55vmin 15vmin 55vmin;  
+    padding: 15vmin 55vmin 15vmin 35vmin;  
 }
 .about-profile-info h2{
     font-family: Raleway;
@@ -296,56 +293,6 @@ ul li{
     font-size: 2vmin;
     color: #fff;    	
 }
-@media screen and (max-width: 1600px) {   
-    .about-profile-info{
-        padding: 10vmin 35vmin 15vmin 35vmin;  
-    }
-}
-@media screen and (max-width: 1300px) {   
-    .about-profile-info{
-        padding: 15vmin 30vmin 20vmin 30vmin;   
-    }
-    #about-info{
-        padding: 5vmin 25vmin;
-    }     
-    #about-profile{        
-        padding-bottom: 20vmin;   
-    }
-}
-@media screen and (max-width: 1000px) { 
-    #BG2{
-        padding: 10vh 10vw; 
-    } 
-    #about-info{
-        padding: 5vmin 20vmin;
-    }   
-    #about-profile{        
-        padding-bottom: 40vmin;   
-    }
-    .about-profile-info{
-        padding: 15vmin 20vmin 20vmin 20vmin;   
-    }
-}
-@media screen and (max-width: 800px) {
-    #BG2{
-        padding: 7vh 5vw; 
-    } 
-    #about-info{
-        padding: 5vmin 15vmin;
-    }     
-    .about-profile-info{
-        padding: 15vmin 10vmin 20vmin 10vmin;   
-    }
-    #about1{
-        background-image: url('../images/Strip_gs.jpg');
-        width: 100vmin;
-        height: 75vmin;
-        position: fixed;
-        padding-top: 100%;
-        z-index: -5;
-    }
-}
-
 /*Gallery Specific Classes*/
 .gallery-header{
     font-size: 4vmin;
@@ -477,60 +424,6 @@ ul li{
     display: none;   
 }
 
-/*START: WORK ITEM HOVER OVERLAY TRANSITIONS
-.works-item{
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    overflow: hidden;
-    position: relative;
-}
-.works-item .hover-overlay{
-    bottom: 0;
-    height: 0;
-    opacity: .95;
-    position: absolute;
-    right: 0;
-    text-indent: -9999px;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-    width: 0;
-}
-.works-item:hover .hover-overlay{
-    border-bottom: 100vmin solid #e8c63d; 
-    border-left: 200vmin solid transparent;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-}
-.works-item .hover-overlay-content{
-    bottom: 0;
-    color: #333;
-    left: 0;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    top: 0;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-.works-item:hover .hover-overlay-content{
-    opacity: 1;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    -moz-transition-delay: 0.3s;
-    -o-transition-delay: 0.3s;
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
-}
-END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 .works-item-overlay{    
     background-color: #333;
     opacity: 0.5;
@@ -603,24 +496,6 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
     padding: 5vmin 30vmin;
     margin: 0;
 }
-@media screen and (max-width: 1400px) { 
-    .hackathons{
-        /*Allow more width space on mobile devices*/   
-        padding: 0 20vmin 10vmin 20vmin;
-    }
-}
-@media screen and (max-width: 1200px) { 
-    .hackathons{
-        /*Allow more width space on mobile devices*/   
-        padding: 0 15vmin 10vmin 15vmin;
-    }
-}
-@media screen and (max-width: 700px) {   
-    .hackathons{
-        /*Allow more width space on mobile devices*/    
-        padding: 0 10vmin 10vmin 10vmin;    
-    }    
-}
 
 .elementerra{
     background-image: url('../images/elementerra.jpg');
@@ -659,15 +534,6 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 }
 .night{
     background-image: url('../images/night.jpg');
-}
-@media screen and (max-width: 775px) {
-    .works-item, .works-item:hover{
-        height: 50vmin;
-    }
-    .works-item{
-        opacity: 1;
-        filter: alpha(opacity=100); /* For IE8 and earlier */
-    }
 }
 
 /*Contact Page Specific Classes*/
@@ -725,23 +591,6 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
     border: 1px solid #ffcc00;
     font-size: 2vmin;
     color: #fff;
-}
-
-@media screen and (max-width: 700px) {
-    .contact-menu{
-        margin-top: 5vmin;   
-    }    
-    .contact-item p{
-        margin: 3vmin 0;
-    }
-    .resume-button{
-        padding-top: 3vmin;
-    }
-}
-@media screen and (max-width: 550px) {
-    .contact-item{
-        margin: 2vmin;   
-    }   
 }
 
 /*OVERLAY CLASSES*/
@@ -914,6 +763,105 @@ END: WORK ITEM HOVER OVERLAY TRANSITIONS*/
 .elevator:hover{    
     cursor: pointer;
 }
+
+/*ALL MOBILE MODIFICATIONS*/
+/*Made to match grid-responsive.css from PureCSS*/
+@media screen and (max-width: 1280px) {   
+    .about-profile-info{
+        padding: 15vmin 30vmin 15vmin 20vmin;  
+    }
+    #hackathons .content{
+        /*Allow more width space on mobile devices*/   
+        padding: 0 20vmin 10vmin 20vmin;
+    }
+}
+@media screen and (max-width: 1024px) {   
+    .about-profile-info{
+        padding: 15vmin 30vmin 20vmin 30vmin;   
+    }
+    #about-info{
+        padding: 5vmin 25vmin;
+    }     
+    #BG2 .inner{
+        padding: 10vmin 10vmin;
+    }
+    #hackathons .content{
+        /*Allow more width space on mobile devices*/   
+        padding: 0 15vmin 10vmin 15vmin;
+    }
+}
+@media screen and (max-width: 768px) { 
+    #about {
+        background: none;
+        background-size: auto;
+        text-align: left;
+    }
+    #about-info{
+        padding: 5vmin 20vmin;
+    }       
+    /* Remove background, use gray color instead */
+    #about{
+        background: none;
+    } 
+    #about-profile{        
+        background: rgba(170, 170, 170, 1);
+    }
+    .about-profile-info{
+        padding: 15vmin 20vmin 20vmin 20vmin;   
+    }   
+    .works-item, .works-item:hover{
+        height: 50vmin;
+    }
+    .works-item{
+        opacity: 1;
+        filter: alpha(opacity=100); /* For IE8 and earlier */
+    } 
+    
+    /* Remove background, use light color instead */
+    #hackathons{
+        background: none;
+    }
+    #hackathons .content{
+        padding: 0 10vmin 10vmin 10vmin;    
+        background: rgba(252, 248, 242, 1);
+    }  
+    /* Remove background, use dark gray color instead */
+    #contact{
+        background: none;
+    }    
+    #contact .content{
+        background: rgba(17, 17, 17, 1); 
+    }
+    .contact-menu{
+        margin-top: 5vmin;   
+    }    
+    .contact-item p{
+        margin: 3vmin 0;
+    }
+    .resume-button{
+        padding-top: 3vmin;
+    }
+}
+@media screen and (max-width: 568px) {
+    #about-info{
+        padding: 5vmin 15vmin;
+    }     
+    .about-profile-info{
+        padding: 15vmin 10vmin 20vmin 10vmin;   
+    }
+    #about1{
+        background-image: url('../images/Strip_gs.jpg');
+        width: 100vmin;
+        height: 75vmin;
+        position: fixed;
+        padding-top: 100%;
+        z-index: -5;
+    }
+    .contact-item{
+        margin: 2vmin;   
+    }   
+}
+
 
 /*Shadow Classes*/
 .shadow{
