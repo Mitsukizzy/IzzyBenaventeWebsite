@@ -157,7 +157,7 @@ ul li{
 }
 .landing-menu{
     margin: auto;
-    padding: 5vmin 20vw !important;
+    padding: 5vmin 25vw !important;
     text-align: center;
 }
 .landing-menu a{
@@ -760,7 +760,7 @@ ul li{
 
 /*ALL MOBILE MODIFICATIONS*/
 /*Made to match grid-responsive.css from PureCSS*/
-@media screen and (max-width: 1281px) {       
+@media screen and (max-width: 1280px) {       
     .landing-menu{
         margin-top: 5vmin;
         padding: 0;
@@ -779,7 +779,7 @@ ul li{
         padding: 0 20vmin 10vmin 20vmin;
     }
 }
-@media screen and (max-width: 1025px) { 
+@media screen and (max-width: 1024px) { 
     .about-profile-info{
         padding: 15vmin 30vmin 20vmin 30vmin;   
     }
@@ -804,7 +804,7 @@ ul li{
         margin: 2vh auto 0 auto;
     }
 }
-@media screen and (max-width: 769px) { 
+@media screen and (max-width: 768px) { 
     #about {
         background: none;
         background-size: auto;
@@ -854,7 +854,7 @@ ul li{
         padding-top: 3vmin;
     }
 }
-@media screen and (max-width: 569px) {
+@media screen and (max-width: 568px) {
     #about-info{
         padding: 5vmin 15vmin;
     }     
