@@ -403,7 +403,7 @@ ul li{
 }
 .works-item:hover{
     height: 40vmin;
-    cursor:pointer; 
+    cursor: pointer; 
     opacity: 1;
 } 
 .hover-overlay{
