@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    // LANDING PAGE
+    // LANDING PAGE FADE IN
     $('.landing-item').delay(250).each(function(i){
         $(this).delay(750 * i).css({'opacity':0}).animate({'opacity':1}, 1000);
     });        
@@ -9,13 +9,7 @@ $(document).ready(function() {
     },function(){
         $(this).removeClass("grey-line");     
     });
-    
-    // ABOUT PAGE  
-    /*$('.profile-image').hover(function(){
-        $(this).attr('src', 'images/Profile.jpg');
-    }, function(){
-        $(this).attr('src', 'images/Profile_gs.jpg');
-    });*/
+
     
     $(function () {
         var $win = $(window);
@@ -24,19 +18,6 @@ $(document).ready(function() {
         
 
         $win.scroll(function () {
-            // If scrolled to top, show text
-/*            if ($win.scrollTop() != $('#about').offset().top && $atTop)
-            {
-                $('.about-izzy').fadeOut();
-                $('.about-more').slideUp();
-                $atTop = false;
-            }
-            else if($win.scrollTop() == $('#about').offset().top && !$atTop){
-                $('.about-izzy').fadeIn();
-                $('.about-more').slideDown();
-                $atTop = true;   
-            }*/
-            
             var $elem = $('.about-izzy');
 
             var docViewTop = $win.scrollTop();
@@ -44,13 +25,6 @@ $(document).ready(function() {
 
             var elemTop = $elem.offset().top;
             var elemBottom = elemTop + $elem.height();
-
-            /*// Venice beach
-            if (!$atTop && (elemBottom <= docViewBottom) && (elemTop >= docViewTop)){
-                $('.about-izzy').slideDown(1000);
-                $('.about-more').slideDown(1000);
-                $atTop = true;   
-            }*/
             
             var bg = jQuery("#BG1");
             jQuery(window).resize("resizeBackground");
@@ -69,19 +43,18 @@ $(document).ready(function() {
                 $('.footer').slideUp();
                 $atBottom = false;
             }
+            
+            if($(window).scrollTop() <= $('#about').height()  && !$atTop)  {
+                $('.custom-wrapper').fadeOut("slow");
+                $atTop = true;
+            }
+            else if($(window).scrollTop() > $('#about').height() && $atTop)  {
+                $('.custom-wrapper').fadeIn("slow");
+                $atTop = false;
+            }
         });
      }); 
     
-    // WORKS PAGE
-/*    $("div.works-item").click(
-        function(event)
-        {
-            //window.location = $(this).attr("url");
-            $url = $(this).attr("url");
-            window.open($url,'_blank');
-            event.preventDefault();
-        }
-    );  */ 
     
     $('.works-item').click(function(){
         $workitem = $(this).attr("item");

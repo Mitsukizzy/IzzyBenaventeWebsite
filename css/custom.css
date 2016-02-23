@@ -118,6 +118,113 @@ ul li{
     text-align: right;   
 }
 
+/*Responsive Menu Classes*/
+.custom-brand{
+    font-family: Raleway; 
+    text-shadow: 1px 1px 2px #000;
+    font-size: 1.3em !important;
+    display: inline-block;
+    color: #ffcc00 !important;
+    padding: 1em 2em !important;
+}
+.custom-brand span{
+    color: #ccc !important;
+}
+.custom-wrapper {
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    background-color: #222;
+    margin-bottom: 1em;
+    -webkit-font-smoothing: antialiased;
+    height: 4em;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+}
+.custom-wrapper.open {
+    height: 13em;
+}
+.custom-menu {
+    text-align: right;
+    padding: 0.2em 2em !important;
+    color: #fff !important;
+}
+.custom-menu a{
+    font-family: Open Sans; 
+    font-size: 0.8em;
+    margin: 1em;
+    color: #ddd;
+    background-color: #222 !important;
+}
+.custom-menu a:hover{
+    color: #FFCC00;
+    background-color: #222;
+}
+.custom-toggle {
+    width: 2.4em;
+    height: 1.6em;
+    display: block;
+    position: absolute;
+    top: 1.4em;
+    right: 1em;
+    display: none;
+}
+.custom-toggle .bar {
+    background-color: #777;
+    display: block;
+    width: 1.8em;
+    height: 0.1em;
+    border-radius: 100px;
+    position: absolute;
+    top: 18px;
+    right: 7px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.custom-toggle .bar:first-child {
+    -webkit-transform: translateY(-8x);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+.custom-toggle .bar:nth-child(2) {
+    -webkit-transform: translateY(-16px);
+    -moz-transform: translateY(-16px);
+    -ms-transform: translateY(-16px);
+    transform: translateY(-16px);
+}
+.custom-toggle.x .bar {
+    -webkit-transform: translateY(-8px) rotate(45deg);
+    -moz-transform: translateY(-8px) rotate(45deg);
+    -ms-transform: translateY(-8px) rotate(45deg);
+    transform: translateY(-8px) rotate(45deg);
+}
+.custom-toggle.x .bar:nth-child(2) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -moz-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+}
+@media (max-width: 47.999em) {
+    .custom-menu {
+        text-align: left;
+    }
+    .custom-menu a{
+        margin: 0;
+    }
+    .custom-menu a:hover{
+        background-color: #111 !important;
+    }
+    .custom-toggle {
+        display: block;
+    }
+}
+
 /*Landing Page Specific Classes*/
 .landing-overlay{
     opacity: 1;
@@ -492,10 +599,6 @@ ul li{
 
 .elementerra{
     background-image: url('../images/elementerra.jpg');
-    height: 45vmin;
-}
-.elementerra:hover{
-    height: 45vmin;   
 }
 .archipelago{
     background-image: url('../images/archipelago.jpg');
@@ -735,7 +838,7 @@ ul li{
 /*Footer Classes*/
 .footer{
     min-width: 100%;
-    background-color: #333;
+    background-color: #222;
     position: fixed;
     bottom: 0;   
     z-index: 20;
