@@ -672,11 +672,11 @@ ul li{
     background: rgba(17, 17, 17, .95); /* Opacity hack, doesn't affect children*/
     background: rgba(127, 140, 141, 1);
     position: relative;     
-    padding: 4vmin 20vmin;
+    padding: 4vmin 35vmin;
     z-index: 5;
 }
 .contact-left{
-    margin: 0 15vmin;
+    margin: 0 5vmin 0 0;
 }
 .contact-left p{    
     font-family: Raleway;
@@ -937,7 +937,7 @@ ul li{
         margin: 0;
     }
     #contact .content{
-        padding: 3vmin 0 0 0;
+        padding: 3vmin 15vmin;
     } 
 }
 @media screen and (max-width: 1024px) { 
@@ -1004,11 +1004,14 @@ ul li{
 }
 @media screen and (max-width: 568px) {
     #about-info{
-        padding: 5vmin 15vmin;
+        padding: 5vmin 10vmin;
     }     
     .about-profile-info{
         padding: 15vmin 10vmin 20vmin 10vmin;   
     }
+    #contact .content{
+        padding: 3vmin 10vmin;
+    } 
 }
 
 
