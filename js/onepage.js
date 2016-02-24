@@ -12,45 +12,14 @@ $(document).ready(function() {
 
     
     $(function () {
-        var $win = $(window);
-        var $atTop = false;
-        var $atBottom = false;
-        
+        var $win = $(window);        
 
-        $win.scroll(function () {
-            var $elem = $('.about-izzy');
-
-            var docViewTop = $win.scrollTop();
-            var docViewBottom = docViewTop + $win.height();
-
-            var elemTop = $elem.offset().top;
-            var elemBottom = elemTop + $elem.height();
-            
-            var bg = jQuery("#BG1");
-            jQuery(window).resize("resizeBackground");
-            
-            function resizeBackground() {
-                bg.height(jQuery(window).height() + 60);
-            }
-            resizeBackground();
-            
-            // If scrolled to bottom, show bottom bar, +2 so it'll just touch the bottom
-          /*  if($(window).scrollTop() + $(window).height() + 1 >= $(document).height() && !$atBottom)  {
-                $('.footer').slideDown();
-                $atBottom = true;
-            }
-            else if($(window).scrollTop() + $(window).height() != $(document).height() && $atBottom)  {
-                $('.footer').slideUp();
-                $atBottom = false;
-            }*/
-            
-            if($(window).scrollTop() <= $('#about').height()  && !$atTop)  {
+        $win.scroll(function () {            
+            if($(window).scrollTop() <= $('#about').height()  && $('.custom-wrapper').is(":visible"))  {
                 $('.custom-wrapper').fadeOut("slow");
-                $atTop = true;
             }
-            else if($(window).scrollTop() > $('#about').height())  {
+            else if($(window).scrollTop() > $('#about').height() && $('.custom-wrapper').is(":hidden"))  {
                 $('.custom-wrapper').fadeIn("slow");
-                $atTop = false;
             }
         });
      }); 
