@@ -312,6 +312,7 @@ ul li{
     background: url(../images/strip.jpg) 50% 0 no-repeat fixed;
     background-size: cover;
     width: 100vw;
+    height: 100%;
     position: fixed;
     padding: 0;
     z-index: -5;
