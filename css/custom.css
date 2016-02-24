@@ -65,7 +65,8 @@ ul li{
 }
 
 #landing {    
-    background: rgba(17, 17, 17, .85); /* Opacity hack, doesn't affect children*/
+    /*#7f8c8d*/
+    background: rgba(127, 140, 141, 1); /* Opacity hack, doesn't affect children*/
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -124,11 +125,17 @@ ul li{
     text-shadow: 1px 1px 2px #000;
     font-size: 1.3em !important;
     display: inline-block;
-    color: #ffcc00 !important;
+    color: #FFCC00 !important;
     padding: 1em 2em !important;
 }
 .custom-brand span{
-    color: #ccc !important;
+    color: #CCC !important;
+}
+.custom-brand:hover{
+    color: #CCC !important;
+}
+.custom-brand:hover > span{
+    color: #FFCC00 !important;
 }
 .custom-wrapper {
     position: fixed;
@@ -483,9 +490,9 @@ ul li{
 
 /*Works Page Specific Classes*/
 .works-title{
-    font-size: 8vmin;
-    padding: 5vmin;
-    border-top: 1px solid #ffcc00;
+    font-size: 4.6vmin;
+    padding: 4vmin;
+    color: #FFCC00;
     border-bottom: 1px solid #fff;
 }
 .works-subtitle{
@@ -635,36 +642,38 @@ ul li{
 /*Contact Page Specific Classes*/
 #contact {    
     background: url(../images/home.jpg) 50% 0 no-repeat fixed;
-    background-size: cover; 
     position: relative;
-    min-height: 100%;
     z-index: 5;
 }
 #contact .content{    
-/*    background-color: #888;*/
+/*    background-color: #888;
     background: rgba(17, 17, 17, .95); /* Opacity hack, doesn't affect children*/
-    background-size: cover; 
-    position: relative;    
-    min-height: 100vh;
+    background: rgba(127, 140, 141, 1);
+    position: relative; 
     z-index: 5;
 }
+.contact-item{
+    margin: 2vmin 0;
+}
+#contact h3{
+    font-family: Open Sans;
+}
 .contact-item p{
-    font-size: 5vmin;
+    font-family: Lato;
+    font-size: 2.6vmin;
+    line-height: 4vmin;
     color: #fff;
     display: inline-block;
-    margin: 2vmin 0;
-    padding-bottom: 1vmin;
 }
 .contact-menu{
-    margin-top: 5vmin;
-    padding: 0 18% 0 30%;   
+    margin-left: 2vmin;
 }
 .contact-menu a{
     text-decoration: none;   
 }
 #contact .fa{
     color: #555;   
-    font-size: 7vmin !important;   
+    font-size: 4vmin !important;   
 }
 .easter{
     font-family: Lato;
@@ -839,9 +848,6 @@ ul li{
 .footer{
     min-width: 100%;
     background-color: #222;
-    position: fixed;
-    bottom: 0;   
-    z-index: 20;
 }
 .footer-text{
     font-size: 2vmin;
