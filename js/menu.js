@@ -77,7 +77,7 @@ $(document).ready(function() {
             event.preventDefault();            
             var $anchor = $(this);
             $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 50
+                scrollTop: $($anchor.attr('href')).offset().top - 60
             }, 1500, 'easeInOutExpo');
             closeMenu();
         });
