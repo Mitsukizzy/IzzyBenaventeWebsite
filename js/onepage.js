@@ -48,7 +48,7 @@ $(document).ready(function() {
                 $('.custom-wrapper').fadeOut("slow");
                 $atTop = true;
             }
-            else if($(window).scrollTop() > $('#about').height() && $atTop)  {
+            else if($(window).scrollTop() > $('#about').height())  {
                 $('.custom-wrapper').fadeIn("slow");
                 $atTop = false;
             }
@@ -83,15 +83,6 @@ $(document).ready(function() {
             $('.menu-icon').show();
         });
     });
-    
-    // CONTACT PAGE
-    $('.contact-item').hover(function(event) {
-        $(this).find(".fa").css("color", "white");
-        $(this).find("p").css("color", "#ffcc00");
-    },function(){
-        $(this).find(".fa").css("color", "#555");
-        $(this).find("p").css("color", "white");
-    });    
                 
     // Responsive icon resizing
     if($(window).width() <= 610) {

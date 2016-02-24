@@ -11,8 +11,18 @@ body, html {
     font-weight: 300;   
     font-size: 2em;
 }
+.lato2{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;   
+}
+.raleway{
+    font-family: Raleway;
+}
 .link{
     color: #ffcc00;   
+}
+.bold{
+    font-weight: bold;
 }
 h1{
     color: #fff;
@@ -66,7 +76,7 @@ ul li{
 
 #landing {    
     /*#7f8c8d*/
-    background: rgba(127, 140, 141, 1); /* Opacity hack, doesn't affect children*/
+    background: rgba(17, 17, 17, 0.85); /* Opacity hack, doesn't affect children*/
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -301,9 +311,7 @@ ul li{
 #BG1{
     background: url(../images/strip.jpg) 50% 0 no-repeat fixed;
     background-size: cover;
-    overflow: none;
     width: 100vw;
-    height: 100%;
     position: fixed;
     padding: 0;
     z-index: -5;
@@ -515,6 +523,20 @@ ul li{
     opacity: .4;
     filter: alpha(opacity=40); 
 }
+.works-caption{
+    position: relative;
+    height: 40vmin;
+    font-size: 1.6vmin;
+	background-color: rgba(0,0,0,0.8);
+    z-index: 0;
+}
+.works-list .works-item:hover .works-caption {
+    bottom: 0vmin;
+}
+.works-list .works-item .works-caption {   
+    bottom: -100%;
+    transition: all 0.5s ease;
+}
 .works-item:hover{
     height: 40vmin;
     cursor: pointer; 
@@ -649,31 +671,55 @@ ul li{
 /*    background-color: #888;
     background: rgba(17, 17, 17, .95); /* Opacity hack, doesn't affect children*/
     background: rgba(127, 140, 141, 1);
-    position: relative; 
+    position: relative;     
+    padding: 4vmin 20vmin;
     z-index: 5;
+}
+.contact-left{
+    margin: 0 15vmin;
+}
+.contact-left p{    
+    font-family: Raleway;
+    font-size: 1.6vmin;
+    letter-spacing: 0.25px;
+    line-height: 2.4vmin !important;
+    text-align: left;
+    color: #fff;
 }
 .contact-item{
     margin: 2vmin 0;
 }
 #contact h3{
     font-family: Open Sans;
+    color: #064d79; 
+    font-size: 2.2vmin;
 }
 .contact-item p{
     font-family: Lato;
-    font-size: 2.6vmin;
+    font-size: 1.8vmin;
     line-height: 4vmin;
     color: #fff;
     display: inline-block;
 }
 .contact-menu{
     margin-left: 2vmin;
+    margin-bottom: 5vmin;
 }
 .contact-menu a{
-    text-decoration: none;   
+    letter-spacing: 0.75px;
+    text-decoration: none;  
+    color: #333; 
+}
+.contact-menu p:hover{
+    color: #FFCC00;
 }
 #contact .fa{
-    color: #555;   
-    font-size: 4vmin !important;   
+    color: #222;   
+    text-align: center;
+    font-size: 2.8vmin !important;   
+    margin-right: 0.5vmin;
+    width: 3vmin;
+    height: 3.2vmin;
 }
 .easter{
     font-family: Lato;
@@ -681,21 +727,32 @@ ul li{
     padding-top: 5vmin;
     text-align: center;
 }
+/*Footer Classes*/
+.footer{
+    min-width: 100%;
+    height: 20vmin;
+    background-color: #222;
+    opacity: 1;
+}
+.footer-text{
+    font-family: Open Sans;
+    font-size: 1.6vmin;
+    line-height: 6vmin;
+    text-align: center;
+}
 .resume-button{
     margin: auto;
-    margin-top: 10vmin;
+    margin-top: 6vmin;
     padding-bottom: 15vmin;
 }
 .resume-button span{
     padding: 2vmin;
-    border: 1px solid #777;
-    font-size: 2vmin;
-    color: #ddd;
+    border: 1px solid #444;
+    font-size: 1.8vmin;
+    color: #ccc;
 }
 .resume-button span:hover{
-    padding: 2vmin;
     border: 1px solid #ffcc00;
-    font-size: 2vmin;
     color: #fff;
 }
 
@@ -778,7 +835,6 @@ ul li{
     }
 }
 
-
 /*Menu Classes*/
 .navigation-wrapper {
 	background: #555;
@@ -843,17 +899,6 @@ ul li{
 .gold-line{
     border-bottom: 1px solid #ffcc00;   
 }
-
-/*Footer Classes*/
-.footer{
-    min-width: 100%;
-    background-color: #222;
-}
-.footer-text{
-    font-size: 2vmin;
-    line-height: 5vmin;
-    text-align: center;
-}
 .elevator{
     position: absolute;
     bottom: 0.8vmin;
@@ -887,6 +932,13 @@ ul li{
         /*Allow more width space on mobile devices*/   
         padding: 0 20vmin 10vmin 20vmin;
     }
+    .hack-end h4{    
+        padding: 5vmin 15vmin;
+        margin: 0;
+    }
+    #contact .content{
+        padding: 3vmin 0 0 0;
+    } 
 }
 @media screen and (max-width: 1024px) { 
     .about-profile-info{
@@ -901,16 +953,6 @@ ul li{
     #hackathons .content{
         /*Allow more width space on mobile devices*/   
         padding: 0 15vmin 10vmin 15vmin;
-    }
-    .hack-end h4{    
-        padding: 5vmin 15vmin;
-        margin: 0;
-    }
-    .contact-menu{
-        margin: 5vmin auto; 
-    }
-    .contact-item{
-        margin: 2vh auto 0 auto;
     }
 }
 @media screen and (max-width: 768px) { 
@@ -957,11 +999,8 @@ ul li{
         background: none;
     }    
     #contact .content{
-        background: rgba(17, 17, 17, 1); 
+        background: rgba(127, 140, 141, 1);
     } 
-    .resume-button{
-        padding-top: 3vmin;
-    }
 }
 @media screen and (max-width: 568px) {
     #about-info{
@@ -969,14 +1008,6 @@ ul li{
     }     
     .about-profile-info{
         padding: 15vmin 10vmin 20vmin 10vmin;   
-    }
-    #about1{
-        background-image: url('../images/Strip_gs.jpg');
-        width: 100vmin;
-        height: 75vmin;
-        position: fixed;
-        padding-top: 100%;
-        z-index: -5;
     }
 }
 
