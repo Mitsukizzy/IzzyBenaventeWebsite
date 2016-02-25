@@ -10,7 +10,28 @@ $(document).ready(function() {
         $(this).removeClass("grey-line");     
     });
 
-    
+    // Swap through images on landing background
+    /*var i = 0;
+    function ChangeLandingBG() {
+        if( i == 0 )
+        {
+            $('#BG1').css('background', 'url(http://izzybenavente.me/images/strip.jpg) 50% 0 no-repeat fixed');
+            $('#BG1').css('background-size', 'cover');
+        }
+        else if( i == 1 )
+        {
+            $('#BG1').css('background', 'url(http://izzybenavente.me/images/home.jpg) 50% 0 no-repeat fixed');
+            $('#BG1').css('background-size', 'cover');
+        }
+        i++;
+        if(i>1) 
+        {
+            i = 0;
+        }
+       setTimeout(ChangeLandingBG, 5000);
+    }
+    setTimeout(ChangeLandingBG, 5000);*/
+
     $(function () {
         var $win = $(window);        
 
