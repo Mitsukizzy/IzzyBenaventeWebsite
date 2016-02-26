@@ -923,7 +923,11 @@ ul li{
     border-bottom: 1px solid #ffcc00;   
 }
 .elevator{
+    margin-top: 2vmin;
     text-align: center;
+}
+.elevator-icon{
+    width: 7vmin;
 }
 
 /*ALL MOBILE MODIFICATIONS*/
@@ -1017,7 +1021,10 @@ ul li{
     }    
     #contact .content{
         background: rgba(127, 140, 141, 1);
-    } 
+    }     
+    .footer-text{
+        line-height: 4vmin;
+    }
 }
 @media screen and (max-width: 568px) {
     .custom-brand{
