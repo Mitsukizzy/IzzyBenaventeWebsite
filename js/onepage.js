@@ -10,6 +10,18 @@ $(document).ready(function() {
         $(this).removeClass("grey-line");     
     });
 
+    //jQuery for page scrolling feature - requires jQuery Easing plugin
+    $(function() {
+        $('a[href*=#]').bind('click', function(event) {
+            event.preventDefault();            
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 60
+            }, 1500, 'easeInOutExpo');
+            closeMenu();
+        });
+    });
+    
     // Swap through images on landing background
     /*var i = 0;
     function ChangeLandingBG() {

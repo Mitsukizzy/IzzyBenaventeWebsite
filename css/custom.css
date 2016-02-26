@@ -369,7 +369,7 @@ ul li{
     background: rgba(255, 255, 255, .8); /* Opacity hack, doesn't affect children*/
 }
 .about-profile-info{
-    padding: 15vmin 55vmin 15vmin 35vmin;  
+    padding: 10vmin 55vmin 15vmin 35vmin;  
 }
 .about-profile-info h2{
     font-family: Raleway;
@@ -694,7 +694,7 @@ ul li{
     color: #fff;
 }
 .contact-item{
-    margin: 2vmin 0;
+    margin: 1vmin 0;
 }
 #contact h3{
     font-family: Open Sans;
@@ -965,7 +965,7 @@ ul li{
 }
 @media screen and (max-width: 1024px) { 
     .about-profile-info{
-        padding: 15vmin 30vmin 20vmin 30vmin;   
+        padding: 15vmin 20vmin 20vmin 15vmin;   
     }
     #about-info{
         padding: 5vmin 15vmin;
