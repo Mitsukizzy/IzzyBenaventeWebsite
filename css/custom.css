@@ -923,16 +923,7 @@ ul li{
     border-bottom: 1px solid #ffcc00;   
 }
 .elevator{
-    position: absolute;
-    bottom: 0.8vmin;
-    right: 5vmin;
-    z-index: 500;
-}
-.elevator a{
-    color: #555;   
-}
-.elevator:hover{    
-    cursor: pointer;
+    text-align: center;
 }
 
 /*ALL MOBILE MODIFICATIONS*/

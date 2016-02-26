@@ -43,20 +43,30 @@ $(document).ready(function() {
        setTimeout(ChangeLandingBG, 5000);
     }
     setTimeout(ChangeLandingBG, 5000);*/
-
-    $(function () {
-        var $win = $(window);        
-
-        $win.scroll(function () {            
-            if($(window).scrollTop() <= $('#about').height()  && $('.custom-wrapper').is(":visible"))  {
-                $('.custom-wrapper').fadeOut("slow");
-            }
-            else if($(window).scrollTop() > $('#about').height() && $('.custom-wrapper').is(":hidden"))  {
-                $('.custom-wrapper').fadeIn("slow");
-            }
-        });
-     }); 
     
+    // ELEVATOR!
+    window.onload = function() {
+      var elevator = new Elevator({
+        element: document.querySelector('.elevator'),
+        mainAudio: 'js/elevator.mp3',
+        endAudio: 'js/ding.mp3'
+      });
+    }   
+
+    // Show and hide the top bar nav
+    var $win = $(window);       
+    $win.scroll(function () {           
+        if($(window).scrollTop() <= $('#about').height() && $('.custom-wrapper').is(":visible"))  {
+            if(!elevator.elevating)
+            {
+                // Extra check because elevator can cause incorrect scroll position due to dynamic resizing of content such as BG images
+                $('.custom-wrapper').fadeOut("slow");       
+            } 
+        }
+        else if($(window).scrollTop() > $('#about').height() && $('.custom-wrapper').is(":hidden"))  {
+            $('.custom-wrapper').fadeIn("slow");
+        }
+    });
     
     $('.works-item').click(function(){
         $workitem = $(this).attr("item");
