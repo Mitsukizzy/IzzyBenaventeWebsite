@@ -74,7 +74,6 @@ var Elevator = function(options) {
             animationFinished();
         }
     }
-
 //            ELEVATE!
 //              /
 //         ____
@@ -239,4 +238,11 @@ var Elevator = function(options) {
     }
 
     init(options);
+    
+    // Allows access from other js files
+    return {
+      elevating: function(){
+        return elevating;
+      }
+    };
 };
