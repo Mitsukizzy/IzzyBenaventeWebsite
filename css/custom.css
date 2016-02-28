@@ -737,7 +737,7 @@ ul li{
 /*Footer Classes*/
 .footer{
     min-width: 100%;
-    height: 20vmin;
+    height: 22vmin;
     background-color: #222;
     opacity: 1;
 }
@@ -923,11 +923,15 @@ ul li{
     border-bottom: 1px solid #ffcc00;   
 }
 .elevator{
-    margin-top: 2vmin;
+    padding: 2vmin 0;
     text-align: center;
 }
-.elevator-icon{
+.elevator-icon, .elevator-icon-no{
     width: 7vmin;
+}
+.elevator p{
+    font-family: Open Sans;
+    font-size: 1.8vmin;
 }
 
 /*ALL MOBILE MODIFICATIONS*/

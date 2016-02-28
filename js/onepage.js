@@ -44,25 +44,33 @@ $(document).ready(function() {
     }
     setTimeout(ChangeLandingBG, 5000);*/
     
+    function closeTopNav() {
+        $('.custom-wrapper').fadeOut("slow");    
+    }
+    
     // ELEVATOR!
     var elevator = new Elevator({
-      element: document.querySelector('.elevator'),
-      mainAudio: 'js/elevator.mp3',
-      endAudio: 'js/ding.mp3'
+      element: document.querySelector('.elevator-icon'),
+      mainAudio: 'js/elevator_low.mp3',
+      endAudio: 'js/ding_low.mp3',
+      endCallback: closeTopNav
+    });
+    
+    // SOUNDLESS ELEVATOR
+    var elevator_no = new Elevator({
+      element: document.querySelector('.elevator-icon-no'),
+      duration: 5000,
+      endCallback: closeTopNav
     });
 
     // Show and hide the top bar nav
     var $win = $(window);       
     $win.scroll(function () {           
         if($(window).scrollTop() <= $('#about').height() && $('.custom-wrapper').is(":visible"))  {
-            if(!elevator.elevating())
+            if(!elevator.elevating() && !elevator_no.elevating())
             {
                 // Extra check because elevator can cause incorrect scroll position due to dynamic resizing of content such as BG images
                 $('.custom-wrapper').fadeOut("slow");       
-            } 
-            if($(window).scrollTop() == 0 ) // Hide the bar at the very end of the elevating
-            {
-                $('.custom-wrapper').fadeOut("slow");    
             }
         }
         else if($(window).scrollTop() > $('#about').height() && $('.custom-wrapper').is(":hidden"))  {
