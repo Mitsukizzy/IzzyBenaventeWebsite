@@ -249,7 +249,7 @@ ul li{
 .splash-logo{
     position: relative;
     margin: auto;
-    padding-top: 30vmin;
+    padding-top: 30vh;
     text-align: center;
 }
 .name-first, .name-last{
@@ -264,10 +264,10 @@ ul li{
     color: #ccc;
 }
 .info-item{
-    font-family: Lato !important; 
-    font-weight: 400; 
+    font-family: Raleway !important; 
+    font-weight: 300; 
     display: inline-block;
-    font-size: 2.4vmin;
+    font-size: 2.5vmin;
     color: #999;
     padding: 0 1vmin;
 }
@@ -281,7 +281,7 @@ ul li{
 }
 .landing-menu{
     margin: auto;
-    padding: 5vmin 25vw !important;
+    padding: 5vmin 30vw !important;
     text-align: center;
 }
 .landing-menu a{
@@ -289,7 +289,7 @@ ul li{
     color: #bbb;
 }
 .landing-item{
-    font-size: 4.6vmin;
+    font-size: 4vmin;
     text-align: center;   
     margin: 10% 0;
 }
@@ -297,6 +297,7 @@ ul li{
     cursor: pointer;
 }
 .landing-item span{
+    font-family: Lato !important;
     padding: 0;   
 }
 .landing-item span:hover{
@@ -304,12 +305,12 @@ ul li{
 }
 .resume-button{
     margin: auto;
-    margin-top: 15vmin;
+    margin-top: 10vh;
 }
 .resume-button span{
-    padding: 2vmin;
+    padding: 1.6vmin;
     border: 1px solid #444;
-    font-size: 1.8vmin;
+    font-size: 1.6vmin;
     color: #ccc;
 }
 .resume-button span:hover{
@@ -946,8 +947,7 @@ ul li{
 /*Made to match grid-responsive.css from PureCSS*/
 @media screen and (max-width: 1280px) {       
     .landing-menu{
-        margin-top: 5vmin;
-        padding: 0;
+        padding: 5vmin 25vw !important;
     }
     .landing-item{
         margin: 5vmin;
@@ -971,6 +971,9 @@ ul li{
     } 
 }
 @media screen and (max-width: 1024px) { 
+    .landing-menu{
+        padding: 5vmin 20vw !important;
+    }
     .about-profile-info{
         padding: 15vmin 20vmin 20vmin 15vmin;   
     }
@@ -985,7 +988,10 @@ ul li{
         padding: 0 15vmin 10vmin 15vmin;
     }
 }
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {     
+    .landing-menu{
+        padding: 5vmin 15vmin !important;
+    }
     .custom-brand{
         padding: 1em 1.5em !important;
     }
@@ -1039,6 +1045,9 @@ ul li{
     }
 }
 @media screen and (max-width: 568px) {
+    .landing-menu{
+        padding: 5vmin 10vmin !important;
+    }
     .custom-brand{
         padding: 1em 1em !important;
     }
