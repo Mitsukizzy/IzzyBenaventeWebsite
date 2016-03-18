@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
     <head>    
+        <title>Izzy Benavente | Developer for immersive and engaging experiences</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:url" content="http://izzybenavente.me" />
@@ -8,16 +9,22 @@
         <meta name="keywords" content="Izzy Benavente, web developer, game developer, usc, programmer, ui design, coding, unity, engineer, Isabella Benavente" />
         <meta name="author" property="og:author" content="Izzy Benavente" />
         <meta property="og:image" content="http://izzybenavente.me/images/thumbnail.jpg">
-        <title>Izzy Benavente | Developer for immersive and engaging experiences</title>
-        <link rel="shortcut icon" href="favicon.ico" />    
-        <link rel="stylesheet" href="css/custom.css" />
+        <link rel="shortcut icon" href="favicon.ico" />   
+        <!-- FONTS -->
         <link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> 
+        <!-- CSS & PURE -->
+        <link rel="stylesheet" href="css/custom.css" />
         <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css"> <!--Required for responsive grid-->
+        <!-- JQUERY & JS -->
         <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>    
+        <script src="js/elevator.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/onepage.js"></script>
     </head>
     <body>
         <div id="BG1">
@@ -26,7 +33,6 @@
         <!-- LANDING PAGE -->
         <div id="landing" class="section">
             <div class="landing-overlay">
-            <!--<i class="menu-icon fa fa-bars fa-3x"></i>-->
             
                 <!--RESPONSIVE MENU-->    
                 <div class="custom-wrapper invisible" id="menu">
@@ -100,76 +106,95 @@
         </div>
             
         <!--ABOUT PAGE-->
-        <div id="about-info">
-            <h2>
-                <span>// Developer, Hackathoner, Gamer, and Foodie?</span>
-            </h2>
-            <br />
-            <p>
-                I'm a huge fan of building cool things for fun.
-                I love messing with new technologies and I have some cool tech like an Tobii eye tracker
-                and a Hexoskin biometric shirt that I plan on hacking on next.
-                I often spend time exploring LA, looking for the best eats.
-                When all else fails, I'll be on my PS4 or Steam trying to catch up on the latest
-                games.
-            </p>
-        </div>
         <div id="about">       
-            <div id="about-profile">
-                <div class="pure-g about-profile-info">
-                    <!--<div class="pure-u-1 center">
-                        <img class="profile-image" src="images/Profile.jpg" />
-                    </div>-->
-                    <div class="pure-u-1 profile-text">
-                        <h2>Hi, I'm Izzy</h2><br />
+            <div class="about-profile pure-g">                    
+                    <div id="slideshow" class="pure-u-1 pure-u-lg-1-2">
+                    </div>
+                    <div class="pure-u-1 pure-u-lg-1-2 profile-text-half">
+                        <div class="content">
+                            <h3>Hi, I'm Izzy</h3>
+                            <p> 
+                                I'm an avid gamer, serial hackathoner, and coffee lover currently residing in Los Angeles, CA. During my freshman and sophomore year, I paddled for the USC Dragon Boat team. On weekends, I like to play tennis and beach volleyball. When I don't feel like leaving home, I'll be on my PS4 or Steam. My favorite video games include Journey, Final Fantasy, Assassin's Creed, Life is Strange, and the Tomb Raider reboot.
+
+                                <br /><br />
+                                Originally from the island of Guam, I moved to Las Vegas with my family when I was eight. I studied Computer Science throughout all four years of high school, realizing along the way that it would be a dream come true if I could develop games for a living. Fast-forward to the present and now I'm a third year undergraduate studying <b>Computer Science</b> with a focus in <b>Game Development</b> and <b>Cyber Security</b> at the University of Southern California. 
+
+                                <br /><br />
+                            </p>
+                        </div>
+                    </div>
+                <div class="about-profile-info">
+                    <div class="pure-u-1">                            
+                        <h2>Abridged CV</h2>
+                        <p>More in-depth project descriptions can be found in the <a href="#works" class="blue">Works</a> section below.</p>
+                        <ul>
+                            <li>
+                                2016-Present: <b>Lead Producer</b> - SkyShot
+                                <p>
+                                    SkyShot is an AGP candidate for the 2016-2017 class.
+                                </p>
+                            </li>
+                            <li>
+                                2016-Present: <b>Vice President</b> - USC ACM  
+                                <p>
+                                    Meet weekly with executive board to plan events for the community. I mentor freshmen biweekly about Computer Science, courses, activities, and job preparation.
+                                    With over 200 general members,
+                                    <a href="http://www.uscacm.org" class="blue" target="_blank">USC's ACM chapter</a>
+                                    organizes events, both professional and social, for students with an interest in Computer Science. 
+                                </p>
+                            </li>
+                            <li>                 
+                                2015-Present: <b>Lead Engineer</b> - Psychic
+                                <p>
+                                    Ensured stable builds, programmed new features, and drove engineering decisions for the game. I work on the game as a volunteer. Psychic is one of six Advanced Game Projects being developed at USC for the 2015-2016 school year. It features a psychic detective in a Telltale-style narrative and is being developed for the Amazon Fire TV.
+                                </p>
+                            </li>
+                            <li>
+                                Fall 2015: <b>Designer &amp; Programmer</b> - Archipelago
+                                 <p>
+                                    Created the game with a partner from start to finish over the course of five months. Archipelago is an adventure-survival game developed during the Intermediate Game Design class at USC. The game was chosen to be showcased in the Underground Show during Fall Demo Day 2015.
+                                </p>
+                            </li>
+                            <li>
+                                Summer 2015: <b>UI Software Engineer Intern</b> - Infinity Ward
+                                 <p>
+                                     Developed new features for a tool optimizing the workflow of the UI pipeline and implemented new UI components for the game. <a href="http://www.infinityward.com" class="blue" target="_blank">Infinity Ward</a> is the original studio behind the Call of Duty franchise and is developing the CoD game for 2016.
+                                </p>
+                            </li>
+                            <li>
+                                2015: <b>Membership Officer</b> - USC ACM
+                                 <p>
+                                     Served the ACM community by planning events and programs to further interest and education in Computer Science fields. Met weekly with the executive board to organize events for students.
+                                </p>
+                            </li>
+                            <li>
+                                2014-2015: <b>Gameplay Engineer</b> - ElemenTerra
+                                 <p>      
+                                     Developed an intuitive movement system using the Oculus Rift and Razer Hydra. Programmed radial gravity and flight mechanics in Unity using C#.
+                                     <a href="http://www.uscacm.org" class="blue" target="_blank">ElemenTerra</a> 
+                                     is one of five Advanced Game Projects developed at USC for the 2014-2015 school year. It is a virtual reality world-building game using the Oculus Rift and Sixense STEM. I worked as a volunteer.
+                                </p>
+                            </li>
+                            <li>
+                                Summer 2014: <b>Web Development Intern</b> - Slickdeals 
+                                 <p>
+                                     Developed Slickdeal's <a href="http://www.slickdeals.net/pricetracker" class="blue" target="_blank">Price Tracker</a> tool to alert users when a price drops on a tracked item across a variety of stores. Integrated features using PHP, SQL, Javascript, and jQuery while using HTML5 and CSS3 to convert designs into functional web pages. Often described as the "Reddit for deals," Slickdeals is the top deal sharing community on the internet.
+                                </p>
+                            </li>                          
+                        </ul>
                         <p>
-                            I'm an avid gamer, serial hackathoner, and coffee lover currently residing in Los Angeles, CA. I love hot and sunny cities, especially ones near the water. On the weekends, I used to paddle for the USC Dragon Boat team, but now I only have time for occasional games of tennis and beach volleyball. My favorite video games include Journey, Final Fantasy, Assassin's Creed, Life is Strange, and the Tomb Raider reboot.
-                            
-                            <br /><br />
-                            Originally from the island of Guam, I moved to Las Vegas with my family when I was eight. I studied Computer Science throughout all four years of high school, realizing along the way that it would be a dream come true if I could develop games for a living. Fast-forward to the present and now I'm a third year undergraduate studying <b>Computer Science</b> with a focus in <b>Game Development</b> and <b>Cyber Security</b> at the University of Southern California. 
-                            <br /><br />
-                            
-                            Throughout my entire second year at USC, I worked on a <b>virtual reality</b> game called <a href="http://www.elementerravr.com" class="blue" target="_blank">ElemenTerra</a> as a <b>Gameplay Programmer</b>. I was responsible for programming many of the player-specific functions and also for experimenting and developing the game's flight controls using the Razer Hydra and the Oculus Rift. This year, I've been working on a narrative-driven, detective, FireTV game called Psychic as the <b>Lead Engineer</b>.
-                            
-                            <br /><br />
-                            In the summer 2014, I was a <b>Web Development Intern</b> at <a href="http://www.slickdeals.net" class="blue" target="_blank">Slickdeals</a>, which is like the reddit for the best deals on the internet. I programmed new web pages in HTML, CSS, PHP, and SQL. This past summer (2015) I worked at 
-                            <a href="http://www.infinityward.com" class="blue" target="_blank">Infinity Ward</a> on the <b>UI team</b> as a <b>Software Engineer Intern</b>.  It was a fantastic experience so I'm going back to IW for my summer 2016 internship. 
-                            <br /><br />
-                            
-                            I'm currently the <b>Vice President</b> of 
-                            <a href="http://www.uscacm.org" class="blue" target="_blank">
-                                USC's ACM chapter
-                            </a>
-                            which organizes events, both professional and social, for students with an interest in Computer Science. 
-                            
-                            <br /><br />
                             Want to get in touch? <a href="#contact" class="blue">Contact me!</a>
                         </p>
-                        <!--
-                        <div class="center works-button">
-                            <a href="#works"><span>VIEW WORK</span></a>
-                        </div>
-                        -->
                     </div>
-                </div>                
+                </div>    
+                
+                
             </div>
         </div>
                 
         <!--WORKS PAGE-->
         <div id="works" class="section">
-            <h2 class="works-title">Works</h2>            
-            <div id="BG2">
-                <div class="pure-u-1 content">
-                    <div class="inner">
-                    <p class="about-izzy">
-                        I am a developer with a passion for designing and building immersive and engaging experiences
-                    </p>
-                    <p class="about-more">
-                         I'm a fan of great storytelling and have a special interest in virtual and augmented reality
-                    </p>
-                    </div>
-                </div>
-            </div>
+            <h2 class="works-title">Works</h2>    
             
             <h2 class="works-subtitle">Games</h2>
             <div class="pure-g works-list"> 
@@ -197,6 +222,18 @@
                     <div class="hover-overlay"><h2>A Night in the Woods</h2></div>
                 </div>    
             </div>
+            <div class="pure-g"> 
+                <div class="pure-u-1 works-why-games">
+                    <div class="content">
+                        <h3 class="center gold">Why games?</h3>
+                        <p class="center">
+                            I found myself drawn to games because they engaged and immersed me like no other medium. I'm a fan of great storytelling and find that narrative-driven games with a good mix of action and adventure are my sweet spot. My dream is to make a living creating fun, immersive experiences for anyone to enjoy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            
             <h2 class="works-subtitle">Featured Projects</h2>
             <div class="pure-g works-list"> 
                 <div class="pure-u-1 pure-u-lg-1-3 works-item coupinions" item="coupinions">
@@ -1521,11 +1558,4 @@ In addition to Echo Chef's use in the kitchen, we track your data and deliver it
             </ul>
         </div>-->
     </body>
-    
-    <script src="js/elevator.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/onepage.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script>
-    </script>
 </html>

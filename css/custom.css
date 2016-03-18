@@ -82,7 +82,7 @@ ul li{
     padding: 0;
 }
 #about {
-    background: url(../images/desert.jpg) 50% 0 no-repeat fixed;
+    background: url(../images/underground.jpg) 50% 0 no-repeat fixed;
     background-size: cover;
     text-align: left;
 }
@@ -373,9 +373,11 @@ ul li{
 .landing-item span{
     font-family: Lato !important;
     padding: 0;   
+    border-bottom: none;  
 }
 .landing-item span:hover{
-    color: #ffcc00;   
+    color: #ffcc00;       
+    border-bottom: 1px solid #aaa;  
 }
 .resume-button{
     margin: auto;
@@ -419,73 +421,62 @@ ul li{
     padding: 0;
     z-index: -5;
 }
-#BG2{
-    background: url(../images/arch.jpg) 50% 0 no-repeat fixed;
-    padding: 0;
-}
-#BG2 .content{
-    background: rgba(70, 70, 70, .75); /* Opacity hack, doesn't affect children*/
-    padding: 0;
-    z-index: 5;
-}
-#BG2 .inner{
-    padding: 10vmin 30vmin;
-}
-.about-izzy{    
-    color: #fff;
-    text-shadow: 1px 1px #333;
-    font-size: 3.8vmin;   
-    text-align: center;
-    /*display: none;  Will be animated in */
-}
-.about-more{
-    color: #ccc;
-    text-shadow: 1px 1px #333;
-    font-size: 2.8vmin;   
-    text-align: center;
-    padding-top: 5vmin; 
-    /*display: none;  Will be animated in */
-}
-.about-more a{
-    color: #ffcc00;
-    text-decoration: none !important;
-}
-#about-info{
-    background-color: #222;
-    padding: 5vmin 35vmin;
-}
-#about-info h2{
-    color: #666 !important;
-    text-align: left;
-}
-#about-info p{
-    color: #888 !important;
-    font-size: 2.6vmin;
-    text-align: left;
-}
-#about-info span{
-    color: #ffcc00;
-}
-#about-profile{ 
+.about-profile{ 
     background-color: #aaa;
-    background: rgba(255, 255, 255, .8); /* Opacity hack, doesn't affect children*/
+    background: rgba(255, 255, 255, 0.9); /* Opacity hack, doesn't affect children*/
+}
+#slideshow{
+    background: url('../gallery/mobilehack.jpg');
+    background-size: cover;
+    opacity: 1;
+    transition: background 1s linear;
+}
+#slideshow.fadeOut{
+    opacity: 0;
+}
+.profile-text-half{
+    background: #fff;
+}
+.profile-text-half .content{
+    padding: 7vmin 5vmin;
 }
 .about-profile-info{
-    padding: 10vmin 55vmin 15vmin 35vmin;  
+    padding: 8vmin 40vmin 10vmin 40vmin;  
 }
-.about-profile-info h2{
+.about-profile-info ul{
+    padding: 0 2vmin;
+}
+.about-profile-info li{
+    font-family: Open Sans;
+    font-size: 2.2vmin;
+    padding: 1vmin 0; 
+    font-style: bold;
+    color: #000;
+}
+.about-profile-info li p{
+    font-size: 1.8vmin;
+    padding: 0 2vmin;
+    color: #555;
+}
+.about-profile h2{
     font-family: Raleway;
     font-size: 4.4vmin;
     text-align: left;  
     color: #cc0000;   /*Blue #0971B2*/ 
 }
-.about-profile-info p{
+.about-profile h3{
+    font-family: Raleway;
+    font-size: 3vmin;
+    text-align: left;  
+    color: #0971B2;   
+}
+.about-profile p, .works-why-games p{
     font-family: Open Sans;
     font-size: 2.0vmin;
     text-align: left;  
     color: #666;
 }
-.about-profile-info b{
+.about-profile b{
     font-weight: 300;
     color: #cc0000;
 }
@@ -646,6 +637,9 @@ ul li{
 }
 .works-list .works-item .works-caption {   
     right: 100%;
+}
+.works-why-games{
+    padding: 2vh 20vw 6vh 20vw;
 }
 .hover-overlay{
     position: relative;  
@@ -973,7 +967,7 @@ ul li{
 .show-menu {
 	display: block;
 }
-.menu-icon, .close-icon, .close-icon-work{
+.close-icon-work{
     position: fixed;
     color: #777 !important;
     top: 3%;
@@ -981,7 +975,7 @@ ul li{
     font-size: 7vmin !important; 
     z-index: 200;
 }
-.menu-icon:hover, .close-icon:hover, .close-icon-work:hover{
+.close-icon-work:hover{
     cursor: pointer;
     color: #fff;
     z-index: 200;   
@@ -1030,7 +1024,7 @@ ul li{
         margin-top: 7vmin !important;
     }
     .about-profile-info{
-        padding: 15vmin 30vmin 15vmin 20vmin;  
+        padding: 15vmin 20vmin 15vmin 20vmin;  
     }
     #hackathons .content{
         /*Allow more width space on mobile devices*/   
@@ -1046,10 +1040,10 @@ ul li{
 }
 @media screen and (max-width: 1024px) { 
     .landing-menu{
-        padding: 5vmin 20vw !important;
+        padding: 5vmin 13vmin !important;
     }
     .about-profile-info{
-        padding: 15vmin 20vmin 20vmin 15vmin;   
+        padding: 15vmin 15vmin 20vmin 15vmin;   
     }
     #about-info{
         padding: 5vmin 15vmin;
@@ -1094,6 +1088,9 @@ ul li{
         opacity: 1;
         filter: alpha(opacity=100); /* For IE8 and earlier */
     } 
+    .works-why-games{
+        padding: 3vh 10vw 6vh 10vw;        
+    }
     
     /* Remove background, use light color instead */
     #hackathons{
@@ -1162,10 +1159,10 @@ ul li{
     color: #5c8f26; 
 } 
 .gold{
-    color: #ffcc00;
+    color: #ffcc00 !important;
 }
 .gold2{
-    color: #CD950C;   
+    color: #CD950C !important;   
 }
 .blue{
     color: #0971B2;   
