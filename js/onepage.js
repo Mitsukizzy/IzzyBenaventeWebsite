@@ -29,6 +29,7 @@ $(document).ready(function() {
         $('#slideshow').className += "fadeOut";
         setTimeout(function() {
             $('#slideshow').css('background', 'url(' + images[i] + ')');
+            $('#slideshow').css('background-size', 'cover');
             $('#slideshow').className = "";
         }, 1000);
         i++;
