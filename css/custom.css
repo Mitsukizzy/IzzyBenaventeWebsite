@@ -423,7 +423,7 @@ ul li{
 }
 .about-profile{ 
     background-color: #aaa;
-    background: rgba(252, 248, 242, 0.9); /* Opacity hack, doesn't affect children*/
+    background: rgba(242, 248, 252, 0.9); /* Opacity hack, doesn't affect children*/
 }
 #slideshow{
     background: url('../gallery/mobilehack.jpg');
