@@ -428,6 +428,8 @@ ul li{
 #slideshow{
     background: url('../gallery/mobilehack.jpg');
     background-size: cover;
+    background-position: center;
+    min-height: 50vmin;
     opacity: 1;
     transition: background 1s linear;
 }
