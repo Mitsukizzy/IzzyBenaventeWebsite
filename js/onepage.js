@@ -1,8 +1,8 @@
 $(document).ready(function() {
     // LANDING PAGE FADE IN
-    $('.landing-item').delay(250).each(function(i){
+/*    $('.landing-item').delay(250).each(function(i){
         $(this).delay(750 * i).css({'opacity':0}).animate({'opacity':1}, 1000);
-    });        
+    });    */    
 
     //jQuery for page scrolling feature - requires jQuery Easing plugin
     $(function() {
@@ -16,14 +16,15 @@ $(document).ready(function() {
         });
     });
     
-    // Swap through images
+    /* SLIDESHOW: Swap through images */
     var images = [
+        "http://izzybenavente.me/gallery/mobilehack.jpg",   
         "http://izzybenavente.me/gallery/pompidou.jpg",
         "http://izzybenavente.me/gallery/ggames.jpg",
         "http://izzybenavente.me/gallery/treehacks.jpg",
         "http://izzybenavente.me/gallery/acm.jpg",
         "http://izzybenavente.me/gallery/dragonboat.jpg",
-        "http://izzybenavente.me/gallery/mobilehack.jpg"   
+        "http://izzybenavente.me/gallery/desert.jpg"
     ];
     var i = 0;    
     function slideShow() {
@@ -38,12 +39,70 @@ $(document).ready(function() {
         setTimeout(slideShow, 5000);
     }
     slideShow();
+    /* END SLIDESHOW */
     
+    
+    /* MENU */
+    var menu = document.getElementById('menu'),
+    WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+
+    function toggleHorizontal() {
+        [].forEach.call(
+            document.getElementById('menu').querySelectorAll('.custom-can-transform'),
+            function(el){
+                el.classList.toggle('pure-menu-horizontal');
+            }
+        );
+    };
+
+    function toggleMenu() {
+        // set timeout so that the panel has a chance to roll up
+        // before the menu switches states
+        if (menu.classList.contains('open')) {
+            setTimeout(toggleHorizontal, 500);
+        }
+        else {
+            toggleHorizontal();
+        }
+        menu.classList.toggle('open');
+        document.getElementById('toggle').classList.toggle('x');
+    }
+
+    function closeMenu() {
+        if (menu.classList.contains('open')) {
+            toggleMenu();
+        }
+    }
+
+    document.getElementById('toggle').addEventListener('click', function (e) {
+        toggleMenu();
+    });
+    
+    window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);    
+    /* END MENU */
+    
+    // Show and hide the top bar nav
+    var $win = $(window);       
+    $win.scroll(function () {           
+        if($(window).scrollTop() <= $('#slideshow').height() + 300 && $('.custom-wrapper').is(":visible"))  {
+            if(!elevator.elevating() && !elevator_no.elevating())
+            {
+                // Extra check because elevator can cause incorrect scroll position due to dynamic resizing of content such as BG images
+                $('.custom-wrapper').fadeOut("slow");     
+                //closeMenu();
+            }
+        }
+        else if($(window).scrollTop() > $('#slideshow').height() + 300 && $('.custom-wrapper').is(":hidden"))  {
+            $('.custom-wrapper').fadeIn("slow");
+        }
+    });
+    
+    
+    // ELEVATOR!
     function closeTopNav() {
         $('.custom-wrapper').fadeOut("slow");    
     }
     
-    // ELEVATOR!
     var elevator = new Elevator({
       element: document.querySelector('.elevator-icon'),
       mainAudio: 'js/elevator_low.mp3',

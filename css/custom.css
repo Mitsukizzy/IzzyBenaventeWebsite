@@ -423,7 +423,7 @@ ul li{
 }
 .about-profile{ 
     background-color: #aaa;
-    background: rgba(255, 255, 255, 0.9); /* Opacity hack, doesn't affect children*/
+    background: rgba(252, 248, 242, 0.9); /* Opacity hack, doesn't affect children*/
 }
 #slideshow{
     background: url('../gallery/mobilehack.jpg');
@@ -462,13 +462,13 @@ ul li{
 }
 .about-profile h2{
     font-family: Raleway;
-    font-size: 4.4vmin;
+    font-size: 4.6vmin;
     text-align: left;  
     color: #cc0000;   /*Blue #0971B2*/ 
 }
 .about-profile h3{
     font-family: Raleway;
-    font-size: 3vmin;
+    font-size: 3.6vmin;
     text-align: left;  
     color: #0971B2;   
 }
