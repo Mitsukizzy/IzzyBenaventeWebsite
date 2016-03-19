@@ -35,6 +35,23 @@ $(document).ready(function() {
         toggleMenu();
     });
 
+    
+    // Show and hide the top bar nav
+    var $win = $(window);       
+    $win.scroll(function () {           
+        if($(window).scrollTop() <= $('#slideshow').height() + 300 && $('.custom-wrapper').is(":visible"))  {
+            if(!elevator.elevating() && !elevator_no.elevating())
+            {
+                // Extra check because elevator can cause incorrect scroll position due to dynamic resizing of content such as BG images
+                $('.custom-wrapper').fadeOut("slow");     
+                closeMenu();
+            }
+        }
+        else if($(window).scrollTop() > $('#slideshow').height() + 300 && $('.custom-wrapper').is(":hidden"))  {
+            $('.custom-wrapper').fadeIn("slow");
+        }
+    });
+    
     window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
     
 }); 

@@ -18,6 +18,7 @@ $(document).ready(function() {
     
     // Swap through images
     var images = [
+        "http://izzybenavente.me/gallery/pompidou.jpg",
         "http://izzybenavente.me/gallery/ggames.jpg",
         "http://izzybenavente.me/gallery/treehacks.jpg",
         "http://izzybenavente.me/gallery/acm.jpg",
@@ -34,7 +35,7 @@ $(document).ready(function() {
         }, 1000);
         i++;
         if (i == images.length) { i = 0; }
-        setTimeout(slideShow, 4000);
+        setTimeout(slideShow, 5000);
     }
     slideShow();
     
@@ -57,21 +58,6 @@ $(document).ready(function() {
       endCallback: closeTopNav
     });
 
-    // Show and hide the top bar nav
-    var $win = $(window);       
-    $win.scroll(function () {           
-        if($(window).scrollTop() <= $('.profile-image1').height() + 300 && $('.custom-wrapper').is(":visible"))  {
-            if(!elevator.elevating() && !elevator_no.elevating())
-            {
-                // Extra check because elevator can cause incorrect scroll position due to dynamic resizing of content such as BG images
-                $('.custom-wrapper').fadeOut("slow");       
-            }
-        }
-        else if($(window).scrollTop() > $('.profile-image1').height() + 300 && $('.custom-wrapper').is(":hidden"))  {
-            $('.custom-wrapper').fadeIn("slow");
-        }
-    });
-    
     $('.works-item').click(function(){
         $workitem = $(this).attr("item");
         $('.item-' + $workitem).fadeIn();
