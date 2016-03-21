@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(window).on("load", function() { // Waits for entire page to be ready, including images
+//$(document).ready(function() { // Does jquery after DOM is loaded
     // LANDING PAGE FADE IN
 /*    $('.landing-item').delay(250).each(function(i){
         $(this).delay(750 * i).css({'opacity':0}).animate({'opacity':1}, 1000);
@@ -18,13 +19,13 @@ $(document).ready(function() {
     
     /* SLIDESHOW: Swap through images */
     var images = [
-        "http://izzybenavente.me/gallery/mobilehack.jpg",   
+        "http://izzybenavente.me/gallery/mobilehack.jpg", 
+        "http://izzybenavente.me/gallery/ggames.jpg",  
         "http://izzybenavente.me/gallery/pompidou.jpg",
-        "http://izzybenavente.me/gallery/ggames.jpg",
         "http://izzybenavente.me/gallery/treehacks.jpg",
+        "http://izzybenavente.me/gallery/desert.jpg",
         "http://izzybenavente.me/gallery/acm.jpg",
-        "http://izzybenavente.me/gallery/dragonboat.jpg",
-        "http://izzybenavente.me/gallery/desert.jpg"
+        "http://izzybenavente.me/gallery/dragonboat.jpg"
     ];
     var i = 0;    
     function slideShow() {
