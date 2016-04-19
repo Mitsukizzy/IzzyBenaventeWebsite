@@ -5,9 +5,8 @@ $(window).on("load", function() { // Waits for entire page to be ready, includin
         $(this).delay(750 * i).css({'opacity':0}).animate({'opacity':1}, 1000);
     });    */    
 
-    setTimeout(function(){
-        $('body').addClass('loaded');
-    }, 3000);
+    $('body').addClass('loaded'); // When page finished loading, makes load overlay invisible    
+    $('body').css('overflow-y', 'auto'); // re-enable scroll
     
     //jQuery for page scrolling feature - requires jQuery Easing plugin
     $(function() {
