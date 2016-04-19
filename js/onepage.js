@@ -5,6 +5,10 @@ $(window).on("load", function() { // Waits for entire page to be ready, includin
         $(this).delay(750 * i).css({'opacity':0}).animate({'opacity':1}, 1000);
     });    */    
 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 3000);
+    
     //jQuery for page scrolling feature - requires jQuery Easing plugin
     $(function() {
         $('a[href*=#]').bind('click', function(event) {
@@ -19,27 +23,30 @@ $(window).on("load", function() { // Waits for entire page to be ready, includin
     
     /* SLIDESHOW: Swap through images */
     var images = [
-        "http://izzybenavente.me/gallery/mobilehack.jpg", 
-        "http://izzybenavente.me/gallery/ggames.jpg",  
-        "http://izzybenavente.me/gallery/pompidou.jpg",
-        "http://izzybenavente.me/gallery/treehacks.jpg",
-        "http://izzybenavente.me/gallery/desert.jpg",
-        "http://izzybenavente.me/gallery/acm.jpg",
-        "http://izzybenavente.me/gallery/dragonboat.jpg"
+        "gallery/mobilehack.jpg", 
+        "gallery/ggames.jpg",  
+        "gallery/pompidou.jpg",
+        "gallery/treehacks.jpg",
+        "gallery/desert.jpg",
+        "gallery/acm.jpg",
+        "gallery/dragonboat.jpg"
     ];
-    var i = 0;    
+    i = 0;
+    // Start first image
+    $('#slideshow').css('background', 'url(' + images[i] + ')');
+    $('#slideshow').css('background-size', 'cover');
+    setTimeout(slideShow, 5000);
+    
     function slideShow() {
         $('#slideshow').className += "fadeOut";
         setTimeout(function() {
             $('#slideshow').css('background', 'url(' + images[i] + ')');
             $('#slideshow').css('background-size', 'cover');
-            $('#slideshow').className = "";
         }, 1000);
         i++;
         if (i == images.length) { i = 0; }
         setTimeout(slideShow, 5000);
     }
-    slideShow();
     /* END SLIDESHOW */
     
     

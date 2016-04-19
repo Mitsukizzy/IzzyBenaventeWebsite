@@ -82,7 +82,8 @@ ul li{
     padding: 0;
 }
 #about {
-    background: url(../images/underground.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/underground.jpg) 50% 0 no-repeat fixed;*/
+    background: #7f8c8d;
     background-size: cover;
     text-align: left;
 }
@@ -265,42 +266,6 @@ ul li{
 }
 /* END hamburger menu animation */
 
-/*.custom-toggle .bar {
-    background-color: #777;
-    display: block;
-    width: 1.8em;
-    height: 0.1em;
-    border-radius: 100px;
-    position: absolute;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    transition: all 0.5s;
-
-.custom-toggle .bar:first-child {
-    -webkit-transform: translateY(-8x);
-    -moz-transform: translateY(-8px);
-    -ms-transform: translateY(-8px);
-    transform: translateY(-8px);
-}
-.custom-toggle .bar:nth-child(2) {
-    -webkit-transform: translateY(-16px);
-    -moz-transform: translateY(-16px);
-    -ms-transform: translateY(-16px);
-    transform: translateY(-16px);
-}
-.custom-toggle.x .bar {
-    -webkit-transform: translateY(-8px) rotate(45deg);
-    -moz-transform: translateY(-8px) rotate(45deg);
-    -ms-transform: translateY(-8px) rotate(45deg);
-    transform: translateY(-8px) rotate(45deg);
-}
-.custom-toggle.x .bar:nth-child(2) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-    -moz-transform: translateY(-8px) rotate(-45deg);
-    -ms-transform: translateY(-8px) rotate(-45deg);
-    transform: translateY(-8px) rotate(-45deg);
-}*/
 @media (max-width: 47.999em) {
     .custom-menu {
         text-align: left;
@@ -411,6 +376,71 @@ ul li{
   100%     { bottom:0; }
 }
 
+#loader {
+    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+}
+#loader-wrapper h1 {
+    color: #EEEEEE;
+}
+#loader-wrapper #content {
+    margin: 0 auto;
+    padding-bottom: 50px;
+    width: 80%;
+    max-width: 978px;
+}
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222222;
+    z-index: 1000;
+}
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+/* Loaded Transitions */
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(-100%);  /* IE 9 */
+            transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(100%);  /* IE 9 */
+            transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out; 
+            transition: all 0.3s ease-out;
+}
+.loaded #loader-wrapper {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+
+    -webkit-transition: all 0.3s 1s ease-out;  
+            transition: all 0.3s 1s ease-out;
+}
+.no-js #loader-wrapper {
+    display: none;
+}
+.no-js #loader-wrapper h1 {
+    color: #222222;
+}
+
 /*About Page Classes*/
 #BG1{
     background: url(../images/strip.jpg) 50% 0 no-repeat fixed;
@@ -426,8 +456,7 @@ ul li{
     background: rgba(242, 248, 252, 0.9); /* Opacity hack, doesn't affect children*/
 }
 #slideshow{
-    background: url('../gallery/mobilehack.jpg');
-    background-size: cover;
+   /* background: url('../gallery/mobilehack.jpg');*/
     background-position: center;
     min-height: 50vmin;
     opacity: 1;
