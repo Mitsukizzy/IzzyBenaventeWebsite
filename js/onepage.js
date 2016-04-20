@@ -40,10 +40,10 @@ $(window).on("load", function() { // Waits for entire page to be ready, includin
         setTimeout(function() {
             $('#slideshow').css('background', 'url(' + images[i] + ')');
             $('#slideshow').css('background-size', 'cover');
-        }, 1000);
+        }, 2000);
         i++;
         if (i == images.length) { i = 0; }
-        setTimeout(slideShow, 5000);
+        setTimeout(slideShow, 8000);
     }
     /* END SLIDESHOW */
     
