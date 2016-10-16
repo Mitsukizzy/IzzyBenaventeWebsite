@@ -518,6 +518,9 @@ ul li{
 #slideshow.fadeOut{
     opacity: 0;
 }
+.galleria{
+    min-height: 50vmin;
+}
 .profile-text-half{
     background: #fff;
 }
