@@ -489,8 +489,8 @@ ul li{
     opacity: 0;
     visibility: hidden;
 
-    -webkit-transition: visibility 0s linear 2000ms, opacity 2s;  
-    transition: visibility 0s linear 2000ms, opacity 2s;
+    -webkit-transition: visibility 0s linear 0.5s, opacity 0.5s;  
+    transition: visibility 0s linear 0.5s, opacity 0.5s;
 }
     
 
