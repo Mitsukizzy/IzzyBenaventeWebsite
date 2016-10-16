@@ -20,31 +20,31 @@ $(window).on("load", function() { // Waits for entire page to be ready, includin
     });
     
     /* SLIDESHOW: Swap through images */
-    var images = [
-        "gallery/mobilehack.jpg", 
-        "gallery/ggames.jpg",  
-        "gallery/pompidou.jpg",
-        "gallery/treehacks.jpg",
-        "gallery/desert.jpg",
-        "gallery/acm.jpg",
-        "gallery/dragonboat.jpg"
-    ];
-    i = 0;
-    // Start first image
-    $('#slideshow').css('background', 'url(' + images[i] + ')');
-    $('#slideshow').css('background-size', 'cover');
-    setTimeout(slideShow, 5000);
-    
-    function slideShow() {
-        $('#slideshow').className += "fadeOut";
-        setTimeout(function() {
-            $('#slideshow').css('background', 'url(' + images[i] + ')');
-            $('#slideshow').css('background-size', 'cover');
-        }, 2000);
-        i++;
-        if (i == images.length) { i = 0; }
-        setTimeout(slideShow, 8000);
-    }
+//    var images = [
+//        "gallery/mobilehack.jpg", 
+//        "gallery/mobilehack.jpg",  
+//        "gallery/pompidou.jpg",
+//        "gallery/treehacks.jpg",
+//        "gallery/desert.jpg",
+//        "gallery/acm.jpg",
+//        "gallery/dragonboat.jpg"
+//    ];
+//    i = 0;
+//    // Start first image
+//    $('#slideshow').css('background', 'url(' + images[i] + ')');
+//    $('#slideshow').css('background-size', 'cover');
+//    setTimeout(slideShow, 5000);
+//    
+//    function slideShow() {
+//        $('#slideshow').className += "fadeOut";
+//        setTimeout(function() {
+//            $('#slideshow').css('background', 'url(' + images[i] + ')');
+//            $('#slideshow').css('background-size', 'cover');
+//        }, 2000);
+//        i++;
+//        if (i == images.length) { i = 0; }
+//        setTimeout(slideShow, 8000);
+//    }
     /* END SLIDESHOW */
     
     
