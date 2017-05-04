@@ -36,28 +36,29 @@
         <link rel="shortcut icon" href="favicon.ico" /> </head>
 
     <body class="c-layout-header-fixed c-layout-header-mobile-fixed c-bg-dark-2 c-bg-dark-2-font">
-        <header class="c-layout-header c-layout-header-4 c-layout-header-default-mobile" data-minimize-offset="80">
+        <header class="c-layout-header c-layout-header-4 c-bg-dark-2 c-layout-header-default-mobile" data-minimize-offset="80">
             <div class="c-navbar">
                 <div class="container">
                     <div class="c-navbar-wrapper clearfix">
                         <div class="c-brand c-pull-left">
                             <a href="index.html" class="c-logo">
                                 <img src="assets/base/img/layout/logos/logo-IB-2.png" alt="IZZY BENAVENTE" class="c-desktop-logo">
-                                <img src="assets/base/img/layout/logos/logo-IB-3.png" alt="JANGO" class="c-desktop-logo-inverse">
-                                <img src="assets/base/img/layout/logos/logo-IB-1.png" alt="JANGO" class="c-mobile-logo">                      
+                                <img src="assets/base/img/layout/logos/logo-IB-3.png" alt="IZZY BENAVENTE" class="c-desktop-logo-inverse">
+                                <img src="assets/base/img/layout/logos/logo-IB-1.png" alt="IZZY BENAVENTE" class="c-mobile-logo">                      
                             </a>
                         </div>
                         <nav class="c-mega-menu c-pull-right c-mega-menu-dark c-mega-menu-dark-mobile c-fonts-uppercase c-fonts-bold">
                             <ul class="nav navbar-nav c-theme-nav">                                
+                                <li class="c-onepage-link">
+                                    <a href="index.html" class="c-link c-font-grey-3">About</a>
+                                </li>
                                 <li class="c-onepage-link c-active active">
-                                    <a href="#home" class="c-link c-font-grey-3">Works</a>
+                                    <a href="works.html" class="c-link c-font-grey-3">Works</a>
                                 </li>
                                 <li class="c-onepage-link ">
-                                    <a href="#about" class="c-link c-font-grey-3">About</a>
+                                    <a href="assets/resume.pdf" target="_blank" class="c-link c-font-grey-3">Resume</a>
                                 </li>
-                                <li class="c-onepage-link ">
-                                    <a href="#services" class="c-link c-font-grey-3">Resume</a>
-                                </li>
+<!--
                                 <li class="c-quick-sidebar-toggler-wrapper">
                                     <a href="#" class="c-quick-sidebar-toggler">
                                         <span class="c-line c-bg-grey-3"></span>
@@ -65,6 +66,7 @@
                                         <span class="c-line c-bg-grey-3"></span>
                                     </a>
                                 </li>
+-->
                             </ul>
                         </nav>
                     </div>
@@ -82,43 +84,17 @@
                 </div>
             </div>
             <!-- BEGIN: PAGE CONTENT -->            
-            <div class="c-content-box c-size-md c-no-padding c-bg-dark-2">
-                <div class="c-content-feature-4">
-                    <div class="c-bg-parallax c-feature-bg c-content-right c-diagonal c-border-left-dark-2" style="background-image: url(assets/base/img/content/backgrounds/bg-54.jpg)" ></div>
-                    <div class="c-content-area c-content-left"></div>
-                    <div class="container">
-                        <div class="c-feature-content c-left">
-                            <div class="c-content-v-center">
-                                <div class="c-wrapper">
-                                    <div class="c-body">
-                                        <div class="c-content-title-1 wow animate fadeInDown">
-                                            <h3 class="c-left c-font-white">Hi, I'm Izzy!</h3>
-                                            <div class="c-line-left c-bg-green-3"></div>
-                                            <p class="c-left">Welcome to my online portfolio!</p>
-                                        </div>
-                                        <div class="c-content">
-                                            <p class="c-margin-b-30 c-left wow animate fadeInDown c-font-grey-3"> I'm a software engineer passionate about creating compelling, interactive experiences through games and media, with previous experience programming for UI, tools, gameplay, and VR. 
-                                            <br /><br />
-                                            Recently graduated from USC in May 2017, I am currently seeking a full-time job in the games industry.
-                                            </p>
-                                            <button class="btn btn-lg c-btn-green-3 c-btn-border-2x c-btn-square c-btn-bold wow animate fadeIn">EXPLORE</button>
-                                            <button class="btn btn-lg c-btn-green-3 c-btn-square c-btn-bold wow animate fadeIn" data-wow-delay="0.2s">PURCHASE</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
             <!-- Begin: Content box -->
             <section id="works">
             <div class="c-content-box c-size-md">
                 <div class="container">
+                    <div class="c-content-title-1 wow animate fadeInDown">
+                        <h3 class="c-center c-font-uppercase c-font-bold c-font-grey-3">Works</h3>
+                        <div class="c-line-center c-bg-green-3"></div>
+                    </div>
                     <!-- Begin: Cubeportfolio grid -->
                     <div class="cbp-panel">
-                        <div id="filters-container" class="cbp-l-filters-buttonCenter">
+                        <div id="filters-container" class="cbp-l-filters-buttonCenter wow animate fadeInDown">
                             <div data-filter="*" class="cbp-filter-item-active cbp-filter-item"> All
                                 <div class="cbp-filter-counter"></div>
                             </div>
@@ -145,7 +121,7 @@
                             </div>
                         </div>
                         <div id="grid-container" class="cbp cbp-l-grid-masonry-projects">
-                            <div class="cbp-item web hack">
+                            <div class="cbp-item web hack wow animate fadeInRight" data-wow-delay="0.2s">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="assets/custom/artemis.jpg" alt=""> </div>
@@ -153,8 +129,8 @@
                                         <div class="c-masonry-border"></div>
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
-                                                <a href="ajax/projects/project1.html?test=1" class="cbp-singlePage cbp-l-caption-buttonLeft btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase">Explore</a>
-                                                <a href="assets/base/img/content/stock/62.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="Dashboard<br>by Paul Flavius Nechita">Zoom</a>
+                                                <a href="ajax/projects/project1.html" class="cbp-singlePage cbp-l-caption-buttonLeft btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase">Explore</a>
+                                                <a href="assets/custom/artemis.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="Artemis<br>Logo by Cherrie Wang">Zoom</a>
                                             </div>
                                         </div>
                                     </div>
@@ -162,7 +138,7 @@
                                 <a href="ajax/projects/project1.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title c-font-white">Artemis</a>
                                 <div class="cbp-l-grid-masonry-projects-desc c-font-green-3">web / hackathon</div>
                             </div>
-                            <div class="cbp-item game">
+                            <div class="cbp-item game wow animate fadeInRight" data-wow-delay="0.4s">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="assets/custom/iw.jpg" alt=""> </div>
@@ -171,7 +147,7 @@
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
                                                 <a href="ajax/projects/project2.html" class="cbp-singlePage cbp-l-caption-buttonLeft btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase">Explore</a>
-                                                <a href="assets/base/img/content/stock/60.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="World Clock Widget<br>by Paul Flavius Nechita">Zoom</a>
+                                                <a href="assets/custom/iw.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="Call of Duty: Infinite Warfare (Key Art)<br>by Infinity Ward">Zoom</a>
                                             </div>
                                         </div>
                                     </div>
@@ -179,7 +155,7 @@
                                 <a href="ajax/projects/project2.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title c-font-white">Call of Duty: Infinite Warfare</a>
                                 <div class="cbp-l-grid-masonry-projects-desc c-font-green-3">game</div>
                             </div>
-                            <div class="cbp-item game unreal">
+                            <div class="cbp-item game unreal web wow animate fadeInRight" data-wow-delay="0.6s">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="assets/custom/skyshot.jpg" alt=""> </div>
@@ -188,15 +164,15 @@
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
                                                 <a href="ajax/projects/project3.html" class="cbp-singlePage cbp-l-caption-buttonLeft btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase">Explore</a>
-                                                <a href="http://vimeo.com/14912890" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="To-Do Dashboard<br>by Tiberiu Neamu">Zoom</a>
+                                                <a href="assets/custom/skyshot.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="Skyshot (Key Art)<br>Artist: Richard Chen">Zoom</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="ajax/projects/project3.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title c-font-white">Skyshot</a>
-                                <div class="cbp-l-grid-masonry-projects-desc c-font-green-3">game / unreal engine</div>
+                                <div class="cbp-l-grid-masonry-projects-desc c-font-green-3">game / unreal engine / web</div>
                             </div>
-                            <div class="cbp-item game unity android">
+                            <div class="cbp-item game unity android wow animate fadeInRight" data-wow-delay="0.2s">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="assets/custom/psychic.jpg" alt=""> </div>
@@ -205,7 +181,7 @@
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
                                                 <a href="ajax/projects/project4.html" class="cbp-singlePage cbp-l-caption-buttonLeft btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase">Explore</a>
-                                                <a href="assets/base/img/content/stock/56.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="WhereTO App<br>by Tiberiu Neamu">Zoom</a>
+                                                <a href="assets/custom/psychic.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="Psychic<br>Game team led by Ascot Smith">Zoom</a>
                                             </div>
                                         </div>
                                     </div>
@@ -213,24 +189,24 @@
                                 <a href="ajax/projects/project5.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title c-font-white">Psychic</a>
                                 <div class="cbp-l-grid-masonry-projects-desc c-font-green-3">game / unity / android</div>
                             </div>
-                            <div class="cbp-item web">
+                            <div class="cbp-item game unity VR wow animate fadeInRight" data-wow-delay="0.4s">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="assets/custom/pinscreen.jpg" alt=""> </div>
+                                        <img src="assets/custom/elementerra.jpg" alt=""> </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="c-masonry-border"></div>
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
                                                 <a href="ajax/projects/project5.html" class="cbp-singlePage cbp-l-caption-buttonLeft btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase">Explore</a>
-                                                <a href="assets/base/img/content/stock/54.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="Events and  More<br>by Tiberiu Neamu">Zoom</a>
+                                                <a href="assets/custom/elementerra.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="ElemenTerra<br>by Freeform Labs">Zoom</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="ajax/projects/project4.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title c-font-white">Pinscreen</a>
-                                <div class="cbp-l-grid-masonry-projects-desc c-font-green-3">web</div>
+                                <a href="ajax/projects/project4.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title c-font-white">ElemenTerra</a>
+                                <div class="cbp-l-grid-masonry-projects-desc c-font-green-3">game / unity / VR</div>
                             </div>
-                            <div class="cbp-item web hack">
+                            <div class="cbp-item web hack wow animate fadeInRight" data-wow-delay="0.6s">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="assets/custom/echochef.jpg" alt=""> </div>
@@ -239,7 +215,7 @@
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
                                                 <a href="ajax/projects/project6.html" class="cbp-singlePage cbp-l-caption-buttonLeft btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase">Explore</a>
-                                                <a href="assets/base/img/content/stock/37.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="Ski * Buddy<br>by Tiberiu Neamu">Zoom</a>
+                                                <a href="assets/custom/echochef.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="Echo Chef<br>Developed for TreeHacks 2016">Zoom</a>
                                             </div>
                                         </div>
                                     </div>
@@ -247,24 +223,24 @@
                                 <a href="ajax/projects/project6.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title c-font-white">Echo Chef</a>
                                 <div class="cbp-l-grid-masonry-projects-desc c-font-green-3">web / hackathon</div>
                             </div>
-                            <div class="cbp-item game unity VR">
+                            <div class="cbp-item game unity wow animate fadeInRight" data-wow-delay="0.2s">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="assets/custom/elementerrra.jpg" alt=""> </div>
+                                        <img src="assets/custom/arch.jpg" alt=""> </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="c-masonry-border"></div>
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
                                                 <a href="ajax/projects/project7.html" class="cbp-singlePage cbp-l-caption-buttonLeft btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase">Explore</a>
-                                                <a href="assets/base/img/content/stock/41.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">Zoom</a>
+                                                <a href="assets/custom/arch.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="Archipelago<br>Created by Izzy Benavente and Jasmine Ying">Zoom</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="ajax/projects/project7.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title c-font-white">ElemenTerra</a>
-                                <div class="cbp-l-grid-masonry-projects-desc c-font-green-3">game / unity / VR</div>
+                                <a href="ajax/projects/project7.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title c-font-white">Archipelago</a>
+                                <div class="cbp-l-grid-masonry-projects-desc c-font-green-3">game / unity</div>
                             </div>
-                            <div class="cbp-item web">
+                            <div class="cbp-item web wow animate fadeInRight" data-wow-delay="0.4s">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="assets/custom/slickdeals.jpg" alt=""> </div>
@@ -273,7 +249,7 @@
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
                                                 <a href="ajax/projects/project8.html" class="cbp-singlePage cbp-l-caption-buttonLeft btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase">Explore</a>
-                                                <a href="http://www.youtube.com/watch?v=Bu9OiDmxCrQ" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="Remind~Me More<br>by Tiberiu Neamu">Zoom</a>
+                                                <a href="assets/custom/slickdeals.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="Slickdeals Price Tracker<br>on slickdeals.net">Zoom</a>
                                             </div>
                                         </div>
                                     </div>
@@ -281,25 +257,25 @@
                                 <a href="ajax/projects/project8.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title c-font-white">Slickdeals</a>
                                 <div class="cbp-l-grid-masonry-projects-desc c-font-green-3">web</div>
                             </div>
-                            <div class="cbp-item game unity">
+                            <div class="cbp-item web wow animate fadeInRight" data-wow-delay="0.6s">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="assets/custom/arch.jpg" alt=""> </div>
+                                        <img src="assets/custom/pinscreen.jpg" alt=""> </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="c-masonry-border"></div>
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
                                                 <a href="ajax/projects/project9.html" class="cbp-singlePage cbp-l-caption-buttonLeft btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase">Explore</a>
-                                                <a href="https://www.ted.com/talks/andrew_bastawrous_get_your_next_eye_exam_on_a_smartphone" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase"
-                                                data-title="Workout Buddy<br>by Tiberiu Neamu">Zoom</a>
+                                                <a href="assets/custom/pinscreen.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase"
+                                                data-title="Pinscreen<br>by the Pinscreen Team">Zoom</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="ajax/projects/project9.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title c-font-white">Archipelago</a>
-                                <div class="cbp-l-grid-masonry-projects-desc c-font-green-3">game / unity</div>
+                                <a href="ajax/projects/project9.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title c-font-white">Pinscreen</a>
+                                <div class="cbp-l-grid-masonry-projects-desc c-font-green-3">web</div>
                             </div>
-                            <div class="cbp-item web hack">
+                            <div class="cbp-item web hack wow animate fadeInRight" data-wow-delay="0.2s">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="assets/custom/whiteboard.jpg" alt=""> </div>
@@ -308,7 +284,7 @@
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
                                                 <a href="ajax/projects/project10.html" class="cbp-singlePage cbp-l-caption-buttonLeft btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase">Explore</a>
-                                                <a href="https://www.youtube.com/watch?v=3wbvpOIIBQA" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="Bills Bills Bills<br>by Cosmin Capitanu">Zoom</a>
+                                                <a href="assets/custom/whiteboard.jpg" class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase" data-title="Whiteboard Learning<br>Developed for AT&T Mobile Hackathon">Zoom</a>
                                             </div>
                                         </div>
                                     </div>
@@ -316,6 +292,7 @@
                                 <a href="ajax/projects/project10.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title c-font-white">Whiteboard Learning</a>
                                 <div class="cbp-l-grid-masonry-projects-desc c-font-green-3">web / hackathon</div>
                             </div>
+<!--
                             <div class="cbp-item android">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
@@ -350,6 +327,7 @@
                                 <a href="ajax/projects/project12.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title c-font-white">Where's It</a>
                                 <div class="cbp-l-grid-masonry-projects-desc c-font-green-3">android / hackathon</div>
                             </div>
+-->
                         </div>
                         <div id="loadMore-container" class="cbp-l-loadMore-button c-margin-t-60">
                             <a href="ajax/masonry-gallery/load-more.html" class="cbp-l-loadMore-link btn c-btn-square c-btn-border-2x c-btn-green-3 c-btn-bold c-btn-uppercase">
@@ -403,56 +381,55 @@
                                 </div>
                                 <ul class="c-works">
                                     <li class="c-first">
-                                        <a href="#">
-                                            <img src="assets/base/img/content/stock/015.jpg" alt="" class="img-responsive" />
+                                        <a href="ajax/projects/project2.html" class="cbp-singlePage">
+                                            <img src="assets/custom/iw.jpg" alt="" class="img-responsive" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
-                                            <img src="assets/base/img/content/stock/012.jpg" class="img-responsive" alt="" />
+                                        <a href="ajax/projects/project1.html" class="cbp-singlePage">
+                                            <img src="assets/custom/artemis.jpg" class="img-responsive" alt="" />
                                         </a>
                                     </li>
                                     <li class="c-last">
-                                        <a href="#">
-                                            <img src="assets/base/img/content/stock/12.jpg" alt="" class="img-responsive" />
+                                        <a href="ajax/projects/project4.html" class="cbp-singlePage">
+                                            <img src="assets/custom/psychic.jpg" alt="" class="img-responsive" />
                                         </a>
                                     </li>
                                 </ul>
                                 <ul class="c-works">
                                     <li class="c-first">
-                                        <a href="#">
-                                            <img src="assets/base/img/content/stock/014.jpg" class="img-responsive" alt="" />
+                                        <a href="ajax/projects/project3.html" class="cbp-singlePage">
+                                            <img src="assets/custom/skyshot.jpg" class="img-responsive" alt="" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
-                                            <img src="assets/base/img/content/stock/011.jpg" class="img-responsive" alt="" />
+                                        <a href="ajax/projects/project7.html" class="cbp-singlePage">
+                                            <img src="assets/custom/arch.jpg" class="img-responsive" alt="" />
                                         </a>
                                     </li>
                                     <li class="c-last">
-                                        <a href="#">
-                                            <img src="assets/base/img/content/stock/15.jpg" class="img-responsive" alt="" />
+                                        <a href="ajax/projects/project9.html" class="cbp-singlePage">
+                                            <img src="assets/custom/pinscreen.jpg" class="img-responsive" alt="" />
                                         </a>
                                     </li>
                                 </ul>
                                 <ul class="c-works">
                                     <li class="c-first">
-                                        <a href="#">
-                                            <img src="assets/base/img/content/stock/015.jpg" class="img-responsive" alt="" />
+                                        <a href="ajax/projects/project6.html" class="cbp-singlePage">
+                                            <img src="assets/custom/echochef.jpg" class="img-responsive" alt="" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
-                                            <img src="assets/base/img/content/stock/013.jpg" class="img-responsive" alt="" />
+                                        <a href="ajax/projects/project5.html" class="cbp-singlePage">
+                                            <img src="assets/custom/elementerra.jpg" class="img-responsive" alt="" />
                                         </a>
                                     </li>
                                     <li class="c-last">
-                                        <a href="#">
-                                            <img src="assets/base/img/content/stock/13.jpg" class="img-responsive" alt="" />
+                                        <a href="ajax/projects/project8.html" class="cbp-singlePage">
+                                            <img src="assets/custom/slickdeals.jpg" class="img-responsive" alt="" />
                                         </a>
                                     </li>
                                 </ul>
-                                <a href="#" class="btn btn-md c-btn-border-1x c-theme-btn c-btn-uppercase c-btn-square c-btn-bold c-read-more hide">View More</a>
                             </div>
                         </div>
                         <div class="col-md-4">
