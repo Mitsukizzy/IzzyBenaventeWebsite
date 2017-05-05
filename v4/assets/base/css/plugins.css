@@ -6980,7 +6980,7 @@ label.control-label {
   position: absolute; }
 
 .owl-carousel .owl-controls {
-  margin-top: 60px; }
+  margin-top: 0px; }    /* Izzy change back to 60px */
   .owl-carousel .owl-controls .owl-dot {
     width: 12px;
     height: 12px;
