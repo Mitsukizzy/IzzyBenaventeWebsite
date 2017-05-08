@@ -28,3 +28,23 @@
   right: 10px;
   left: auto;
 }
+
+@media (min-width: 992px) {
+    .welcome-container{
+        min-height: 850px !important;
+    }   
+}
+
+/* FOR MOBILE */
+@media (max-width: 991px) {
+    .welcome-container{
+        display: none !important;
+        min-height: 100% !important;
+    }       
+    .c-feature-content .c-content-v-center{
+        padding: 0 !important;
+    }
+    .c-feature-content .c-content-v-center .c-wrapper{
+        height: 450px !important;
+    }
+}
