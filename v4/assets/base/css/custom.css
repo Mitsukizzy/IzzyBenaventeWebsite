@@ -29,6 +29,14 @@
   left: auto;
 }
 
+.role
+{
+    margin: 0;
+    color: #222;
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+}
+
 @media (min-width: 992px) {
     .welcome-container{
         min-height: 850px !important;
