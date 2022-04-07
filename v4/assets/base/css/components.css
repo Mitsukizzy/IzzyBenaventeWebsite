@@ -2707,7 +2707,8 @@ h1 {
   background-position: center center;
   background-size: cover;
   background-color: transparent;
-  min-height: 100%; } /* Change back to 100% if anything breaks Izzy */
+  /*min-height: 100%;*/ /* Change back to 100% if anything breaks Izzy */
+} 
 
 /* ios safari hacks */
 @supports (-webkit-text-size-adjust: none) and (-ms-accelerator: true) {
@@ -9227,7 +9228,7 @@ h1 {
     float: right;
     position: relative; }
   .c-content-feature-4 .c-feature-content .c-content-v-center {
-    height: 850px; } /* Izzy change to 750px */
+    height: 850px; } /* Izzy changed to 750px, this is overridden in custom.css for large screens */
 
 @media (max-width: 991px) {
   /* 991px */

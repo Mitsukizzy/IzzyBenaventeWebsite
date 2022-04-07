@@ -37,10 +37,30 @@
     text-align: center;
 }
 
-@media (min-width: 992px) {
+
+
+/* Handle top photo diagonal bottom border issues */
+@media (min-width: 2200px) {
     .welcome-container{
         min-height: 850px !important;
     }   
+    .c-content-feature-4 .c-feature-content .c-content-v-center {
+        height: 750px; /* Izzy change to 750px */
+    } 
+}
+
+@media (min-width: 992px max-width:2200px) {
+
+    .welcome-container{
+        min-height: 850px !important;
+        max-height: 650px !important;
+    }   
+    .c-content-feature-4 .c-feature-content .c-content-v-center {
+        height: 70px; /* Izzy change to 750px */
+    } 
+  .c-content-feature-4 .c-content-right.c-diagonal {
+    border-left: 100px solid !important;
+    border-top: 600px solid transparent !important; } /* Izzy change to 750px */
 }
 
 /* FOR MOBILE */
@@ -55,4 +75,4 @@
     .c-feature-content .c-content-v-center .c-wrapper{
         height: 450px !important;
     }
-}
+}0
