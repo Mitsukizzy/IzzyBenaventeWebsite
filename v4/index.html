@@ -119,7 +119,7 @@
             </div>
             
             <!-- ABOUT INFO -->
-            <div id="feature-15-1" class="c-bg-parallax c-content-feature-15 c-bg-img-center" style="background-image: url(assets/custom/respawnE3.jpg); min-height: 60%">
+            <div id="feature-15-1" class="c-bg-parallax c-content-feature-15 c-bg-img-center" style="background-image: url(assets/custom/parallaxbg.jpg); min-height: 60%">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-xs-12">
@@ -148,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <div id="feature-15-2" class="c-content-feature-15 c-bg-parallax c-bg-img-center" style="background-image: url(assets/custom/respawnE3.jpg); min-height: 60%">
+            <div id="feature-15-2" class="c-content-feature-15 c-bg-parallax c-bg-img-center" style="background-image: url(assets/custom/parallaxbg.jpg); min-height: 60%">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-offset-4 col-md-8 col-xs-12">
@@ -419,6 +419,12 @@
             $(document).ready(function()
             {
                 App.init(); // init core    
+            });
+            window.addEventListener('auxclick', e => {
+                if (e.button === 1) 
+                {
+                    e.preventDefault() // Prevent middle click behaviour to prevent ajax/html issues
+                }
             });
         </script>
         <!-- END: THEME SCRIPTS -->

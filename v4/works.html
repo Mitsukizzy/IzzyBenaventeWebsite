@@ -681,6 +681,12 @@
             {
                 App.init(); // init core    
             });
+            window.addEventListener('auxclick', e => {
+                if (e.button === 1) 
+                {
+                    e.preventDefault() // Prevent middle click behaviour to prevent ajax/html issues
+                }
+            });
         </script>
         <!-- END: THEME SCRIPTS -->
         <!-- BEGIN: PAGE SCRIPTS -->
