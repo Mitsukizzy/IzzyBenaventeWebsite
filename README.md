@@ -1,2 +1,3 @@
-# Mitsukizzy.github.io
-Github pages site for quick personal site testing
+# Live Site: http://izzybenavente.me/
+
+Old/gh page for quick tests: Mitsukizzy.github.io
