@@ -9212,7 +9212,7 @@ h1 {
     border-bottom-left-radius: 35% 50%; }
   .c-content-feature-4 .c-content-right.c-diagonal {
     border-left: 200px solid;
-    border-top: 850px solid transparent; } /* Izzy change to 750px */
+    border-top: 750px solid transparent; } /* Izzy: was 750px */
   .c-content-feature-4 .c-content-right.c-arrow {
     border-left: 200px solid;
     border-top: 375px solid transparent;
@@ -9228,7 +9228,7 @@ h1 {
     float: right;
     position: relative; }
   .c-content-feature-4 .c-feature-content .c-content-v-center {
-    height: 850px; } /* Izzy changed to 750px, this is overridden in custom.css for large screens */
+    height: 750px; } /* Izzy: was 750px. this is overridden in custom.css for large screens */
 
 @media (max-width: 991px) {
   /* 991px */

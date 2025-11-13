@@ -37,6 +37,23 @@
     text-align: center;
 }
 
+.c-feature-content .bio{
+    a {
+        color: #84C68f;
+    }
+    
+    a:hover {
+        color: #FFFFFF;
+    }
+}
+
+.c-font-grey-4{
+    color: #a5bca5 !important;
+}
+
+.c-font-grey-5{
+    color: #b1b1b1 !important;
+}
 
 
 /* Handle top photo diagonal bottom border issues */
@@ -45,7 +62,7 @@
         min-height: 850px !important;
     }   
     .c-content-feature-4 .c-feature-content .c-content-v-center {
-        height: 750px; /* Izzy change to 750px */
+        height: 750px; /* Izzy: was 750px */
     } 
 }
 
@@ -75,4 +92,4 @@
     .c-feature-content .c-content-v-center .c-wrapper{
         height: 450px !important;
     }
-}0
+}
